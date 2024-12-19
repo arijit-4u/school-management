@@ -27,4 +27,14 @@
   --drop-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   --hero-inner-shadow: inset 0px 40px 40px rgba(0, 0, 0, 0.25),
     inset 0px -40px 40px rgba(0, 0, 0, 0.25);
+
+  /* Padding size */
+  --small-extra: 4px;
+  --small: 8px;
+  --medium: 12px;
+  --large: 16px;
+  --large-extra: 24px;
+  --large-ultimate: 32px;
+  --huge: 48px;
+  --huge-large: 64px;
 }
