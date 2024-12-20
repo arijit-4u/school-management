@@ -37,4 +37,8 @@
   --large-ultimate: 32px;
   --huge: 48px;
   --huge-large: 64px;
+  --side-gutter: 80px;
+
+  /* Border radius */
+  --rounded-normal: 4px;
 }

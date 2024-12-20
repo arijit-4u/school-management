@@ -10,18 +10,24 @@ body {
 }
 
 .main-nav {
+  background: linear-gradient(
+    180deg,
+    var(--red) 0%,
+    #6a0000 40%,
+    var(--red-dim) 100%
+  );
+
   display: flex;
   max-height: 164px;
-
   justify-content: space-between;
-  padding: 32px 80px;
+  padding: var(--large-ultimate) var(--side-gutter);
 }
 
 .left-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: var(--small);
 }
 
 .primary-links {
@@ -29,8 +35,8 @@ body {
 }
 
 .primary-links > .nav-links {
-  border-right: 1px solid #3a2f2f;
-  padding: 8px 16px;
+  border-right: 1px solid var(--surface-shade);
+  padding: var(--small) var(--large);
   display: inline-block;
 }
 
@@ -41,7 +47,7 @@ li {
 .nav-links a {
   color: var(--surface-dim);
   text-decoration: none;
-  padding-right: 4px;
+  padding-right: var(--small-extra);
 }
 
 .nav-links span {
@@ -49,18 +55,34 @@ li {
 }
 
 .right-section {
+  position: relative;
   display: flex;
   align-items: flex-end;
-  flex-direction: column;
-  gap: 24px;
+  gap: var(--large-extra);
 }
 
-.info-list {
-  display: flex;
+.right-section li {
+  color: var(--surface);
+  display: inline;
 }
 
-.secondary-group {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.right-section > li:first-child {
+  padding-right: var(--small);
+}
+
+.right-section > .secondary-group > li {
+  display: inline;
+}
+
+.right-section input {
+  width: 128px;
+  height: 30px;
+  padding: var(--small) var(--medium);
+  background-color: var(--red-shade);
+  border-top-left-radius: var(--rounded-normal);
+  border-bottom-left-radius: var(--rounded-normal);
+}
+
+.right-section input::placeholder {
+  color: var(--surface);
 }
