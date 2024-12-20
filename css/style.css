@@ -7,6 +7,11 @@
 
 body {
   background-color: #57606f;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+li {
+  list-style-type: none;
 }
 
 .main-nav {
@@ -40,10 +45,6 @@ body {
   display: inline-block;
 }
 
-li {
-  list-style-type: none;
-}
-
 .nav-links a {
   color: var(--surface-dim);
   text-decoration: none;
@@ -55,10 +56,11 @@ li {
 }
 
 .right-section {
-  position: relative;
+  /* position: relative; */
   display: flex;
-  align-items: flex-end;
-  gap: var(--large-extra);
+  justify-content: flex-end;
+  align-items: center;
+  /* gap: var(--large-extra); */
 }
 
 .right-section li {
@@ -70,8 +72,14 @@ li {
   padding-right: var(--small);
 }
 
-.secondary-group {
+.info-list {
+  position: absolute;
+  top: 16px;
+}
+
+.secondary-group li {
   background-color: var(--red-dim);
+  padding: var(--small) var(--medium);
 }
 
 .secondary-group li:first-child {
@@ -80,11 +88,19 @@ li {
 }
 
 .search-form {
+  position: relative;
   background-color: var(--red-shade);
   padding: var(--small) var(--medium);
   border-top-right-radius: var(--rounded-normal);
   border-bottom-right-radius: var(--rounded-normal);
 }
+
+.search-form svg {
+  position: absolute;
+  top: 11px;
+  right: 11px;
+}
+
 .search-form input {
   width: 92px;
   background-color: var(--red-shade);
@@ -93,4 +109,5 @@ li {
 
 .search-form input::placeholder {
   color: var(--surface);
+  font-size: var(--text---small-extra);
 }
