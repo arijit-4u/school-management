@@ -70,19 +70,27 @@ li {
   padding-right: var(--small);
 }
 
-.right-section > .secondary-group > li {
-  display: inline;
+.secondary-group {
+  background-color: var(--red-dim);
 }
 
-.right-section input {
-  width: 128px;
-  height: 30px;
-  padding: var(--small) var(--medium);
-  background-color: var(--red-shade);
+.secondary-group li:first-child {
   border-top-left-radius: var(--rounded-normal);
   border-bottom-left-radius: var(--rounded-normal);
 }
 
-.right-section input::placeholder {
+.search-form {
+  background-color: var(--red-shade);
+  padding: var(--small) var(--medium);
+  border-top-right-radius: var(--rounded-normal);
+  border-bottom-right-radius: var(--rounded-normal);
+}
+.search-form input {
+  width: 92px;
+  background-color: var(--red-shade);
+  border: none;
+}
+
+.search-form input::placeholder {
   color: var(--surface);
 }
