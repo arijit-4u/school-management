@@ -1,0 +1,44 @@
+:root {
+  /* Color styles */
+  --surface: #ffffff;
+  --surface-dim: #f5f5f5;
+  --surface-mute: #9b9b9b;
+  --surface-shade: #666666;
+  --neutral: #141414;
+  --red: #990000;
+  --red-shade: #ff6666;
+  --red-dim: #661414;
+  --red-muted: #7a1f1f;
+
+  /* Text-size styles */
+  /* base size: text---medium--bold (16px) */
+  --heading---heading-1: 2.25rem;
+  --heading---heading-2: 1.5rem;
+  --text---large--bold: 1.12rem;
+  --text---large: 1.12rem;
+  --text---medium--bold: 1rem;
+  --text---medium: 1rem;
+  --text---small--bold: 0.88rem;
+  --text---small: 0.88rem;
+  --text---small-extra--bold: 0.75rem;
+  --text---small-extra: 0.75rem;
+
+  /* Effect styles */
+  --drop-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --hero-inner-shadow: inset 0px 40px 40px rgba(0, 0, 0, 0.25),
+    inset 0px -40px 40px rgba(0, 0, 0, 0.25);
+
+  /* Padding size */
+  --small-extra: 4px;
+  --small: 8px;
+  --medium: 12px;
+  --large: 16px;
+  --large-extra: 24px;
+  --large-ultimate: 32px;
+  --huge: 48px;
+  --huge-large: 64px;
+  --side-gutter: 80px;
+
+  /* Border radius */
+  --rounded-normal: 4px;
+}
