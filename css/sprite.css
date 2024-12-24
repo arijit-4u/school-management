@@ -1,0 +1,11 @@
+.sprite {
+  display: inline-block;
+}
+.sprite-normal {
+  height: 16px;
+  width: 16px;
+}
+.sprite-small {
+  height: 12px;
+  width: 12px;
+}
