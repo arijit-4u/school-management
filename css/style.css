@@ -1,4 +1,4 @@
-/* Global reset */
+/* Global Preset */
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +18,11 @@ a {
   color: var(--surface-dim);
   text-decoration: none;
 }
+
+svg {
+  fill: var(--surface);
+}
+
 .main-nav {
   background: linear-gradient(
     180deg,
@@ -55,21 +60,18 @@ a {
   padding-right: var(--small-extra);
 }
 
-.info-list span,
-.nav-links span {
+.info-list svg,
+.nav-links svg {
   vertical-align: bottom;
 }
 
 .right-section {
-  /* position: relative; */
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  /* gap: var(--large-extra); */
 }
 
 .right-section li {
-  color: var(--surface);
   display: inline;
 }
 
@@ -80,6 +82,10 @@ a {
 .info-list {
   position: absolute;
   top: 16px;
+}
+
+.info-list li {
+  margin-left: var(--small);
 }
 
 .info-list a {
