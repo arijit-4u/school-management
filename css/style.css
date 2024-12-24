@@ -23,6 +23,10 @@ svg {
   fill: var(--surface);
 }
 
+.fix-white-space {
+  font-size: 0;
+}
+
 .main-nav {
   background: linear-gradient(
     180deg,
@@ -52,6 +56,12 @@ svg {
   border-right: 1px solid var(--surface-shade);
   padding: var(--small) var(--large);
   display: inline-block;
+}
+
+.primary-links li:hover,
+.secondary-group li:hover {
+  cursor: pointer;
+  background-color: var(--red-shade);
 }
 
 .nav-links a {
@@ -93,6 +103,8 @@ svg {
 }
 
 .secondary-group li {
+  height: 30px;
+  display: inline-block;
   background-color: var(--red-dim);
   padding: var(--small) var(--medium);
 }
