@@ -171,8 +171,8 @@ svg {
 /* Carousel */
 .slider {
   display: flex;
-  margin: 50px auto;
-  width: 1280px;
+  /* margin: 50px auto; */
+  /* width: 1280px; */
   height: 350px;
   position: relative;
   overflow: hidden;
@@ -190,28 +190,10 @@ svg {
 
 .slider__btn {
   position: absolute;
-  background: rgba(255, 255, 255, 0.7);
-  color: #333;
-  font-size: 1.875rem;
+  background: none;
   border: none;
-  height: 2.25rem;
-  width: 2.25rem;
-  border-radius: 50%;
   cursor: pointer;
-  top: 50%;
-  transform: translateY(50%);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.slider__btn > img {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  top: 47%;
 }
 
 .slider__btn--left {
@@ -221,7 +203,11 @@ svg {
 
 .slider__btn--right {
   right: 3%;
-  transform: translateX(50%);
+  transform: translateX(50%) rotate(180deg);
+}
+
+#carousel_arrow rect {
+  fill: var(--surface-shade);
 }
 
 .dots {
@@ -259,6 +245,14 @@ svg {
   cursor: pointer;
 }
 
-.info__icon:hover {
-  background-position: -144px 0;
+.swap-on-hover use:first-child {
+  display: none;
+}
+
+.swap-on-hover:hover use:last-child {
+  display: none;
+}
+
+.swap-on-hover:hover use:first-child {
+  display: block;
 }
