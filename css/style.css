@@ -1,9 +1,132 @@
+/* Global reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  background-color: #57606f;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: var(--surface-dim);
+  text-decoration: none;
+}
+.main-nav {
+  background: linear-gradient(
+    180deg,
+    var(--red) 0%,
+    #6a0000 40%,
+    var(--red-dim) 100%
+  );
+
+  display: flex;
+  max-height: 164px;
+  justify-content: space-between;
+  padding: var(--large-ultimate) var(--side-gutter);
+}
+
+.left-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--small);
+}
+
+.primary-links {
+  display: inline;
+}
+
+.primary-links > .nav-links {
+  border-right: 1px solid var(--surface-shade);
+  padding: var(--small) var(--large);
+  display: inline-block;
+}
+
+.nav-links a {
+  color: var(--surface-dim);
+  text-decoration: none;
+  padding-right: var(--small-extra);
+}
+
+.info-list span,
+.nav-links span {
+  vertical-align: bottom;
+}
+
+.right-section {
+  /* position: relative; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* gap: var(--large-extra); */
+}
+
+.right-section li {
+  color: var(--surface);
+  display: inline;
+}
+
+.right-section > li:first-child {
+  padding-right: var(--small);
+}
+
+.info-list {
+  position: absolute;
+  top: 16px;
+}
+
+.info-list a {
+  font-size: var(--text---small-extra--bold);
+}
+
+.secondary-group li {
+  background-color: var(--red-dim);
+  padding: var(--small) var(--medium);
+}
+
+.secondary-group li:first-child {
+  border-top-left-radius: var(--rounded-normal);
+  border-bottom-left-radius: var(--rounded-normal);
+}
+
+.search-form {
+  height: 30px;
+  position: relative;
+  background-color: var(--red-shade);
+  padding: var(--small) var(--medium);
+  border-top-right-radius: var(--rounded-normal);
+  border-bottom-right-radius: var(--rounded-normal);
+}
+
+.search-form svg {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+}
+
+.search-form input {
+  width: 92px;
+  background-color: var(--red-shade);
+  color: var(--surface);
+  font-size: var(--text---small-extra);
+  vertical-align: top;
+  border: none;
+  outline: none;
+}
+
+.search-form input::placeholder {
+  color: var(--surface);
+  font-size: var(--text---small-extra);
+}
+
+/* Carousel */
 .slider {
   display: flex;
   margin: 50px auto;
@@ -66,7 +189,6 @@
   top: 4px;
   right: 4px;
   width: 100%;
-  /* background-color: gold; */
 }
 
 .dots__dot {
