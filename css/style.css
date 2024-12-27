@@ -125,3 +125,98 @@ a {
   color: var(--surface);
   font-size: var(--text---small-extra);
 }
+
+/* Carousel */
+.slider {
+  display: flex;
+  margin: 50px auto;
+  width: 1280px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+}
+
+.slide > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider__btn {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+  color: #333;
+  font-size: 1.875rem;
+  border: none;
+  height: 2.25rem;
+  width: 2.25rem;
+  border-radius: 50%;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__btn > img {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__btn--left {
+  left: 3%;
+  transform: translateX(-50%);
+}
+
+.slider__btn--right {
+  right: 3%;
+  transform: translateX(50%);
+}
+
+.dots {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 100%;
+}
+
+.dots__dot {
+  height: 14px;
+  width: 14px;
+  margin: 0 5px;
+  background: none;
+  border: 1px solid var(--surface);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dots__dot:last-child {
+  margin-right: 0;
+}
+
+.dots__dot--active {
+  background: var(--surface);
+  opacity: 1;
+}
+
+.info__icon {
+  position: absolute;
+  bottom: var(--small-extra);
+  right: var(--small-extra);
+  cursor: pointer;
+}
+
+.info__icon:hover {
+  background-position: -144px 0;
+}
