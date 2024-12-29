@@ -171,8 +171,6 @@ svg {
 /* Carousel */
 .slider {
   display: flex;
-  /* margin: 50px auto; */
-  /* width: 1280px; */
   height: 350px;
   position: relative;
   overflow: hidden;
