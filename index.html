@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/spriteSheet-v2.css" />
+    <link rel="stylesheet" href="./css/sprite.css" />
     <link rel="stylesheet" href="./css/variables.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -24,69 +24,105 @@
             alt="a placeholder logo"
             class="logo"
           />
-          <ul class="primary-links text-medium-bold">
-            <li class="nav-links">
+          <ul class="primary-links fix-white-space">
+            <li class="nav-links text-medium-bold">
               <a href="#">ADMISSIONS</a>
-              <span class="icon icon-chevron-down-short"></span>
+              <svg class="sprite sprite--small" role="img">
+                <use href="img/sprite.svg#icon-chevron-down-short"></use>
+              </svg>
             </li>
-            <li class="nav-links">
+            <li class="nav-links text-medium-bold">
               <a href="#">ACADEMICS</a>
-              <span class="icon icon-chevron-down-short"></span>
+              <svg class="sprite sprite--small" role="img">
+                <use href="img/sprite.svg#icon-chevron-down-short"></use>
+              </svg>
             </li>
-            <li class="nav-links">
+            <li class="nav-links text-medium-bold">
               <a href="#">NOTICE</a>
-              <span class="icon icon-chevron-down-short"></span>
+              <svg class="sprite sprite--small" role="img">
+                <use href="img/sprite.svg#icon-chevron-down-short"></use>
+              </svg>
             </li>
-            <li class="nav-links">
+            <li class="nav-links text-medium-bold">
               <a href="#">ABOUT</a>
-              <span class="icon icon-chevron-down-short"></span>
+              <svg class="sprite sprite--small" role="img">
+                <use href="img/sprite.svg#icon-chevron-down-short"></use>
+              </svg>
             </li>
           </ul>
         </div>
         <div class="right-section">
           <ul class="info-list">
             <li>
-              <span class="icon icon-mail-o"></span>
+              <svg class="sprite sprite--normal" role="img">
+                <use href="img/sprite.svg#icon-mail-o"></use>
+              </svg>
               <a href="#">info@school.edu.in</a>
             </li>
             <li>
-              <span class="icon icon-phone-o"></span>
+              <svg class="sprite sprite--normal" role="img">
+                <use href="img/sprite.svg#icon-phone-o"></use>
+              </svg>
               <a href="#">+91-33-8585-8888</a>
             </li>
           </ul>
-          <ul class="secondary-group text-small-extra">
-            <li class="nav-links">
+          <ul class="secondary-group fix-white-space">
+            <li class="nav-links text-small-extra">
               <a href="#">Staff</a>
-              <span class="icon icon-chevron-down-short"></span>
+              <svg class="sprite sprite--small" role="img">
+                <use href="img/sprite.svg#icon-chevron-down-short"></use>
+              </svg>
             </li>
-            <li class="nav-links">
+            <li class="nav-links text-small-extra">
               <a href="#">Students</a>
-              <span class="icon icon-chevron-down-short"></span>
+              <svg class="sprite sprite--small" role="img">
+                <use href="img/sprite.svg#icon-chevron-down-short"></use>
+              </svg>
             </li>
-            <li class="nav-links">
+            <li class="nav-links text-small-extra">
               <a href="#">Parents</a>
-              <span class="icon icon-chevron-down-short"></span>
+              <svg class="sprite sprite--small" role="img">
+                <use href="img/sprite.svg#icon-chevron-down-short"></use>
+              </svg>
             </li>
           </ul>
           <form action="" class="search-form">
             <input type="search" class="search-box" placeholder="Search..." />
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke="white"
-                stroke-width="2"
-                d="M14.5 13.793L10.724 10.017C11.6314 8.92766 12.0839 7.53042 11.9873 6.11595C11.8908 4.70149 11.2526 3.3787 10.2056 2.42276C9.15861 1.46682 7.78337 0.951337 6.36598 0.983543C4.94858 1.01575 3.59817 1.59316 2.59567 2.59567C1.59316 3.59818 1.01575 4.94859 0.98354 6.36598C0.951334 7.78337 1.46682 9.15861 2.42275 10.2056C3.37869 11.2526 4.70148 11.8908 6.11595 11.9873C7.53041 12.0839 8.92765 11.6314 10.017 10.724L13.793 14.5L14.5 13.793ZM2 6.5C2 5.60998 2.26392 4.73996 2.75838 3.99993C3.25285 3.25991 3.95565 2.68314 4.77792 2.34254C5.60019 2.00195 6.50499 1.91283 7.3779 2.08647C8.25082 2.2601 9.05264 2.68868 9.68198 3.31802C10.3113 3.94736 10.7399 4.74918 10.9135 5.62209C11.0872 6.49501 10.998 7.39981 10.6575 8.22208C10.3169 9.04434 9.74008 9.74715 9.00006 10.2416C8.26004 10.7361 7.39001 11 6.5 11C5.30693 10.9987 4.16311 10.5241 3.31948 9.68052C2.47585 8.83689 2.00132 7.69307 2 6.5Z"
-                fill="white"
-              />
+            <svg class="sprite sprite--normal" role="img">
+              <use href="img/sprite.svg#search"></use>
             </svg>
           </form>
         </div>
       </nav>
     </header>
+    <main>
+      <div class="slider">
+        <div class="slide">
+          <img src="./img/image-1.jpg" alt="a random photo" />
+        </div>
+        <div class="slide">
+          <img src="./img/image-2.jpg" alt="a random photo" />
+        </div>
+        <div class="slide">
+          <img src="./img/image-3.jpg" alt="a random photo" />
+        </div>
+        <button class="slider__btn slider__btn--left">
+          <svg class="sprite sprite--large">
+            <use href="img/sprite.svg#carousel_arrow"></use>
+          </svg>
+        </button>
+        <button class="slider__btn slider__btn--right">
+          <svg class="sprite sprite--large">
+            <use href="img/sprite.svg#carousel_arrow"></use>
+          </svg>
+        </button>
+        <div class="dots"></div>
+        <svg class="sprite sprite--medium info__icon swap-on-hover" role="img">
+          <use href="img/sprite.svg#icon-information-filled"></use>
+          <use href="img/sprite.svg#icon-information-o"></use>
+        </svg>
+      </div>
+    </main>
+    <script src="./js/app.js"></script>
   </body>
 </html>

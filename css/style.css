@@ -1,4 +1,4 @@
-/* Global reset */
+/* Global Preset */
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +18,15 @@ a {
   color: var(--surface-dim);
   text-decoration: none;
 }
+
+svg {
+  fill: var(--surface);
+}
+
+.fix-white-space {
+  font-size: 0;
+}
+
 .main-nav {
   background: linear-gradient(
     180deg,
@@ -49,27 +58,30 @@ a {
   display: inline-block;
 }
 
+.primary-links li:hover,
+.secondary-group li:hover {
+  cursor: pointer;
+  background-color: var(--red-shade);
+}
+
 .nav-links a {
   color: var(--surface-dim);
   text-decoration: none;
   padding-right: var(--small-extra);
 }
 
-.info-list span,
-.nav-links span {
+.info-list svg,
+.nav-links svg {
   vertical-align: bottom;
 }
 
 .right-section {
-  /* position: relative; */
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  /* gap: var(--large-extra); */
 }
 
 .right-section li {
-  color: var(--surface);
   display: inline;
 }
 
@@ -82,11 +94,17 @@ a {
   top: 16px;
 }
 
+.info-list li {
+  margin-left: var(--small);
+}
+
 .info-list a {
   font-size: var(--text---small-extra--bold);
 }
 
 .secondary-group li {
+  height: 30px;
+  display: inline-block;
   background-color: var(--red-dim);
   padding: var(--small) var(--medium);
 }
@@ -97,6 +115,7 @@ a {
 }
 
 .search-form {
+  width: 128px;
   height: 30px;
   position: relative;
   background-color: var(--red-shade);
@@ -105,23 +124,133 @@ a {
   border-bottom-right-radius: var(--rounded-normal);
 }
 
+.search-form:focus-within {
+  background-color: var(--surface-dim);
+}
+
 .search-form svg {
   position: absolute;
   top: 7px;
-  right: 7px;
+  right: 8px;
+  stroke: var(--surface);
+  stroke-width: 3;
+}
+
+.search-form:focus-within svg {
+  stroke: var(--surface-shade);
+  fill: var(--surface-shade);
 }
 
 .search-form input {
-  width: 92px;
+  width: 88px;
+  height: 14px;
+
   background-color: var(--red-shade);
   color: var(--surface);
   font-size: var(--text---small-extra);
+
   vertical-align: top;
   border: none;
   outline: none;
 }
 
+.search-form:focus-within input {
+  background-color: var(--surface-dim);
+  color: var(--surface-shade);
+}
+
 .search-form input::placeholder {
   color: var(--surface);
   font-size: var(--text---small-extra);
+}
+
+.search-form:focus-within input::placeholder {
+  color: var(--surface-shade);
+}
+
+/* Carousel */
+.slider {
+  display: flex;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+}
+
+.slide > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider__btn {
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+  top: 47%;
+}
+
+.slider__btn--left {
+  left: 3%;
+  transform: translateX(-50%);
+}
+
+.slider__btn--right {
+  right: 3%;
+  transform: translateX(50%) rotate(180deg);
+}
+
+#carousel_arrow rect {
+  fill: var(--surface-shade);
+}
+
+.dots {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 100%;
+}
+
+.dots__dot {
+  height: 14px;
+  width: 14px;
+  margin: 0 5px;
+  background: none;
+  border: 1px solid var(--surface);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dots__dot:last-child {
+  margin-right: 0;
+}
+
+.dots__dot--active {
+  background: var(--surface);
+  opacity: 1;
+}
+
+.info__icon {
+  position: absolute;
+  bottom: var(--small-extra);
+  right: var(--small-extra);
+  cursor: pointer;
+}
+
+.swap-on-hover use:first-child {
+  display: none;
+}
+
+.swap-on-hover:hover use:last-child {
+  display: none;
+}
+
+.swap-on-hover:hover use:first-child {
+  display: block;
 }
