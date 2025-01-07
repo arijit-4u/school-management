@@ -178,6 +178,7 @@ svg {
 
 .slide {
   position: absolute;
+  z-index: -2;
 }
 
 .slide > img {
@@ -244,6 +245,21 @@ svg {
   bottom: var(--small-extra);
   right: var(--small-extra);
   cursor: pointer;
+}
+
+.info__icon:hover::before {
+  content: attr(data-desc);
+  display: block;
+  position: absolute;
+  width: max-content;
+  right: 0;
+  bottom: 0;
+  background: rgba(20, 20, 20, 0.5);
+  color: var(--surface);
+  font-size: var(--text---small-extra);
+  padding: var(--small) var(--side-gutter) var(--small) var(--medium);
+  border-radius: var(--rounded-normal);
+  z-index: -1;
 }
 
 .swap-on-hover use:first-child {
