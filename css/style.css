@@ -58,8 +58,7 @@ svg {
   display: inline-block;
 }
 
-.primary-links li:hover,
-.secondary-group li:hover {
+.primary-links li:hover {
   cursor: pointer;
   background-color: var(--red-shade);
 }
@@ -113,8 +112,18 @@ svg {
   padding: var(--small) var(--medium);
 }
 
+.secondary-group > li:hover {
+  cursor: pointer;
+  background-color: var(--red-shade);
+}
+
 .secondary-group > li:first-child {
   border-top-left-radius: var(--rounded-normal);
+  border-bottom-left-radius: var(--rounded-normal);
+}
+
+.secondary-group > li:hover:first-child {
+  border-bottom-left-radius: 0;
 }
 
 .search-form {
