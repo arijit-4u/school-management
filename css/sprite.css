@@ -1,19 +1,19 @@
 .sprite {
-    display: inline-block;
+  display: inline-block;
 }
 .sprite--small {
-    height: 12px;
-    width: 12px;
+  height: 12px;
+  width: 12px;
 }
 .sprite--normal {
-    height: 16px;
-    width: 16px;
+  height: 16px;
+  width: 16px;
 }
 .sprite--medium {
-    height: 24px;
-    width: 24px;
+  height: 24px;
+  width: 24px;
 }
 .sprite--large {
-    height: 36px;
-    width: 36px;
+  height: 36px;
+  width: 36px;
 }
