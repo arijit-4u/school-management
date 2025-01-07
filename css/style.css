@@ -187,9 +187,12 @@ svg {
 }
 
 .slider__btn {
+  height: 36px;
+  width: 36px;
   position: absolute;
-  background: none;
+  background-color: var(--surface-shade);
   border: none;
+  border-radius: 50%;
   cursor: pointer;
   top: 47%;
 }
