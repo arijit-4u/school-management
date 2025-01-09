@@ -329,14 +329,14 @@ svg {
   opacity: 1;
 }
 
-.info__icon {
+.image-info {
   position: absolute;
   bottom: var(--small-extra);
   right: var(--small-extra);
   cursor: pointer;
 }
 
-.info__icon:hover::before {
+.image-info:hover::before {
   content: attr(data-desc);
   display: block;
   position: absolute;

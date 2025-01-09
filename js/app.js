@@ -5,6 +5,7 @@ const slides = document.querySelectorAll(".slide");
 const btnPerv = document.querySelector(".slider__btn--left");
 const btnNext = document.querySelector(".slider__btn--right");
 const dotsContainer = document.querySelector(".dots");
+const imageInfo = document.querySelector(".image-info");
 
 // Global variables
 let curSlide = 0; // the current slide with translateX(0%)
@@ -41,6 +42,7 @@ const nextSlide = function () {
   curSlide = (curSlide + 1) % maxSlides; // update current slide
   gotoSlide(curSlide);
   activateDot(curSlide);
+  createInfo(curSlide);
 };
 
 const prevSlide = function () {
@@ -48,6 +50,12 @@ const prevSlide = function () {
   curSlide = curSlide === 0 ? maxSlides - 1 : curSlide - 1;
   gotoSlide(curSlide);
   activateDot(curSlide);
+  createInfo(curSlide);
+};
+
+const createInfo = function (slide) {  
+  // Put that into the desc data attribute of imageInfo
+  imageInfo.dataset.desc = slides[slide].title;
 };
 
 // Event handlers
@@ -62,6 +70,7 @@ dotsContainer.addEventListener("click", function (e) {
     // goto the selected slide
     gotoSlide(curSlide);
     activateDot(curSlide);
+    createInfo(curSlide);
   }
 });
 
@@ -75,6 +84,7 @@ function init() {
   gotoSlide(0);
   createDots();
   activateDot(0);
+  createInfo(0);
 }
 
 init();
