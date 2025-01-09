@@ -9,12 +9,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/sprite.css" />
     <link rel="stylesheet" href="./css/variables.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/animation.css" />
     <link rel="stylesheet" href="./css/nav.css" />
     <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/classes.css" />
     <script src="./js/app.js" defer></script>
     <title>Document</title>
   </head>
@@ -182,38 +184,48 @@
       </section>
 
       <section class="classes-section">
-        <h2>Our Classes</h2>
-        <span class="class-icon">
-          <svg class="sprite sprite--normal" role="img">
-            <use href="img/sprite.svg#icon-chevron-right"></use>
-          </svg>
-        </span>
-        <div class="classes">
-          <img src="https://placehold.co/350x250" alt="a placeholder image">
-          <p>Explore more</p>
-          <span class="class-icon">
-            <svg class="sprite sprite--medium" role="img">
+        <div class="section__title-wrapper">
+          <h2 class="section__title heading-2">Our Classes</h2>
+          <span class="section__title-icon">
+            <svg class="sprite sprite--normal" role="img">
               <use href="img/sprite.svg#icon-chevron-right"></use>
             </svg>
           </span>
         </div>
-        <div class="classes">
-          <img src="https://placehold.co/350x250" alt="a placeholder image">
-          <p>Explore more</p>
-          <span class="class-icon">
-            <svg class="sprite sprite--medium" role="img">
-              <use href="img/sprite.svg#icon-chevron-right"></use>
-            </svg>
-          </span>
-        </div>
-        <div class="classes">
-          <img src="https://placehold.co/350x250" alt="a placeholder image">
-          <p>Explore more</p>
-          <span class="class-icon">
-            <svg class="sprite sprite--medium" role="img">
-              <use href="img/sprite.svg#icon-chevron-right"></use>
-            </svg>
-          </span>
+        <div class="classes-wrapper">
+          <article class="class-cards">
+            <img src="https://placehold.co/350x250" alt="a placeholder image" />
+            <div class="classes-info-wrapper">
+              <p class="text-large-bold">Explore more</p>
+              <span class="class-cards__icon">
+                <svg class="sprite sprite--small" role="img">
+                  <use href="img/sprite.svg#icon-chevron-right"></use>
+                </svg>
+              </span>
+            </div>
+          </article>
+          <article class="class-cards">
+            <img src="https://placehold.co/350x250" alt="a placeholder image" />
+            <div class="classes-info-wrapper">
+              <p class="text-large-bold">Explore more</p>
+              <span class="class-cards__icon">
+                <svg class="sprite sprite--small" role="img">
+                  <use href="img/sprite.svg#icon-chevron-right"></use>
+                </svg>
+              </span>
+            </div>
+          </article>
+          <article class="class-cards">
+            <img src="https://placehold.co/350x250" alt="a placeholder image" />
+            <div class="classes-info-wrapper">
+              <p class="text-large-bold">Explore more</p>
+              <span class="class-cards__icon">
+                <svg class="sprite sprite--small" role="img">
+                  <use href="img/sprite.svg#icon-chevron-right"></use>
+                </svg>
+              </span>
+            </div>
+          </article>
         </div>
       </section>
     </main>

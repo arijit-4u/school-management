@@ -1,32 +1,3 @@
-/* Global Preset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #57606f;
-  font-family: "Inter", Arial, Helvetica, sans-serif;
-}
-
-li {
-  list-style-type: none;
-}
-
-a {
-  color: var(--surface-dim);
-  text-decoration: none;
-}
-
-svg {
-  fill: var(--surface);
-}
-
-.fix-white-space {
-  font-size: 0;
-}
-
 /* NAVIGATION BAR */
 
 .main-nav {

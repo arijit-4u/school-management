@@ -1,0 +1,27 @@
+.classes-section {
+    background: var(--surface-dim);
+    padding: var(--large-ultimate) var(--side-gutter);
+}
+
+.classes-section svg {
+    fill: var(--neutral);
+}
+
+.section__title {
+    display: inline-block;
+    color: var(--neutral);
+    padding: var(--small-extra) 0;
+}
+
+.section__title-wrapper {
+    margin-bottom: var(--large-extra);
+}
+
+.classes-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   
+}
+
+.class-cards p {
+    display: inline-block;
+}
