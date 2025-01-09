@@ -21,8 +21,7 @@ const createDots = function () {
   slides.forEach((_, i) => {
     dotsContainer.insertAdjacentHTML(
       "beforeend",
-      `
-      <button class="dots__dot" data-slide="${i}"></button>`
+      `<button class="dots__dot" data-slide="${i}"></button>`
     );
   });
 };

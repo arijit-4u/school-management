@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/sprite.css" />
     <link rel="stylesheet" href="./css/variables.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/animation.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
   </head>
@@ -139,32 +140,44 @@
       </nav>
     </header>
     <main>
-      <div class="slider">
-        <div class="slide">
-          <img src="./img/image-1.jpg" alt="a random photo" />
+      <section class="hero-section">
+        <div class="slider">
+          <div class="slide">
+            <img src="./img/image-1.jpg" alt="a random photo" />
+          </div>
+          <div class="slide">
+            <img src="./img/image-2.jpg" alt="a random photo" />
+          </div>
+          <div class="slide">
+            <img src="./img/image-3.jpg" alt="a random photo" />
+          </div>
+          <button class="slider__btn slider__btn--left">
+            <svg class="sprite sprite--large">
+              <use href="img/sprite.svg#carousel_arrow"></use>
+            </svg>
+          </button>
+          <button class="slider__btn slider__btn--right">
+            <svg class="sprite sprite--large">
+              <use href="img/sprite.svg#carousel_arrow"></use>
+            </svg>
+          </button>
+          <div class="dots"></div>
+          <div class="info__icon" data-desc="This is a image ">
+            <svg class="sprite sprite--medium swap-on-hover" role="img">
+              <use href="img/sprite.svg#icon-information-filled"></use>
+              <use href="img/sprite.svg#icon-information-o"></use>
+            </svg>
+          </div>
         </div>
-        <div class="slide">
-          <img src="./img/image-2.jpg" alt="a random photo" />
+        <div class="hero-text">
+          <span class="text-large-bold text-scroll-horizontal">
+            Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum
+            dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet
+            consectetur adipisicing. Lorem ipsum dolor sit amet consectetur
+            adipisicing.
+          </span>
         </div>
-        <div class="slide">
-          <img src="./img/image-3.jpg" alt="a random photo" />
-        </div>
-        <button class="slider__btn slider__btn--left">
-          <svg class="sprite sprite--large">
-            <use href="img/sprite.svg#carousel_arrow"></use>
-          </svg>
-        </button>
-        <button class="slider__btn slider__btn--right">
-          <svg class="sprite sprite--large">
-            <use href="img/sprite.svg#carousel_arrow"></use>
-          </svg>
-        </button>
-        <div class="dots"></div>
-        <svg class="sprite sprite--medium info__icon swap-on-hover" role="img">
-          <use href="img/sprite.svg#icon-information-filled"></use>
-          <use href="img/sprite.svg#icon-information-o"></use>
-        </svg>
-      </div>
+      </section>
     </main>
     <script src="./js/app.js"></script>
   </body>

@@ -11,6 +11,20 @@
   --red-dim: #661414;
   --red-muted: #7a1f1f;
 
+  /* Gradients */
+  --red-gradient: linear-gradient(
+    180deg,
+    var(--red) 0%,
+    #6a0000 40%,
+    var(--red-dim) 100%
+  );
+  --red-gradient-inverted: linear-gradient(
+    0deg,
+    var(--red) 0%,
+    #6a0000 40%,
+    var(--red-dim) 100%
+  );
+
   /* Text-size styles */
   /* base size: text---medium--bold (16px) */
   --heading---heading-1: 2.25rem;
