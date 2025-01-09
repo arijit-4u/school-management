@@ -139,34 +139,39 @@
       </nav>
     </header>
     <main>
-      <div class="slider">
-        <div class="slide">
-          <img src="./img/image-1.jpg" alt="a random photo" />
+      <section class="hero-section">
+        <div class="slider">
+          <div class="slide">
+            <img src="./img/image-1.jpg" alt="a random photo" />
+          </div>
+          <div class="slide">
+            <img src="./img/image-2.jpg" alt="a random photo" />
+          </div>
+          <div class="slide">
+            <img src="./img/image-3.jpg" alt="a random photo" />
+          </div>
+          <button class="slider__btn slider__btn--left">
+            <svg class="sprite sprite--large">
+              <use href="img/sprite.svg#carousel_arrow"></use>
+            </svg>
+          </button>
+          <button class="slider__btn slider__btn--right">
+            <svg class="sprite sprite--large">
+              <use href="img/sprite.svg#carousel_arrow"></use>
+            </svg>
+          </button>
+          <div class="dots"></div>
+          <div class="info__icon" data-desc="This is a image ">
+            <svg class="sprite sprite--medium swap-on-hover" role="img">
+              <use href="img/sprite.svg#icon-information-filled"></use>
+              <use href="img/sprite.svg#icon-information-o"></use>
+            </svg>
+          </div>
         </div>
-        <div class="slide">
-          <img src="./img/image-2.jpg" alt="a random photo" />
+        <div class="hero-text">
+          <h1 class="text-large-bold">Welcome to School</h1>
         </div>
-        <div class="slide">
-          <img src="./img/image-3.jpg" alt="a random photo" />
-        </div>
-        <button class="slider__btn slider__btn--left">
-          <svg class="sprite sprite--large">
-            <use href="img/sprite.svg#carousel_arrow"></use>
-          </svg>
-        </button>
-        <button class="slider__btn slider__btn--right">
-          <svg class="sprite sprite--large">
-            <use href="img/sprite.svg#carousel_arrow"></use>
-          </svg>
-        </button>
-        <div class="dots"></div>
-        <div class="info__icon" data-desc="This is a image discription">
-          <svg class="sprite sprite--medium swap-on-hover" role="img">
-            <use href="img/sprite.svg#icon-information-filled"></use>
-            <use href="img/sprite.svg#icon-information-o"></use>
-          </svg>
-        </div>
-      </div>
+      </section>
     </main>
     <script src="./js/app.js"></script>
   </body>
