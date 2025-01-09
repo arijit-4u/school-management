@@ -30,12 +30,7 @@ svg {
 /* NAVIGATION BAR */
 
 .main-nav {
-  background: linear-gradient(
-    180deg,
-    var(--red) 0%,
-    #6a0000 40%,
-    var(--red-dim) 100%
-  );
+  background: var(--red-gradient);
 
   display: flex;
   max-height: 164px;
@@ -368,3 +363,13 @@ svg {
   display: block;
 }
 
+.hero-text {
+  background: var(--red-gradient-inverted);
+  color: var(--surface);
+  font-size: var(--headaing---heading-2);
+  width: 100%;
+  padding: var(--large-ultimate) var(--side-gutter);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
