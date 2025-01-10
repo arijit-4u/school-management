@@ -18,11 +18,19 @@
     #6a0000 40%,
     var(--red-dim) 100%
   );
+
   --red-gradient-inverted: linear-gradient(
     0deg,
     var(--red) 0%,
     #6a0000 40%,
     var(--red-dim) 100%
+  );
+
+  --surface-gradient-horizontal: linear-gradient(
+    90deg,
+    #a8a8a8 0%,
+    rgba(155, 155, 155, 0.7) 60%,
+    rgba(155, 155, 155, 0) 100%
   );
 
   /* Text-size styles */
