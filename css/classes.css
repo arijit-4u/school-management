@@ -42,5 +42,5 @@
   padding-bottom: var(--small-extra);
   padding-left: var(--medium);
   position: absolute;
-  top: 225px;
+  bottom: 0;
 }
