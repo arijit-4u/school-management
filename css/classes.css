@@ -17,7 +17,7 @@
   margin-bottom: var(--large-extra);
 }
 
-.classes-wrapper {
+.classes-cards-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
