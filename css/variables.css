@@ -33,6 +33,13 @@
     rgba(155, 155, 155, 0) 100%
   );
 
+  --surface-gradient-vertical: linear-gradient(
+    360deg,
+    #9b9b9b 0%,
+    rgba(155, 155, 155, 0.7) 65%,
+    rgba(155, 155, 155, 0) 100%
+  );
+
   /* Text-size styles */
   /* base size: text---medium--bold (16px) */
   --heading---heading-1: 2.25rem;
