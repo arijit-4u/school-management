@@ -3,6 +3,10 @@
   padding: var(--large-ultimate) var(--side-gutter);
 }
 
+.facility-section svg {
+  fill: var(--neutral);
+}
+
 .facility-cards-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -27,13 +31,4 @@
   width: 100%;
   background: var(--surface-gradient-vertical);
   border-top: 2px solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(43, 43, 43, 0.6) 15%,
-    #666666 50%,
-    rgba(102, 102, 102, 0.6) 84.5%,
-    rgba(102, 102, 102, 0) 100%
-  );
 }

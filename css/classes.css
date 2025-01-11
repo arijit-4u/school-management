@@ -13,10 +13,6 @@
   padding: var(--small-extra) 0;
 }
 
-.section__title-wrapper {
-  margin-bottom: var(--large-extra);
-}
-
 .classes-cards-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
