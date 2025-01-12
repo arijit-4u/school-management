@@ -47,6 +47,8 @@
 }
 
 .event {
+  display: flex;
+  gap: var(--medium);
   margin-bottom: var(--large-ultimate);
 }
 
@@ -60,15 +62,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  float: left;
-  margin-right: var(--medium);
+  flex-shrink: 0;
 }
 
-.event__desc {
-  display: flex;
-  flex-direction: column;
-  gap: var(--small);
+.event__desc p {
+  margin-bottom: var(--small);
   color: var(--surface-shade);
 }
 
