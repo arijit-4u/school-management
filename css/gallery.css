@@ -1,0 +1,36 @@
+.gallery-section {
+  padding: var(--large-ultimate) var(--side-gutter);
+  background: var(--surface-mute);
+}
+
+.section__images {
+  /* width: 1120px; */
+  overflow: hidden;
+  display: flex;
+  gap: var(--large-ultimate);
+  position: relative;
+}
+
+.gallery__btn {
+  background-color: var(--surface-shade);
+  border: none;
+  border-radius: 50%;
+  height: 2.25rem;
+  width: 1.875rem;
+  position: absolute;
+  top: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery__btn--left {
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.gallery__btn--right {
+  right: 0;
+  transform: rotate(180deg) translateY(50%);
+}
