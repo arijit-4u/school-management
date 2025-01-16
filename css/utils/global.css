@@ -1,4 +1,4 @@
-/* Global Reset */
+/* Global Preset */
 * {
   margin: 0;
   padding: 0;
@@ -21,31 +21,4 @@ a {
 
 svg {
   fill: var(--surface);
-}
-
-.fix-white-space {
-  font-size: 0;
-}
-
-.separator-gradient {
-  border-image-slice: 1;
-  border-image-source: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(43, 43, 43, 0.6) 15%,
-    #666666 50%,
-    rgba(43, 43, 43, 0.6) 84.5%,
-    rgba(0, 0, 0, 0) 100%
-  );
-}
-.separator-gradient-vertical {
-  border-image-slice: 1;
-  border-image-source: linear-gradient(
-    360deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(43, 43, 43, 0.6) 15%,
-    #666666 50%,
-    rgba(43, 43, 43, 0.6) 84.5%,
-    rgba(0, 0, 0, 0) 100%
-  );
 }

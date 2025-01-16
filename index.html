@@ -9,10 +9,11 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="./css/utils/global.css" />
     <link rel="stylesheet" href="./css/utils/sprite.css" />
     <link rel="stylesheet" href="./css/utils/variables.css" />
-    <link rel="stylesheet" href="./css/utils/fonts.css" />
+    <link rel="stylesheet" href="./css/utils/utils.css" />
     <link rel="stylesheet" href="./css/utils/animation.css" />
     <link rel="stylesheet" href="./css/utils/search-box.css" />
     <link rel="stylesheet" href="./css/components/header-type-1.css" />
@@ -23,19 +24,39 @@
     <link rel="stylesheet" href="./css/components/gallery.css" />
     <link rel="stylesheet" href="./css/components/testimonial.css" />
     <link rel="stylesheet" href="./css/components/footer.css" />
+
     <script src="./js/app.js" defer></script>
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <header class="container">
+      <ul class="top-section">
+        <li>
+          <svg class="sprite sprite--normal" role="img">
+            <use href="img/sprite.svg#icon-mail-o"></use>
+          </svg>
+          <a class="text-small-extra-bold" href="#">info@school.edu.in</a>
+        </li>
+        <li>
+          <svg class="sprite sprite--normal" role="img">
+            <use href="img/sprite.svg#icon-phone-o"></use>
+          </svg>
+          <a class="text-small-extra-bold" href="#">+91-33-8585-8888</a>
+        </li>
+      </ul>
       <nav class="main-nav">
         <div class="left-section">
           <img
             src="./img/logo.jpg"
             alt="logo"
-            class="logo"
+            class="logo-square"
             width="100"
             height="100"
+          />
+          <img
+            src="https://placehold.co/140x60"
+            alt="a placeholder logo for small screen device"
+            class="logo-wide"
           />
           <ul class="primary-links fix-white-space">
             <li class="nav-links text-medium-bold">
@@ -89,21 +110,7 @@
           </ul>
         </div>
         <div class="right-section">
-          <ul class="info-list">
-            <li>
-              <svg class="sprite sprite--normal" role="img">
-                <use href="img/sprite.svg#icon-mail-o"></use>
-              </svg>
-              <a href="#">info@school.edu.in</a>
-            </li>
-            <li>
-              <svg class="sprite sprite--normal" role="img">
-                <use href="img/sprite.svg#icon-phone-o"></use>
-              </svg>
-              <a href="#">+91-33-8585-8888</a>
-            </li>
-          </ul>
-          <ul class="secondary-group fix-white-space">
+          <ul class="secondary-links fix-white-space">
             <li class="nav-links text-small-extra">
               <a href="#">Staff</a>
               <svg class="sprite sprite--small" role="img">
@@ -142,26 +149,59 @@
             </li>
           </ul>
           <form action="get" class="search-form">
-            <input type="search" class="search-box" placeholder="Search..." />
+            <input
+              type="search"
+              class="search-box text-small-extra"
+              placeholder="Search..."
+            />
             <svg class="sprite sprite--normal" role="img">
               <use href="img/sprite.svg#search"></use>
             </svg>
           </form>
+          <button class="menu-collapsed">
+            <svg class="sprite sprite--medium" role="img">
+              <use href="img/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
         </div>
       </nav>
     </header>
     <main>
-      <section class="hero-section">
+      <section class="container hero-section">
         <div class="slider">
-          <div class="slide" title="first random image">
-            <img src="./img/cover-1.jpg" alt="random photo 1" />
-          </div>
-          <div class="slide" title="second random image">
-            <img src="./img/cover-2.jpg" alt="random photo 2" />
-          </div>
-          <div class="slide" title="third random image">
-            <img src="./img/cover-3.jpg" alt="random photo 3" />
-          </div>
+          <picture class="slide" title="Image of our school campus">
+            <source
+              media="(max-width: 639px)"
+              srcset="./img/cover-1__600w.jpg"
+            />
+            <source
+              media="(max-width: 1024px)"
+              srcset="./img/cover-1__1024w.jpg"
+            />
+            <img src="./img/cover-1__1600w.jpg" alt="random photo 1" />
+          </picture>
+          <picture class="slide" title="Image of our school building">
+            <source
+              media="(max-width: 639px)"
+              srcset="./img/cover-2__600w.jpg"
+            />
+            <source
+              media="(max-width: 1024px)"
+              srcset="./img/cover-2__1024w.jpg"
+            />
+            <img src="./img/cover-2__1600w.jpg" alt="random photo 2" />
+          </picture>
+          <picture class="slide" title="Image of our school playground">
+            <source
+              media="(max-width: 639px)"
+              srcset="./img/cover-3__600w.jpg"
+            />
+            <source
+              media="(max-width: 1024px)"
+              srcset="./img/cover-3__1024w.jpg"
+            />
+            <img src="./img/cover-3__1600w.jpg" alt="random photo 3" />
+          </picture>
           <button class="slider__btn slider__btn--left">
             <svg class="sprite sprite--large">
               <use href="img/sprite.svg#carousel_arrow-left"></use>
@@ -190,7 +230,7 @@
         </div>
       </section>
 
-      <section class="classes-section">
+      <section class="container section classes-section">
         <div class="section__title-wrapper">
           <h2 class="section__title heading-2">Our Classes</h2>
           <span class="section__title-icon">
@@ -236,7 +276,7 @@
         </div>
       </section>
 
-      <section class="facility-section">
+      <section class="container section facility-section">
         <div class="section__title-wrapper">
           <h2 class="section__title heading-2">Our Infrastructure</h2>
           <span class="section__title-icon">
@@ -279,110 +319,116 @@
         </div>
       </section>
 
-      <section class="blogs-events-section">
-        <div class="blogs-section">
-          <div class="section__title">
-            <h2 class="heading-2">Blogs</h2>
-            <p class="text-small">See More</p>
+      <section class="container section blogs-events-section">
+        <div class="blogs-events-section-wrapper">
+          <div class="blogs-section">
+            <div class="section__title">
+              <h2 class="heading-2">Blogs</h2>
+              <p class="text-small">See More</p>
+            </div>
+            <div class="blogs-cards-wrapper">
+              <article class="blogs-cards">
+                <img src="./img/blog-1.jpg" alt="a picture of books" />
+                <p class="blog-card-title text-medium-bold">
+                  Reading a book daily: it's impact on mental growth.
+                </p>
+                <p class="blog-card-description text-small-extra">
+                  By John Doe
+                </p>
+              </article>
+              <article class="blogs-cards">
+                <img src="./img/blog-2.jpg" alt="a picture of books" />
+                <p class="blog-card-title text-medium-bold">
+                  Mental rot: a new side-effect of smartphones.
+                </p>
+                <p class="blog-card-description text-small-extra">
+                  By Sarah J. Dias
+                </p>
+              </article>
+              <article class="blogs-cards">
+                <img src="./img/blog-3.jpg" alt="a picture of books" />
+                <p class="blog-card-title text-medium-bold">
+                  Do your children have ADHD? know the ins-and-outs.
+                </p>
+                <p class="blog-card-description text-small-extra">
+                  By Dr.Frank Mason
+                </p>
+              </article>
+            </div>
           </div>
-          <div class="blogs-cards-wrapper">
-            <article class="blogs-cards">
-              <img src="./img/blog-1.jpg" alt="a picture of books" />
-              <p class="blog-card-title text-medium-bold">
-                Reading a book daily: it's impact on mental growth.
-              </p>
-              <p class="blog-card-description text-small-extra">By John Doe</p>
-            </article>
-            <article class="blogs-cards">
-              <img src="./img/blog-2.jpg" alt="a picture of books" />
-              <p class="blog-card-title text-medium-bold">
-                Mental rot: a new side-effect of smartphones.
-              </p>
-              <p class="blog-card-description text-small-extra">
-                By Sarah J. Dias
-              </p>
-            </article>
-            <article class="blogs-cards">
-              <img src="./img/blog-3.jpg" alt="a picture of books" />
-              <p class="blog-card-title text-medium-bold">
-                Do your children have ADHD? know the ins-and-outs.
-              </p>
-              <p class="blog-card-description text-small-extra">
-                By Dr.Frank Mason
-              </p>
-            </article>
+          <div class="events-section">
+            <div class="section__title">
+              <h2 class="heading-2">Events</h2>
+              <p class="text-small">See More</p>
+            </div>
+            <div class="events-wrapper">
+              <ul class="events">
+                <li class="event">
+                  <div class="event__date">
+                    <span class="text-large-bold">15</span>
+                    <span class="text-medium">Jan</span>
+                  </div>
+                  <div class="event__desc">
+                    <p class="text-medium-bold">
+                      This is a event headline. Lorem ipsum
+                    </p>
+                    <p class="text-medium">This is event description</p>
+                    <p class="text-small-extra">01 Jan, 1970</p>
+                  </div>
+                </li>
+                <li class="event">
+                  <div class="event__date">
+                    <span class="text-large-bold">15</span>
+                    <span class="text-medium">Jan</span>
+                  </div>
+                  <div class="event__desc">
+                    <p class="text-medium-bold">
+                      This is a event headline. Lorem ipsum
+                    </p>
+                    <p class="text-medium">This is event description</p>
+                    <p class="text-small-extra">01 Jan, 1970</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="events-section">
+      </section>
+
+      <section class="container section gallery-section">
+        <div class="gallery-section-wrapper">
           <div class="section__title">
-            <h2 class="heading-2">Events</h2>
+            <h2 class="heading-2">Gallery</h2>
             <p class="text-small">See More</p>
           </div>
-          <div class="events-wrapper">
-            <ul class="events">
-              <li class="event">
-                <div class="event__date">
-                  <span class="text-large-bold">15</span>
-                  <span class="text-medium">Jan</span>
-                </div>
-                <div class="event__desc">
-                  <p class="text-medium-bold">
-                    This is a event headline. Lorem ipsum
-                  </p>
-                  <p class="text-medium">This is event description</p>
-                  <p class="text-small-extra">01 Jan, 1970</p>
-                </div>
-              </li>
-              <li class="event">
-                <div class="event__date">
-                  <span class="text-large-bold">15</span>
-                  <span class="text-medium">Jan</span>
-                </div>
-                <div class="event__desc">
-                  <p class="text-medium-bold">
-                    This is a event headline. Lorem ipsum
-                  </p>
-                  <p class="text-medium">This is event description</p>
-                  <p class="text-small-extra">01 Jan, 1970</p>
-                </div>
-              </li>
-            </ul>
+          <div class="section__images">
+            <div class="image-wrapper">
+              <img src="./img/gallary-1.jpg" alt="" />
+              <img src="./img/gallary-2.jpg" alt="" />
+              <img src="./img/gallary-3.jpg" alt="" />
+              <img src="./img/gallary-4.jpg" alt="" />
+              <img src="./img/gallary-5.jpg" alt="" />
+              <img src="./img/gallary-6.jpg" alt="" />
+              <img src="./img/gallary-7.jpg" alt="" />
+              <img src="./img/gallary-8.jpg" alt="" />
+              <img src="./img/gallary-9.jpg" alt="" />
+              <img src="./img/gallary-10.jpg" alt="" />
+            </div>
+            <button class="gallery__btn gallery__btn--left">
+              <svg class="sprite sprite--large">
+                <use href="img/sprite.svg#carousel_arrow-left"></use>
+              </svg>
+            </button>
+            <button class="gallery__btn gallery__btn--right">
+              <svg class="sprite sprite--large">
+                <use href="img/sprite.svg#carousel_arrow-right"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
 
-      <section class="gallery-section">
-        <div class="section__title">
-          <h2 class="heading-2">Gallery</h2>
-          <p class="text-small">See More</p>
-        </div>
-        <div class="section__images">
-          <div class="image-wrapper">
-            <img src="./img/gallary-1.jpg" alt="" />
-            <img src="./img/gallary-2.jpg" alt="" />
-            <img src="./img/gallary-3.jpg" alt="" />
-            <img src="./img/gallary-4.jpg" alt="" />
-            <img src="./img/gallary-5.jpg" alt="" />
-            <img src="./img/gallary-6.jpg" alt="" />
-            <img src="./img/gallary-7.jpg" alt="" />
-            <img src="./img/gallary-8.jpg" alt="" />
-            <img src="./img/gallary-9.jpg" alt="" />
-            <img src="./img/gallary-10.jpg" alt="" />
-          </div>
-          <button class="gallery__btn gallery__btn--left">
-            <svg class="sprite sprite--large">
-              <use href="img/sprite.svg#carousel_arrow-left"></use>
-            </svg>
-          </button>
-          <button class="gallery__btn gallery__btn--right">
-            <svg class="sprite sprite--large">
-              <use href="img/sprite.svg#carousel_arrow-right"></use>
-            </svg>
-          </button>
-        </div>
-      </section>
-
-      <section class="testimonial-section">
+      <section class="container section testimonial-section">
         <h2 class="testimonial__heading heading-2">
           What our students and their parents says about us
         </h2>
@@ -519,8 +565,8 @@
       </section>
     </main>
 
-    <footer class="footer separator-gradient">
-      <div class="social-media">
+    <footer class="container section footer">
+      <div class="social-media separator-gradient">
         <p class="text-small-bold">CONNECT WITH US</p>
         <span>
           <svg class="sprite sprite--medium">
@@ -534,16 +580,17 @@
           </svg>
         </span>
       </div>
+
       <section class="footer__links">
-        <img
-          src="./img/logo.jpg"
-          alt="logo"
-          class="logo"
-          width="100"
-          height="100"
-        />
         <div class="footer-content-wrapper separator-gradient-vertical">
-          <h2 class="heading-2">
+          <img
+            src="./img/logo.jpg"
+            alt="logo"
+            class="logo__footer"
+            width="100"
+            height="100"
+          />
+          <h2 class="heading-2 title__footer">
             Public High School<br />
             (Higher Secondary)
           </h2>
@@ -597,6 +644,7 @@
           </ul>
         </div>
       </section>
+
       <section class="footer__nav separator-gradient">
         <p class="text-small-extra">&copy;Public High School 2024</p>
         <nav>
