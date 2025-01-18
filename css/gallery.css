@@ -1,0 +1,43 @@
+.gallery-section {
+  padding: var(--large-ultimate) var(--side-gutter);
+  background: var(--surface-mute);
+}
+
+.section__images {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-wrapper {
+  /* width: 1120px; */
+  display: flex;
+  gap: var(--large-ultimate);
+  transition: transform 2500ms ease-in-out;
+}
+
+.gallery__btn {
+  background-color: var(--surface-shade);
+  border: none;
+  border-radius: 50%;
+  height: 36px;
+  width: 30px;
+  position: absolute;
+  top: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.gallery__btn--left {
+  left: 0;
+  transform: translate(-100%, -50%);
+  transition: transform 2000ms ease-in;
+}
+
+.gallery__btn--right {
+  right: 0;
+  transform: translate(0%, -50%);
+  transition: transform 2000ms ease-in;
+}
