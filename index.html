@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./css/facilities.css" />
     <link rel="stylesheet" href="./css/blogs.css" />
     <link rel="stylesheet" href="./css/gallery.css" />
+    <link rel="stylesheet" href="./css/testimonial.css" />
     <script src="./js/app.js" defer></script>
     <title>Document</title>
   </head>
@@ -136,7 +137,7 @@
               </ul>
             </li>
           </ul>
-          <form action="" class="search-form">
+          <form action="get" class="search-form">
             <input type="search" class="search-box" placeholder="Search..." />
             <svg class="sprite sprite--normal" role="img">
               <use href="img/sprite.svg#search"></use>
@@ -241,36 +242,36 @@
           </span>
         </div>
         <div class="facility-cards-wrapper">
-          <atricle class="facility-cards">
+          <article class="facility-cards">
             <img
               src="./img/facility-1.jpg"
-              alt="a picuter of the computer lab"
+              alt="a picture of the computer lab"
             />
             <p class="facility-card-description separator-gradient">
               Computer Lab
             </p>
-          </atricle>
-          <atricle class="facility-cards">
-            <img src="./img/facility-2.jpg" alt="a picuter of the infirmary" />
+          </article>
+          <article class="facility-cards">
+            <img src="./img/facility-2.jpg" alt="a picture of the infirmary" />
             <p class="facility-card-description separator-gradient">
               Infirmary
             </p>
-          </atricle>
-          <atricle class="facility-cards">
-            <img src="./img/facility-3.jpg" alt="a picuter of the cafetaria" />
+          </article>
+          <article class="facility-cards">
+            <img src="./img/facility-3.jpg" alt="a picture of the cafeteria" />
             <p class="facility-card-description separator-gradient">
-              Cafetaria
+              Cafeteria
             </p>
-          </atricle>
-          <atricle class="facility-cards">
+          </article>
+          <article class="facility-cards">
             <img
               src="./img/facility-4.jpg"
-              alt="a picuter of the chemistry lab"
+              alt="a picture of the chemistry lab"
             />
             <p class="facility-card-description separator-gradient">
               Chemistry Lab
             </p>
-          </atricle>
+          </article>
         </div>
       </section>
 
@@ -281,31 +282,31 @@
             <p class="text-small">See More</p>
           </div>
           <div class="blogs-cards-wrapper">
-            <atricle class="blogs-cards">
-              <img src="./img/blog-1.jpg" alt="a picuter of books" />
+            <article class="blogs-cards">
+              <img src="./img/blog-1.jpg" alt="a picture of books" />
               <p class="blog-card-title text-medium-bold">
                 Reading a book daily: it's impact on mental growth.
               </p>
               <p class="blog-card-description text-small-extra">By John Doe</p>
-            </atricle>
-            <atricle class="blogs-cards">
-              <img src="./img/blog-2.jpg" alt="a picuter of books" />
+            </article>
+            <article class="blogs-cards">
+              <img src="./img/blog-2.jpg" alt="a picture of books" />
               <p class="blog-card-title text-medium-bold">
                 Mental rot: a new side-effect of smartphones.
               </p>
               <p class="blog-card-description text-small-extra">
                 By Sarah J. Dias
               </p>
-            </atricle>
-            <atricle class="blogs-cards">
-              <img src="./img/blog-3.jpg" alt="a picuter of books" />
+            </article>
+            <article class="blogs-cards">
+              <img src="./img/blog-3.jpg" alt="a picture of books" />
               <p class="blog-card-title text-medium-bold">
                 Do your children have ADHD? know the ins-and-outs.
               </p>
               <p class="blog-card-description text-small-extra">
-                By Dr. Fank Mason
+                By Dr.Frank Mason
               </p>
-            </atricle>
+            </article>
           </div>
         </div>
         <div class="events-section">
@@ -374,6 +375,142 @@
               <use href="img/sprite.svg#carousel_arrow-right"></use>
             </svg>
           </button>
+        </div>
+      </section>
+
+      <section class="testimonial-section">
+        <h2 class="testimonial__heading heading-2">
+          What our students and their parents says about us
+        </h2>
+        <div class="testimonial-cards">
+          <article class="testimonial-card">
+            <div class="review-icons">
+              <svg class="sprite sprite--normal">
+                <use href="img/sprite.svg#icon-star-filled"></use>
+              </svg>
+              <svg class="sprite sprite--normal">
+                <use href="img/sprite.svg#icon-star-filled"></use>
+              </svg>
+              <svg class="sprite sprite--normal">
+                <use href="img/sprite.svg#icon-star-filled"></use>
+              </svg>
+              <svg class="sprite sprite--normal">
+                <use href="img/sprite.svg#icon-star-filled"></use>
+              </svg>
+              <svg class="sprite sprite--normal">
+                <use href="img/sprite.svg#icon-star-half"></use>
+              </svg>
+            </div>
+            <div class="review text-small">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Distinctio, adipisci totam itaque quo nemo sed non accusantium?
+                Neque, quo tenetur impedit cum culpa quisquam magni expedita,
+                velit exercitationem rem earum quas repellat provident
+                recusandae est quos corrupti tempora quae illo?
+              </p>
+              <div class="review-author">
+                <p class="text-medium-bold">Jane Coopper</p>
+                <p class="text-small-extra">Student(10th standard)</p>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="review-icons">
+              <svg class="sprite sprite--normal">
+                <use href="img/sprite.svg#icon-star-filled"></use>
+              </svg>
+              <svg class="sprite sprite--normal">
+                <use href="img/sprite.svg#icon-star-filled"></use>
+              </svg>
+              <svg class="sprite sprite--normal">
+                <use href="img/sprite.svg#icon-star-filled"></use>
+              </svg>
+              <svg class="sprite sprite--normal">
+                <use href="img/sprite.svg#icon-star-filled"></use>
+              </svg>
+              <svg class="sprite sprite--normal">
+                <use href="img/sprite.svg#icon-star-half"></use>
+              </svg>
+            </div>
+            <div class="review text-small">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Distinctio, adipisci totam itaque quo nemo sed non accusantium?
+                Neque, quo tenetur impedit cum culpa quisquam magni expedita,
+                velit exercitationem rem earum quas repellat provident
+                recusandae est quos corrupti tempora quae illo?
+              </p>
+              <div class="review-author">
+                <p class="text-medium-bold">Jenny Wilson</p>
+                <p class="text-small-extra">Parent</p>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="review-icons">
+              <svg class="sprite sprite--normal">
+                <use href="img/sprite.svg#icon-star-filled"></use>
+              </svg>
+              <svg class="sprite sprite--normal">
+                <use href="img/sprite.svg#icon-star-filled"></use>
+              </svg>
+              <svg class="sprite sprite--normal">
+                <use href="img/sprite.svg#icon-star-filled"></use>
+              </svg>
+              <svg class="sprite sprite--normal">
+                <use href="img/sprite.svg#icon-star-filled"></use>
+              </svg>
+              <svg class="sprite sprite--normal">
+                <use href="img/sprite.svg#icon-star-half"></use>
+              </svg>
+            </div>
+            <div class="review text-small">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Distinctio, adipisci totam itaque quo nemo sed non accusantium?
+                Neque, quo tenetur impedit cum culpa quisquam magni expedita,
+                velit exercitationem rem earum quas repellat provident
+                recusandae est quos corrupti tempora quae illo?
+              </p>
+              <div class="review-author">
+                <p class="text-medium-bold">Esther Howard</p>
+                <p class="text-small-extra">Parent</p>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="review-icons">
+              <svg class="sprite sprite--normal">
+                <use href="img/sprite.svg#icon-star-filled"></use>
+              </svg>
+              <svg class="sprite sprite--normal">
+                <use href="img/sprite.svg#icon-star-filled"></use>
+              </svg>
+              <svg class="sprite sprite--normal">
+                <use href="img/sprite.svg#icon-star-filled"></use>
+              </svg>
+              <svg class="sprite sprite--normal">
+                <use href="img/sprite.svg#icon-star-filled"></use>
+              </svg>
+              <svg class="sprite sprite--normal">
+                <use href="img/sprite.svg#icon-star-half"></use>
+              </svg>
+            </div>
+            <div class="review text-small">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Distinctio, adipisci totam itaque quo nemo sed non accusantium?
+                Neque, quo tenetur impedit cum culpa quisquam magni expedita,
+                velit exercitationem rem earum quas repellat provident
+                recusandae est quos corrupti tempora quae illo?
+              </p>
+              <div class="review-author">
+                <p class="text-medium-bold">Wade Warren</p>
+                <p class="text-small-extra">Parent</p>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
     </main>
