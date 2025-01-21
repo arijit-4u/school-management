@@ -1,6 +1,6 @@
 .footer {
   background: var(--red-dim);
-  padding: var(--large-ultimate) var(--side-gutter);
+  padding: 0 var(--side-gutter);
   border-top: 2px solid;
 }
 
@@ -9,15 +9,18 @@
   align-items: center;
   gap: var(--large-extra);
   margin-bottom: var(--large-extra);
+  padding-top: var(--large-extra);
 }
 
 .social-media p {
-  /* display: inline; */
   color: var(--surface);
 }
 
-.footer-content-wrapper {
+.footer-content-wrapper,
+.footer-link-container {
   color: var(--surface);
+  border-right: 2px solid;
+  padding-right: var(--large-extra);
 }
 
 .footer-content-wrapper h2 {
