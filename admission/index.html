@@ -3,19 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/variables.css" />
-    <link rel="stylesheet" href="../css/sprite.css" />
+    <link rel="stylesheet" href="../css/utils/global.css" />
+    <link rel="stylesheet" href="../css/utils/variables.css" />
+    <link rel="stylesheet" href="../css/utils/fonts.css" />
+    <link rel="stylesheet" href="../css/utils/sprite.css" />
+    <link rel="stylesheet" href="../css/utils/search-box.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/components/header-type-2.css" />
     <title>Admission</title>
   </head>
   <body>
     <header class="header">
-      <a href="../"><img src="https://placehold.co/100" alt="logo" /></a>
+      <a href="../"
+        ><img src="https://placehold.co/100" alt="logo" class="logo"
+      /></a>
       <nav class="main-nav">
         <div class="top-container">
-          <ul class="auxilliary-links">
-            <li class="nav-links text-medium-bold">
+          <ul class="auxiliary-links">
+            <li class="nav-links text-small">
               <a href="#">ADMISSIONS</a>
               <svg class="sprite sprite--normal" role="img">
                 <use href="../img/sprite.svg#icon-chevron-down-short"></use>
@@ -27,7 +32,7 @@
                 <li><a href="#" class="text-small-extra">List item 4</a></li>
               </ul>
             </li>
-            <li class="nav-links text-medium-bold">
+            <li class="nav-links text-small">
               <a href="#">ACADEMICS</a>
               <svg class="sprite sprite--normal" role="img">
                 <use href="../img/sprite.svg#icon-chevron-down-short"></use>
@@ -39,7 +44,7 @@
                 <li><a href="#" class="text-small-extra">List item 4</a></li>
               </ul>
             </li>
-            <li class="nav-links text-medium-bold">
+            <li class="nav-links text-small">
               <a href="#">NOTICE</a>
               <svg class="sprite sprite--normal" role="img">
                 <use href="../img/sprite.svg#icon-chevron-down-short"></use>
@@ -51,7 +56,7 @@
                 <li><a href="#" class="text-small-extra">List item 4</a></li>
               </ul>
             </li>
-            <li class="nav-links text-medium-bold">
+            <li class="nav-links text-small">
               <a href="#">ABOUT</a>
               <svg class="sprite sprite--normal" role="img">
                 <use href="../img/sprite.svg#icon-chevron-down-short"></use>
@@ -71,17 +76,34 @@
             </svg>
           </form>
         </div>
-        <!-- <div class="bottom-container">
-          <h1 class="heading-2">ADMISSIONS</h1>
-          <svg class="sprite sprite--normal" role="img">
-            <use href="../img/sprite.svg#separator"></use>
-          </svg>
-          <ul>
-            <li class="text-large">LINK ONE</li>
-            <li class="text-large">LINK TWO</li>
-            <li class="text-large">LINK THREE</li>
+        <div class="bottom-container">
+          <h2 class="heading-2 heading-primary">ADMISSIONS</h2>
+          <img
+            src="../img/SeparatorChevron.png"
+            alt="a separator"
+            class="separator-img"
+          />
+          <ul class="primary-links">
+            <li class="text-large">
+              Link One
+              <svg class="sprite sprite--normal" role="img">
+                <use href="../img/sprite.svg#icon-chevron-down-short"></use>
+              </svg>
+            </li>
+            <li class="text-large">
+              Link Two
+              <svg class="sprite sprite--normal" role="img">
+                <use href="../img/sprite.svg#icon-chevron-down-short"></use>
+              </svg>
+            </li>
+            <li class="text-large">
+              Link Three
+              <svg class="sprite sprite--normal" role="img">
+                <use href="../img/sprite.svg#icon-chevron-down-short"></use>
+              </svg>
+            </li>
           </ul>
-        </div> -->
+        </div>
       </nav>
     </header>
   </body>
