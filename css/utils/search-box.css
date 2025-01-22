@@ -1,0 +1,53 @@
+.search-form {
+  width: 128px;
+  height: 30px;
+  position: relative;
+  background-color: var(--red);
+  padding: var(--small) var(--medium);
+  border-top-right-radius: var(--rounded-normal);
+  border-bottom-right-radius: var(--rounded-normal);
+}
+
+.search-form:focus-within {
+  background-color: var(--surface-dim);
+}
+
+.search-form svg {
+  position: absolute;
+  top: 7px;
+  right: 8px;
+  stroke: var(--surface);
+  stroke-width: 3;
+}
+
+.search-form:focus-within svg {
+  stroke: var(--surface-shade);
+  fill: var(--surface-shade);
+}
+
+.search-form input {
+  width: 88px;
+  height: 14px;
+
+  background-color: var(--red);
+  color: var(--surface);
+  font-size: var(--text---small-extra);
+
+  vertical-align: top;
+  border: none;
+  outline: none;
+}
+
+.search-form:focus-within input {
+  background-color: var(--surface-dim);
+  color: var(--surface-shade);
+}
+
+.search-form input::placeholder {
+  color: var(--surface);
+  font-size: var(--text---small-extra);
+}
+
+.search-form:focus-within input::placeholder {
+  color: var(--surface-shade);
+}
