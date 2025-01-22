@@ -1,0 +1,34 @@
+.header {
+  background: var(--red-gradient);
+  padding-left: var(--side-gutter);
+  padding-right: var(--side-gutter);
+  padding-top: var(--large-ultimate);
+  padding-bottom: var(--large-ultimate);
+
+  display: flex;
+  gap: var(--small);
+}
+
+.sub-menu {
+  display: none;
+}
+.main-nav {
+  flex-basis: 100%;
+}
+.top-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: inline-block;
+  padding-top: var(--small);
+  padding-bottom: var(--small);
+  padding-left: var(--medium);
+  padding-right: var(--medium);
+}
+
+.nav-links svg {
+  padding-left: var(--small-extra);
+  vertical-align: bottom;
+}
