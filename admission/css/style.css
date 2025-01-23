@@ -1,0 +1,65 @@
+.hero {
+  background: var(--surface-dim);
+  padding: 0 var(--side-gutter);
+}
+
+.breadcrumb {
+  padding-top: var(--small);
+  padding-bottom: var(--small);
+  margin-bottom: var(--large);
+}
+
+.hero svg {
+  fill: var(--neutral);
+}
+
+.breadcrumb svg {
+  vertical-align: bottom;
+}
+
+.breadcrumb-link {
+  display: inline;
+}
+
+.breadcrumb-link a {
+  color: var(--neutral);
+}
+
+.breadcrumb-link:first-child a {
+  color: var(--red);
+}
+.breadcrumb-link:first-child svg {
+  fill: var(--red);
+}
+
+.hero h1 {
+  color: var(--neutral);
+  margin-bottom: var(--large);
+}
+
+.admission-content {
+  margin-bottom: var(--large-ultimate);
+}
+
+.admission-cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.admission-card-img {
+  margin-bottom: var(--medium);
+}
+
+.admission-card p {
+  margin-bottom: var(--small-extra);
+}
+
+.admission-card__list {
+  margin-left: var(--medium);
+}
+
+.admission-card__list li {
+  margin-bottom: var(--small-extra);
+  list-style-type: disc;
+  color: var(--red);
+}
