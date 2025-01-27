@@ -1,3 +1,4 @@
+/* HERO SECTION */
 .hero {
   background: var(--surface-dim);
   padding: 0 var(--side-gutter);
@@ -62,4 +63,99 @@
   margin-bottom: var(--small-extra);
   list-style-type: disc;
   color: var(--red);
+}
+
+/* FAQ SECTION */
+.faq {
+  padding: var(--large-ultimate) var(--side-gutter);
+  background: var(--surface-dim);
+  color: var(--neutral);
+}
+.faq svg {
+  fill: var(--neutral);
+}
+.faq h2 {
+  padding: var(--small-extra) 0;
+  margin-bottom: var(--large);
+}
+.faq details {
+  margin-bottom: var(--large);
+  border: 2px solid var(--neutral);
+  box-shadow: var(--drop-shadow);
+}
+.faq summary {
+  padding-top: var(--small);
+  padding-left: var(--large-ultimate);
+  padding-right: var(--small-extra);
+  padding-bottom: var(--small);
+  background: var(--surface-mute);
+  position: relative;
+}
+.faq summary::marker {
+  content: none;
+}
+.faq summary::before {
+  content: url(../../svg/icon-plus.svg);
+  height: var(--medium);
+  width: var(--medium);
+  position: absolute;
+  left: var(--small);
+  top: var(--small);
+}
+.faq summary::after {
+  content: url(../../svg/icon-plus.svg);
+  height: var(--medium);
+  width: var(--medium);
+  position: absolute;
+  right: var(--small);
+}
+.faq p {
+  padding: var(--small) var(--large-extra);
+  background: var(--surface-dim);
+}
+.faq details[open] summary::before {
+  content: url(../../svg/icon-cross.svg);
+  height: var(--medium);
+  width: var(--medium);
+  position: absolute;
+  left: var(--small);
+  top: var(--small);
+}
+.faq details[open] summary::after {
+  content: url(../../svg/icon-cross.svg);
+  height: var(--medium);
+  width: var(--medium);
+  position: absolute;
+  right: var(--small);
+}
+
+/* SEARCH BOX */
+.search {
+  background: var(--red-gradient);
+  padding: var(--large) 0;
+  display: flex;
+  justify-content: center;
+}
+.search-form-large {
+  width: 800px;
+}
+#search-input {
+  width: 700px;
+  background-color: var(--surface);
+  color: var(--surface-shade);
+  padding: var(--small) var(--large);
+  border: 1px solid var(--neutral);
+  border-radius: var(--rounded-normal);
+  outline: none;
+  margin-right: var(--medium);
+}
+.btn-submit {
+  padding: var(--small) var(--large);
+  background-color: var(--red-shade);
+  color: var(--surface);
+  border-radius: var(--rounded-normal);
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  letter-spacing: 0.5px;
 }
