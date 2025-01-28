@@ -140,14 +140,14 @@
   width: 800px;
 }
 #search-input {
-  width: 700px;
+  width: 690px;
   background-color: var(--surface);
   color: var(--surface-shade);
   padding: var(--small) var(--large);
   border: 1px solid var(--neutral);
   border-radius: var(--rounded-normal);
   outline: none;
-  margin-right: var(--medium);
+  margin-right: var(--small);
 }
 .btn-submit {
   padding: var(--small) var(--large);
