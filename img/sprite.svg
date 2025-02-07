@@ -123,6 +123,6 @@
 		<path stroke-width="2" d="M11.875 11.345 9.043 8.513a4.132 4.132 0 1 0-.53.53l2.832 2.832zM2.5 5.875a3.375 3.375 0 1 1 6.75 0 3.375 3.375 0 0 1-6.75 0Z"/>
 	</symbol>
 	<symbol id="separator" viewBox="0 0 30 50">
-		<path stroke-linecap="round" d="m10 3 10 24.077L10 48"/>
+		<path d="M10 3L20 27.0765L10 48"/>
 	</symbol>
 </svg>
