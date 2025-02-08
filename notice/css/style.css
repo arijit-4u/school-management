@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--surface);
+}
+
+main {
+  margin-left: var(--side-gutter);
+  margin-right: var(--side-gutter);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 288px;
+  gap: 12px;
+}
+
+.news {
+  background-color: var(--surface-dim);
+  padding-left: var(--medium);
+
+  display: grid;
+  grid-template-columns: 544px auto;
+  grid-template-rows: auto min-content;
+  gap: 16px;
+}
+
+.news > h2 {
+  grid-column: 1 / -1;
+  padding-top: var(--large-extra);
+  padding-bottom: var(--medium);
+}
+
+.news svg {
+  fill: var(--neutral);
+}
+.events {
+  grid-row: span 2;
+  background-color: var(--surface-dim);
+}
+.notice {
+  background-color: var(--surface-dim);
+}

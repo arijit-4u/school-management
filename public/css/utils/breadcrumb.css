@@ -1,0 +1,25 @@
+.breadcrumb {
+  padding-top: var(--small);
+  padding-bottom: var(--small);
+  margin-bottom: var(--large);
+}
+
+.breadcrumb svg {
+  vertical-align: bottom;
+}
+
+.breadcrumb-link {
+  display: inline;
+}
+
+.breadcrumb-link a {
+  color: var(--neutral);
+}
+
+.breadcrumb-link:first-child a {
+  color: var(--red);
+}
+
+.breadcrumb-link:first-child svg {
+  fill: var(--red);
+}
