@@ -51,20 +51,38 @@ body {
 .news-text {
   position: absolute;
   bottom: 0;
+  background: var(--surface-gradient-vertical);
+  min-width: 544px;
+  padding-left: var(--large);
+  padding-bottom: var(--large);
+}
+.news-text p:first-child {
+  margin-bottom: var(--medium);
 }
 
 .slider__btn {
+  height: 36px;
+  width: 36px;
   position: absolute;
+  background-color: var(--surface-shade);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  top: 47%;
+}
+
+.slider__btn svg {
+  fill: var(--surface);
 }
 
 .slider__btn--left {
-  left: 0;
+  left: var(--large);
   top: 50%;
   transform: translateY(-50%);
 }
 
 .slider__btn--right {
-  right: 0;
+  right: var(--large);
   top: 50%;
   transform: translateY(-50%);
 }
