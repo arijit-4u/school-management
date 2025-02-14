@@ -2,37 +2,23 @@
 
 // DOM elements
 const newsCards = document.querySelectorAll(".news-card");
+const parentElm = document.querySelector(".news ul");
 const eventsList = document.querySelectorAll(".event--small");
 const btnNext = document.querySelector(".slider__btn--right");
 const btnPrev = document.querySelector(".slider__btn--left");
 
-console.log(eventsList);
-
+// Events card scrolling
 let curCard = 0;
 const maxCards = newsCards.length;
 
-let curEventItem = 0;
-const maxNewsEvents = eventsList.length;
-
 newsCards.forEach(function (newsCard, i) {
   newsCard.style.transform = `translateX(${100 * i}%)`;
-});
-
-eventsList.forEach(function (event, i) {
-  event.style.transform = `translateY(${100 * i}%)`;
 });
 
 btnNext.addEventListener("click", () => {
   curCard = (curCard + 1) % maxCards;
   newsCards.forEach(function (newsCard, i) {
     newsCard.style.transform = `translateX(${100 * (i - curCard)}%)`;
-  });
-});
-
-btnNext.addEventListener("click", () => {
-  curEventItem = (curEventItem + 1) % maxNewsEvents;
-  eventsList.forEach(function (event, i) {
-    event.style.transform = `translateY(${100 * (i - curEventItem)}%)`;
   });
 });
 
@@ -43,4 +29,19 @@ btnPrev.addEventListener("click", () => {
   });
 });
 
-btnPrev.addEventListener("click", () => {});
+// Events list scrolling
+const eventsArray = [...eventsList];
+
+// Upshift the array
+btnNext.addEventListener("click", () => {
+  const firstElement = eventsArray.shift();
+  eventsArray.push(firstElement);
+  parentElm.appendChild(firstElement);
+});
+
+// Downshift the array
+btnPrev.addEventListener("click", () => {
+  const lastElement = eventsArray.pop();
+  eventsArray.unshift(lastElement);
+  parentElm.insertBefore(lastElement, parentElm.firstChild);
+});

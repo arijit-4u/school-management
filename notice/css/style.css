@@ -68,6 +68,7 @@ body {
   min-width: 544px;
   padding-left: var(--large);
   padding-bottom: var(--large);
+  padding-top: var(--large-extra);
   z-index: 98;
 }
 .news-text p:first-child {
@@ -102,8 +103,8 @@ body {
   transform: translateY(-50%);
 }
 
-.event--small {
-  position: absolute;
+.news ul {
+  overflow: hidden;
 }
 
 /* EVENTS */
