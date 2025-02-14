@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../public/css/components/search.css" />
     <link rel="stylesheet" href="../public/css/components/footer.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
     <title>Notice</title>
   </head>
   <body>
@@ -156,7 +157,6 @@
             </svg>
           </h2>
           <div class="news-wrapper">
-            <img src="https://placehold.co/544x230" alt="dummy pic" />
             <button class="slider__btn slider__btn--left">
               <svg class="sprite sprite--large">
                 <use href="../assets/img/sprite.svg#carousel_arrow-left"></use>
@@ -167,30 +167,86 @@
                 <use href="../assets/img/sprite.svg#carousel_arrow-right"></use>
               </svg>
             </button>
-            <div class="news-text">
-              <p class="text-large-bold">
-                Lorem ipsum dolor sit amet consectetur adipisicing.
-              </p>
-              <p class="text-small">01 Jan, 1970</p>
+            <div class="news-card-wrapper">
+              <div class="news-card">
+                <img
+                  src="./img/news-1.jpg"
+                  alt="dummy pic"
+                  class="news-image"
+                />
+                <div class="news-text">
+                  <p class="text-large-bold">
+                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                  </p>
+                  <p class="text-small">01 Jan, 1970</p>
+                </div>
+              </div>
+              <div class="news-card">
+                <img
+                  src="./img/news-2.jpg"
+                  alt="dummy pic"
+                  class="news-image"
+                />
+                <div class="news-text">
+                  <p class="text-large-bold">
+                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                  </p>
+                  <p class="text-small">01 Jan, 1970</p>
+                </div>
+              </div>
+              <div class="news-card">
+                <img
+                  src="./img/news-3.jpg"
+                  alt="dummy pic"
+                  class="news-image"
+                />
+                <div class="news-text">
+                  <p class="text-large-bold">
+                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                  </p>
+                  <p class="text-small">01 Jan, 1970</p>
+                </div>
+              </div>
+              <div class="news-card">
+                <img
+                  src="./img/news-4.jpg"
+                  alt="dummy pic"
+                  class="news-image"
+                />
+                <div class="news-text">
+                  <p class="text-large-bold">
+                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                  </p>
+                  <p class="text-small">01 Jan, 1970</p>
+                </div>
+              </div>
             </div>
           </div>
+
           <ul class="events">
-            <li class="event">
-              <img src="https://placehold.co/50" alt="" />
+            <li class="event event--small">
+              <img src="./img/news-thumb-1.jpg" width="50px" alt="" />
               <div class="event__desc">
                 <p class="text-small-extra-bold">Lorem ipsum dolor sit amet.</p>
                 <p class="text-small-extra">01 Jan, 1970</p>
               </div>
             </li>
-            <li class="event">
-              <img src="https://placehold.co/50" alt="" />
+            <li class="event event--small">
+              <img src="./img/news-thumb-2.jpg" width="50px" alt="" />
               <div class="event__desc">
                 <p class="text-small-extra-bold">Lorem ipsum dolor sit amet.</p>
                 <p class="text-small-extra">01 Jan, 1970</p>
               </div>
             </li>
-            <li class="event">
-              <img src="https://placehold.co/50" alt="" />
+            <li class="event event--small">
+              <img src="./img/news-thumb-3.jpg" width="50px" alt="" />
+              <div class="event__desc">
+                <p class="text-small-extra-bold">Lorem ipsum dolor sit amet.</p>
+                <p class="text-small-extra">01 Jan, 1970</p>
+              </div>
+            </li>
+            <li class="event event--small">
+              <img src="./img/news-thumb-3.jpg" width="50px" alt="" />
               <div class="event__desc">
                 <p class="text-small-extra-bold">Lorem ipsum dolor sit amet.</p>
                 <p class="text-small-extra">01 Jan, 1970</p>
@@ -333,6 +389,7 @@
           </ul>
         </section>
       </div>
+
       <section class="search">
         <form action="get" class="search-form-large">
           <input
