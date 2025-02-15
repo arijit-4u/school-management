@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="../public/css/utils/global.css" />
     <link rel="stylesheet" href="../public/css/utils/variables.css" />
     <link rel="stylesheet" href="../public/css/utils/fonts.css" />
-    <link rel="stylesheet" href="../public/css/utils/sprite.css" />
     <link rel="stylesheet" href="../public/css/utils/search-box.css" />
     <link rel="stylesheet" href="../public/css/utils/breadcrumb.css" />
     <link rel="stylesheet" href="../public/css/utils/events.css" />
@@ -31,7 +30,7 @@
         <div class="top-container">
           <ul class="auxiliary-links">
             <li class="nav-links text-small">
-              <a href="#">ADMISSIONS</a>
+              <a href="/admission/">ADMISSIONS</a>
               <svg class="sprite sprite--normal" role="img">
                 <use
                   href="../assets/img/sprite.svg#icon-chevron-down-short"
@@ -59,7 +58,7 @@
               </ul>
             </li>
             <li class="nav-links text-small">
-              <a href="#">NOTICE</a>
+              <a href="/notice/">NOTICE</a>
               <svg class="sprite sprite--normal" role="img">
                 <use
                   href="../assets/img/sprite.svg#icon-chevron-down-short"
@@ -73,7 +72,7 @@
               </ul>
             </li>
             <li class="nav-links text-small">
-              <a href="#">ABOUT</a>
+              <a href="/about/">ABOUT</a>
               <svg class="sprite sprite--normal" role="img">
                 <use
                   href="../assets/img/sprite.svg#icon-chevron-down-short"
@@ -148,7 +147,7 @@
           </li>
         </ul>
       </nav>
-      <div class="container">
+      <div class="grid--main">
         <section class="news">
           <h2 class="heading-2">
             Featured News
@@ -429,7 +428,6 @@
           </ul>
         </section>
       </div>
-
       <section class="search">
         <form action="get" class="search-form-large">
           <input
@@ -444,37 +442,32 @@
       </section>
     </main>
 
-    <footer class="footer separator-gradient">
-      <div class="social-media">
+    <footer class="container section footer">
+      <div class="social-media separator-gradient">
         <p class="text-small-bold">CONNECT WITH US</p>
         <span>
           <svg class="sprite sprite--medium">
-            <use href="../assets/img/sprite.svg#icon-whatsapp-o"></use>
+            <use href="/assets/img/sprite.svg#icon-whatsapp-o"></use>
           </svg>
           <svg class="sprite sprite--medium">
-            <use href="../assets/img/sprite.svg#icon-youtube-o"></use>
+            <use href="/assets/img/sprite.svg#icon-youtube-o"></use>
           </svg>
           <svg class="sprite sprite--medium">
-            <use href="../assets/img/sprite.svg#icon-facebook-o"></use>
+            <use href="/assets/img/sprite.svg#icon-facebook-o"></use>
           </svg>
         </span>
       </div>
+
       <section class="footer__links">
-        <img
-          src="../assets/img/logo.png"
-          alt="logo"
-          class="logo"
-          width="100"
-          height="100"
-        />
         <div class="footer-content-wrapper separator-gradient-vertical">
-          <h2 class="heading-2">
+          <img src="/assets/img/logo.png" alt="logo" class="logo__footer" />
+          <h2 class="heading-2 title__footer">
             Public High School<br />
             (Higher Secondary)
           </h2>
           <div class="location-wrapper">
             <svg class="sprite sprite--normal">
-              <use href="../assets/img/sprite.svg#icon-location-filled"></use>
+              <use href="/assets/img/sprite.svg#icon-location-filled"></use>
             </svg>
             <p class="text-small">
               DUMDUM SOUTH, NORTH<br />TWENTY FOUR PARGANAS<br />West Bengal -
@@ -486,7 +479,7 @@
           <h3 class="text-medium-bold">
             Section Header
             <svg class="sprite sprite--normal">
-              <use href="../assets/img/sprite.svg#icon-chevron-right"></use>
+              <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
             </svg>
           </h3>
           <ul>
@@ -499,7 +492,7 @@
           <h3 class="text-medium-bold">
             Section Header
             <svg class="sprite sprite--normal">
-              <use href="../assets/img/sprite.svg#icon-chevron-right"></use>
+              <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
             </svg>
           </h3>
           <ul>
@@ -512,7 +505,7 @@
           <h3 class="text-medium-bold">
             Section Header
             <svg class="sprite sprite--normal">
-              <use href="../assets/img/sprite.svg#icon-chevron-right"></use>
+              <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
             </svg>
           </h3>
           <ul>
@@ -522,6 +515,7 @@
           </ul>
         </div>
       </section>
+
       <section class="footer__nav separator-gradient">
         <p class="text-small-extra">&copy;Public High School 2024</p>
         <nav>

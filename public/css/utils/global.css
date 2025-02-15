@@ -1,4 +1,4 @@
-/* Global Reset */
+/* Global Default */
 * {
   margin: 0;
   padding: 0;
@@ -23,10 +23,12 @@ svg {
   fill: var(--surface);
 }
 
+/* Utility classes */
 .fix-white-space {
   font-size: 0;
 }
 
+/* Gradients */
 .separator-gradient {
   border-image-slice: 1;
   border-image-source: linear-gradient(
@@ -38,6 +40,7 @@ svg {
     rgba(0, 0, 0, 0) 100%
   );
 }
+
 .separator-gradient-vertical {
   border-image-slice: 1;
   border-image-source: linear-gradient(
@@ -49,3 +52,87 @@ svg {
     rgba(0, 0, 0, 0) 100%
   );
 }
+
+/* Sprite classes */
+.sprite {
+  display: inline-block;
+}
+
+.sprite--small {
+  height: 12px;
+  width: 12px;
+}
+
+.sprite--normal {
+  height: 16px;
+  width: 16px;
+}
+
+.sprite--medium {
+  height: 24px;
+  width: 24px;
+}
+
+.sprite--large {
+  height: 36px;
+  width: 36px;
+}
+
+/* Responsive */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding: var(--medium) var(--large);
+}
+
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+
+  .section {
+    padding: var(--large-ultimate) var(--side-gutter);
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+/* Media querries template */
+/* @media (min-width: 475px) { } */
+/* @media (min-width: 640px) { } */
+/* @media (min-width: 768px) { } */
+/* @media (min-width: 1024px) { } */
+/* @media (min-width: 1280px) { } */
+/* @media (min-width: 1536px) { } */

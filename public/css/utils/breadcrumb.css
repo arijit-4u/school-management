@@ -1,10 +1,11 @@
 .breadcrumb {
   padding-top: var(--small);
-  padding-bottom: var(--small);
-  margin-bottom: var(--large);
+  padding-bottom: var(--large-extra);
+  /* margin-bottom: var(--large); */
 }
 
 .breadcrumb svg {
+  fill: var(--neutral);
   vertical-align: bottom;
 }
 
