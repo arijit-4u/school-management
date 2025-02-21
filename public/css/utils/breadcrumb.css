@@ -1,6 +1,8 @@
 .breadcrumb {
   padding-top: var(--small);
   padding-bottom: var(--large-extra);
+  margin-left: var(--side-gutter);
+  margin-right: var(--side-gutter);
   /* margin-bottom: var(--large); */
 }
 
