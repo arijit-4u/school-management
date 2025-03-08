@@ -89,20 +89,23 @@
   display: none;
 }
 
-.menu-collapsed {
+.btn__mobile-nav {
   background: none;
   border: none;
-  border-left: 1px solid var(--surface-shade);
   cursor: pointer;
+}
+
+.btn__mobile-nav #btnCollapsed {
+  border-left: 1px solid var(--surface-shade);
   padding: 0 var(--medium);
 }
 
-.menu-collapsed > svg {
+.btn__mobile-nav > svg {
   fill: var(--surface-dim);
   vertical-align: bottom;
 }
 
-.menu-collapsed:hover > svg {
+.btn__mobile-nav:hover > svg {
   fill: var(--surface);
 }
 
@@ -291,7 +294,7 @@
     color: var(--surface-shade);
   }
 
-  .menu-collapsed {
+  .btn__mobile-nav {
     display: none;
   }
 }
