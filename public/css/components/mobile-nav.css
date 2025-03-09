@@ -38,16 +38,17 @@
   padding: var(--medium) var(--large);
 }
 
-.mobile-nav__links label {
-  /* display: none; */
+.mobile-nav__links ul {
+  overflow-y: hidden;
+  transition: 0.3s;
 }
 
 .mobile-nav__links[aria-expanded="false"] ul {
-  display: none;
+  height: 0;
 }
 
 .mobile-nav__links[aria-expanded="true"] ul {
-  display: block;
+  height: auto;
 }
 
 .mobile-nav__sub-links a {
