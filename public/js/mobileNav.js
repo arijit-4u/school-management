@@ -10,8 +10,8 @@ const menuOpen = function () {
 };
 
 const menuClose = function () {
-  nav.classList.remove("open");
   subMenuClose();
+  nav.classList.remove("open");
 };
 
 const subMenuToggle = function (dropDown, isMenuOpen) {
@@ -44,7 +44,8 @@ btnMenu.addEventListener("click", menuOpen);
 btnMenuClose.addEventListener("click", menuClose);
 
 dropDownList.forEach(dropDown => {
-  dropDown.firstElementChild.addEventListener("click", () => {
+  dropDown.querySelector("a").addEventListener("click", e => {
+    e.preventDefault();
     const isMenuOpen = dropDown.getAttribute("aria-expanded") === "true";
     subMenuClose();
     subMenuToggle(dropDown, isMenuOpen);

@@ -8,6 +8,8 @@
   height: 100%;
   padding-top: var(--large-extra);
   visibility: hidden;
+  color: var(--surface);
+  fill: var(--surface);
   transform: translateX(60%);
   opacity: 0;
   transition: 0.3s;
@@ -19,14 +21,20 @@
   opacity: 100;
 }
 
+.mobile-nav button {
+  margin-inline: var(--medium);
+}
+
+.mobile-nav svg {
+  fill: inherit;
+  transition: 0.3s;
+}
+
 .mobile-nav li a:hover {
   background: var(--red-shade-light);
   cursor: pointer;
   color: var(--neutral);
-}
-
-.mobile-nav button {
-  margin-inline: var(--medium);
+  fill: var(--neutral);
 }
 
 .mobile-nav__menu {
@@ -34,7 +42,8 @@
 }
 
 .mobile-nav__links a {
-  display: block;
+  display: flex;
+  justify-content: space-between;
   padding: var(--medium) var(--large);
 }
 
@@ -49,6 +58,10 @@
 
 .mobile-nav__links[aria-expanded="true"] ul {
   height: auto;
+}
+
+.mobile-nav__links[aria-expanded="true"] svg {
+  transform: rotate(180deg);
 }
 
 .mobile-nav__sub-links a {
