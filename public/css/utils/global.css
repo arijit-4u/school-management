@@ -19,10 +19,6 @@ a {
   text-decoration: none;
 }
 
-svg {
-  fill: var(--surface);
-}
-
 /* Utility classes */
 .fix-white-space {
   font-size: 0;
@@ -56,6 +52,21 @@ svg {
 /* Sprite classes */
 .sprite {
   display: inline-block;
+}
+
+.sprite--light {
+  fill: var(--surface);
+  --svg-fill: var(--surface);
+}
+
+.sprite--dark {
+  fill: var(--neutral);
+  --svg-fill: var(--neutral);
+}
+
+.sprite--bold {
+  stroke: var(--svg-fill);
+  stroke-width: 2;
 }
 
 .sprite--small {

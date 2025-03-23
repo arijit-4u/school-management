@@ -22,8 +22,6 @@
   border-radius: var(--rounded-normal);
   box-shadow: var(--drop-shadow);
   padding: var(--medium);
-  /* max-width: 256px; */
-  /* min-height: 272px; */
 }
 
 .review-icons {

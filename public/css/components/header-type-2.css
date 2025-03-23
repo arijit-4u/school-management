@@ -1,10 +1,6 @@
 .header {
   background: var(--red-gradient);
-  padding-left: var(--side-gutter);
-  padding-right: var(--side-gutter);
-  padding-top: var(--large-ultimate);
-  padding-bottom: var(--large-ultimate);
-
+  padding: var(--large-ultimate) var(--side-gutter);
   display: flex;
   gap: var(--small);
 }
@@ -12,12 +8,15 @@
 .logo {
   margin-right: var(--small);
 }
+
 .sub-menu {
   display: none;
 }
+
 .main-nav {
   flex-basis: 100%;
 }
+
 .top-container {
   display: flex;
   justify-content: space-between;

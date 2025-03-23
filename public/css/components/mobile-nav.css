@@ -9,7 +9,6 @@
   padding-top: var(--large-extra);
   visibility: hidden;
   color: var(--surface);
-  fill: var(--surface);
   transform: translateX(60%);
   opacity: 0;
   transition: 0.3s;
@@ -26,7 +25,6 @@
 }
 
 .mobile-nav svg {
-  fill: inherit;
   transition: 0.3s;
 }
 
@@ -34,7 +32,10 @@
   background: var(--red-shade-light);
   cursor: pointer;
   color: var(--neutral);
-  fill: var(--neutral);
+
+  & svg {
+    fill: var(--neutral);
+  }
 }
 
 .mobile-nav__menu {

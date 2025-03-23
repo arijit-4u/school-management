@@ -3,11 +3,9 @@
   padding-bottom: var(--large-extra);
   margin-left: var(--side-gutter);
   margin-right: var(--side-gutter);
-  /* margin-bottom: var(--large); */
 }
 
 .breadcrumb svg {
-  fill: var(--neutral);
   vertical-align: bottom;
 }
 
