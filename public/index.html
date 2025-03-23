@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/utils/animation.css" />
     <link rel="stylesheet" href="./css/utils/search-box.css" />
     <link rel="stylesheet" href="./css/components/header-type-1.css" />
+    <link rel="stylesheet" href="./css/components/mobile-nav.css" />
     <link rel="stylesheet" href="./css/components/hero.css" />
     <link rel="stylesheet" href="./css/components/classes.css" />
     <link rel="stylesheet" href="./css/components/facilities.css" />
@@ -18,6 +19,7 @@
     <link rel="stylesheet" href="./css/components/footer.css" />
 
     <script src="./js/app.js" defer></script>
+    <script src="./js/mobileNav.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -36,6 +38,8 @@
           <a class="text-small-extra-bold" href="#">+91-33-8585-8888</a>
         </li>
       </ul>
+
+      <!-- Header Navigation -->
       <nav class="main-nav">
         <div class="left-section">
           <img src="/assets/img/logo.png" alt="logo" class="logo-square" />
@@ -158,13 +162,191 @@
               <use href="/assets/img/sprite.svg#search"></use>
             </svg>
           </form>
-          <button class="menu-collapsed">
+          <button class="btn__mobile-nav" id="btnCollapsed">
             <svg class="sprite sprite--medium" role="img">
               <use href="/assets/img/sprite.svg#icon-menu"></use>
             </svg>
           </button>
         </div>
       </nav>
+      <!-- End of Header Navigation -->
+
+      <!-- Mobile Navigation -->
+      <nav class="mobile-nav">
+        <button class="btn__mobile-nav" id="btnExpanded">
+          <svg class="sprite sprite--large" role="img">
+            <use href="/assets/img/sprite.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <ul class="mobile-nav__menu">
+          <li
+            class="mobile-nav__links mobile-nav__primary"
+            aria-expanded="false"
+          >
+            <a href="#" class="text-medium-bold"
+              >ADMISSIONS
+              <svg class="sprite sprite--normal" role="img">
+                <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </a>
+            <ul>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link One</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Two</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Three</a>
+              </li>
+            </ul>
+          </li>
+
+          <li
+            class="mobile-nav__links mobile-nav__primary"
+            aria-expanded="false"
+          >
+            <a href="#" class="text-medium-bold"
+              >ACADEMICS
+              <svg class="sprite sprite--normal" role="img">
+                <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </a>
+            <ul>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link One</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Two</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Three</a>
+              </li>
+            </ul>
+          </li>
+
+          <li
+            class="mobile-nav__links mobile-nav__primary"
+            aria-expanded="false"
+          >
+            <a href="#" class="text-medium-bold"
+              >NOTICE
+
+              <svg class="sprite sprite--normal" role="img">
+                <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </a>
+            <ul>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link One</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Two</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Three</a>
+              </li>
+            </ul>
+          </li>
+
+          <li
+            class="mobile-nav__links mobile-nav__primary"
+            aria-expanded="false"
+          >
+            <a href="#" class="text-medium-bold"
+              >ABOUT
+
+              <svg class="sprite sprite--normal" role="img">
+                <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </a>
+            <ul>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link One</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Two</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Three</a>
+              </li>
+            </ul>
+          </li>
+
+          <li
+            class="mobile-nav__links mobile-nav__secondary"
+            aria-expanded="false"
+          >
+            <a href="#" class="text-medium-bold"
+              >Staff
+
+              <svg class="sprite sprite--normal" role="img">
+                <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </a>
+            <ul>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link One</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Two</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Three</a>
+              </li>
+            </ul>
+          </li>
+
+          <li
+            class="mobile-nav__links mobile-nav__secondary"
+            aria-expanded="false"
+          >
+            <a href="#" class="text-medium-bold"
+              >Students
+
+              <svg class="sprite sprite--normal" role="img">
+                <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </a>
+            <ul>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link One</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Two</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Three</a>
+              </li>
+            </ul>
+          </li>
+
+          <li
+            class="mobile-nav__links mobile-nav__secondary"
+            aria-expanded="false"
+          >
+            <a href="#" class="text-medium-bold"
+              >Parents
+
+              <svg class="sprite sprite--normal" role="img">
+                <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </a>
+            <ul>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link One</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Two</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Three</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- End of Mobile Navigation -->
     </header>
     <main>
       <section class="container hero-section">
