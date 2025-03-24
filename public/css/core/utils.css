@@ -17,11 +17,29 @@ li {
 a {
   color: var(--surface-dim);
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 }
 
 /* Utility classes */
 .fix-white-space {
   font-size: 0;
+}
+
+.link-container {
+  position: relative;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* Gradients */

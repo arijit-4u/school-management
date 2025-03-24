@@ -18,7 +18,6 @@
   gap: var(--small);
 }
 
-.logo-square,
 .primary-links {
   display: none;
 }
@@ -37,14 +36,10 @@
 .right-section {
   display: inline-flex;
   align-items: center;
-
-  /* display: grid; */
-  /* grid-template-columns: repeat(2, auto); */
-  /* place-items: center; */
 }
 
 .right-section > * {
-  height: 40%;
+  height: initial;
 }
 
 .top-section {
@@ -88,15 +83,6 @@
 /* @media (min-width: 768px) { } */
 
 @media (min-width: 1024px) {
-  .logo-wide {
-    display: none;
-  }
-
-  .logo-square {
-    width: 100px;
-    display: inline;
-  }
-
   .primary-links {
     display: inline;
   }
@@ -161,6 +147,10 @@
   .top-section {
     padding-left: var(--side-gutter);
     padding-right: var(--side-gutter);
+  }
+
+  .right-section > * {
+    height: 35%;
   }
 
   .secondary-links {
