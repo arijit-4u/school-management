@@ -6,10 +6,6 @@ img {
   width: 100%;
 }
 
-li {
-  padding-top: var(--small);
-  padding-bottom: var(--small);
-}
 .grid-wrapper {
   padding: var(--large) var(--side-gutter);
 
@@ -48,6 +44,12 @@ li {
 }
 .text {
   margin-bottom: var(--medium);
+}
+
+.about-aside-top li,
+.about-aside-bottom li {
+  padding-top: var(--small);
+  padding-bottom: var(--small);
 }
 
 .about-aside-top ul:first-of-type {
