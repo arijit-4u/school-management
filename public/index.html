@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/components/footer.css" />
 
     <script src="./js/app.js" defer></script>
-    <script src="./js/mobileNav.js" defer></script>
+    <script src="./js/utils.js" type="module" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -168,16 +168,20 @@
           </ul>
           <search>
             <form
+              id="searchForm"
+              action="/search/"
+              method="get"
               class="search-form"
               aria-selected="false"
-              aria-expanded="true"
             >
               <input
+                id="searchInput"
                 type="search"
                 class="search-box text-small-extra"
                 placeholder="Search..."
               />
               <button
+                id="btnSearch"
                 type="submit"
                 class="btn--search"
                 aria-label="search-button"
