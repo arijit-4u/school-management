@@ -1,8 +1,9 @@
 .breadcrumb {
+  background-color: var(--surface);
   padding-top: var(--small);
   padding-bottom: var(--large-extra);
-  margin-left: var(--side-gutter);
-  margin-right: var(--side-gutter);
+  padding-left: var(--side-gutter);
+  padding-right: var(--side-gutter);
 }
 
 .breadcrumb svg {

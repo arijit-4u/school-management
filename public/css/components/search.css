@@ -6,11 +6,12 @@
 }
 
 .search-form-large {
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
 }
 
 #search-input {
-  width: 690px;
+  width: 100%;
   background-color: var(--surface);
   color: var(--surface-shade);
   padding: var(--small) var(--large);
