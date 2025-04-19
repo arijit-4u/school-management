@@ -38,6 +38,25 @@
   }
 }
 
+.btn__mobile-nav {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn__mobile-nav #btnCollapsed {
+  border-left: 1px solid var(--surface-shade);
+  padding: 0 var(--medium);
+}
+
+.btn__mobile-nav svg {
+  vertical-align: bottom;
+}
+
+.btn__mobile-nav:hover svg {
+  fill: var(--surface);
+}
+
 .mobile-nav__menu {
   margin-top: 80px;
 }
@@ -80,7 +99,8 @@
 }
 
 @media (min-width: 1280px) {
-  .mobile-nav {
+  .mobile-nav,
+  .btn__mobile-nav {
     display: none;
   }
 }

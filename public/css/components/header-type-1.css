@@ -57,25 +57,6 @@
   display: none;
 }
 
-.btn__mobile-nav {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.btn__mobile-nav #btnCollapsed {
-  border-left: 1px solid var(--surface-shade);
-  padding: 0 var(--medium);
-}
-
-.btn__mobile-nav svg {
-  vertical-align: bottom;
-}
-
-.btn__mobile-nav:hover svg {
-  fill: var(--surface);
-}
-
 /* Responsive */
 
 /* @media (min-width: 475px) { } */
@@ -218,10 +199,6 @@
 
   .sub-menu__right a {
     color: var(--red-dim);
-  }
-
-  .btn__mobile-nav {
-    display: none;
   }
 }
 
