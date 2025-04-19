@@ -2,14 +2,6 @@ main {
   background-color: var(--surface);
 }
 
-/********** search box (overidden) ******** */
-.search-form-large {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* **************** main area *****************  */
-
 .search-area,
 .results-area {
   width: 100%;

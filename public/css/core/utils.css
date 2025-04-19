@@ -118,6 +118,9 @@ a {
 .section {
   padding: var(--medium) var(--large);
 }
+.section--inline {
+  padding-inline: var(--large);
+}
 
 @media (min-width: 475px) {
   .container {
@@ -150,6 +153,9 @@ a {
 
   .section {
     padding: var(--large-ultimate) var(--side-gutter);
+  }
+  .section--inline {
+    padding-inline: var(--side-gutter);
   }
 }
 
