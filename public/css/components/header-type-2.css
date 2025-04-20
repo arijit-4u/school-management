@@ -23,70 +23,6 @@
   display: none;
 }
 
-.nav-links {
-  display: inline-block;
-  position: relative;
-  padding: var(--small) var(--medium);
-  border-right: 1px solid var(--surface-shade);
-  cursor: pointer;
-
-  svg {
-    margin-left: var(--small-extra);
-    vertical-align: bottom;
-  }
-
-  &:last-child {
-    border-right: 0;
-  }
-
-  &:hover {
-    background-color: var(--red-shade);
-    .sub-menu {
-      display: block;
-    }
-  }
-}
-
-/* =============================================
- * Sub Menu
- * ===========================================*/
-
-.sub-menu {
-  display: none;
-  z-index: 1;
-  min-width: 180px;
-
-  background-color: var(--surface);
-  border-bottom-left-radius: var(--rounded-normal);
-  border-bottom-right-radius: var(--rounded-normal);
-
-  position: absolute;
-  top: 100%;
-  left: 0;
-
-  a {
-    color: var(--red-dim);
-  }
-
-  > li {
-    cursor: pointer;
-    padding: var(--small) var(--medium);
-
-    &:hover {
-      background-color: var(--red-shade-light);
-
-      a {
-        color: var(--surface);
-      }
-
-      &:last-child {
-        border-bottom-left-radius: var(--rounded-normal);
-        border-bottom-right-radius: var(--rounded-normal);
-      }
-    }
-  }
-}
-
 /* =============================================
  * Responsive
  * ===========================================*/
@@ -139,7 +75,7 @@
 
 @media (min-width: 1280px) {
   .main-nav {
-    padding: var(--large-ultimate) var(--side-gutter);
+    padding-inline: var(--side-gutter);
   }
 }
 
