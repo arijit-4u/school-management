@@ -74,13 +74,13 @@ a {
 }
 
 .sprite--light {
-  fill: var(--surface);
   --svg-fill: var(--surface);
+  fill: var(--svg-fill--ov, var(--svg-fill));
 }
 
 .sprite--dark {
-  fill: var(--neutral);
   --svg-fill: var(--neutral);
+  fill: var(--svg-fill--ov, var(--svg-fill));
 }
 
 .sprite--bold {

@@ -1,7 +1,11 @@
 .nav-links {
+  color: var(--surface);
   position: relative;
   padding: var(--small) var(--medium);
-  cursor: pointer;
+
+  a {
+    color: inherit;
+  }
 
   svg {
     margin-left: var(--small-extra);
@@ -9,7 +13,7 @@
   }
 
   &:hover {
-    background-color: var(--red-shade);
+    --svg-fill--ov: var(--red-shade-light);
     .sub-menu {
       display: block;
     }
@@ -23,6 +27,10 @@
   &:last-child {
     border-right: 0;
   }
+
+  &:hover {
+    color: var(--red-shade-light);
+  }
 }
 
 .nav-links--alt {
@@ -34,5 +42,9 @@
   &:first-child {
     border-top-left-radius: var(--rounded-normal);
     border-bottom-left-radius: var(--rounded-normal);
+  }
+
+  &:hover {
+    background-color: var(--red-shade);
   }
 }
