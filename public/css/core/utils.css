@@ -118,6 +118,7 @@ a {
 .section {
   padding: var(--medium) var(--large);
 }
+
 .section--inline {
   padding-inline: var(--large);
 }
@@ -144,6 +145,14 @@ a {
   .container {
     max-width: 1024px;
   }
+
+  .section {
+    padding: var(--large-ultimate);
+  }
+
+  .section--inline {
+    padding-inline: var(--large-ultimate);
+  }
 }
 
 @media (min-width: 1280px) {
@@ -154,6 +163,7 @@ a {
   .section {
     padding: var(--large-ultimate) var(--side-gutter);
   }
+
   .section--inline {
     padding-inline: var(--side-gutter);
   }
