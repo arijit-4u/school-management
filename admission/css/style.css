@@ -1,6 +1,9 @@
+main {
+  background: var(--surface);
+}
+
 /* HERO SECTION */
 .hero {
-  background: var(--surface-dim);
   padding: 0 var(--side-gutter);
 }
 
@@ -19,6 +22,8 @@
 
 .admission-cards {
   display: flex;
+  gap: var(--large-ultimate);
+  flex-direction: column;
   justify-content: space-evenly;
 }
 
@@ -26,8 +31,12 @@
   margin-bottom: var(--medium);
 }
 
-.admission-card p {
+.admission-card__title {
   margin-bottom: var(--small-extra);
+}
+
+.admission-card__subtitle {
+  margin-bottom: var(--small);
 }
 
 .admission-card__list {
@@ -43,21 +52,25 @@
 /* FAQ SECTION */
 .faq {
   padding: var(--large-ultimate) var(--side-gutter);
-  background: var(--surface-dim);
   color: var(--neutral);
 }
+
 .faq svg {
   fill: var(--neutral);
 }
+
 .faq h2 {
+  word-spacing: var(--small-extra);
   padding: var(--small-extra) 0;
   margin-bottom: var(--large);
 }
+
 .faq details {
   margin-bottom: var(--large);
   border: 2px solid var(--neutral);
   box-shadow: var(--drop-shadow);
 }
+
 .faq summary {
   padding-top: var(--small);
   padding-left: var(--large-ultimate);
@@ -66,9 +79,11 @@
   background: var(--surface-mute);
   position: relative;
 }
+
 .faq summary::marker {
   content: none;
 }
+
 .faq summary::before {
   content: url(../../assets/svg/icon-plus.svg);
   height: var(--medium);
@@ -77,6 +92,7 @@
   left: var(--small);
   top: var(--small);
 }
+
 .faq summary::after {
   content: url(../../assets/svg/icon-plus.svg);
   height: var(--medium);
@@ -84,10 +100,12 @@
   position: absolute;
   right: var(--small);
 }
+
 .faq p {
   padding: var(--small) var(--large-extra);
   background: var(--surface-dim);
 }
+
 .faq details[open] summary::before {
   content: url(../../assets/svg/icon-cross.svg);
   height: var(--medium);
@@ -96,6 +114,7 @@
   left: var(--small);
   top: var(--small);
 }
+
 .faq details[open] summary::after {
   content: url(../../assets/svg/icon-cross.svg);
   height: var(--medium);
@@ -103,3 +122,36 @@
   position: absolute;
   right: var(--small);
 }
+
+/*
+* Responsive
+*/
+/* @media (min-width: 475px) { } */
+
+@media (min-width: 640px) {
+  .admission-card {
+    display: grid;
+    grid-template-rows: repeat(2, min-content) 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 1.6em;
+  }
+
+  .admission-card-img {
+    grid-row: span 3;
+  }
+}
+
+/* @media (min-width: 768px) { } */
+
+@media (min-width: 1024px) {
+  .admission-cards {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .admission-card {
+    display: block;
+  }
+}
+
+/* @media (min-width: 1280px) { } */
