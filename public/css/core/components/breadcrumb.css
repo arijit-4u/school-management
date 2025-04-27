@@ -23,3 +23,11 @@
 .breadcrumb-link:first-child svg {
   fill: var(--red);
 }
+
+.breadcrumb-link:last-child {
+  color: var(--surface-shade);
+}
+
+.breadcrumb-link:last-child svg {
+  fill: var(--surface-shade);
+}

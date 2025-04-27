@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg
-	xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg">
+
+	<symbol id="sidebar-menu" viewBox="0 0 16 13.5">
+	  <rect x="3" y="3" width="1.5" height="1.5" fill="currentColor"/>
+	  <rect x="3" y="6" width="1.5" height="1.5" fill="currentColor"/>
+	  <rect x="3" y="9" width="1.5" height="1.5" fill="currentColor"/>
+	  <path d="M15,0H1A1,1,0,0,0,0,1V12.5a1,1,0,0,0,1,1H15a1,1,0,0,0,1-1V1A1,1,0,0,0,15,0ZM1.5,1.5H6V12H1.5ZM14.5,12h-7V1.5h7Z" fill="currentColor"/>
+	</symbol>
 	<symbol id="carousel_arrow-left" viewBox="0 0 36 36">
 		<path d="M13.656 18.25 19.835 6l2.26 1.906-5.01 10.344 5.01 10.535-2.26 1.715z"/>
 	</symbol>
