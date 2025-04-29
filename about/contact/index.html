@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/css/base.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="/public/js/utils.js" type="module" defer></script>
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header class="container">
+      <!-- Info Section -->
+      <ul class="top-section section--inline">
+        <li>
+          <a
+            class="text-small-extra-bold"
+            href="mailto:info@school.edu.in"
+            aria-label="school email address"
+          >
+            <svg class="sprite sprite--light sprite--normal" role="img">
+              <use href="/assets/img/sprite.svg#icon-mail-o"></use>
+            </svg>
+            info@school.edu.in</a
+          >
+        </li>
+        <li>
+          <a
+            class="text-small-extra-bold"
+            href="tel:+913385858888"
+            aria-label="school telephone number"
+          >
+            <svg class="sprite sprite--light sprite--normal" role="img">
+              <use href="/assets/img/sprite.svg#icon-phone-o"></use>
+            </svg>
+            +91-33-8585-8888</a
+          >
+        </li>
+      </ul>
+      <!-- End of Info Section -->
+
+      <!-- Header Navigation -->
+      <nav class="main-nav section--inline">
+        <div class="left-section">
+          <a href="/public/" aria-label="home page">
+            <img src="/assets/img/logo.png" alt="logo" class="logo-square" />
+            <img
+              src="https://dummyimage.com/140x60/eee/aaa "
+              alt="logo"
+              class="logo-wide"
+          /></a>
+          <ul class="primary-links fix-white-space">
+            <li class="nav-links nav-links--main text-medium-bold">
+              <a href="/admission/"
+                >ADMISSIONS
+                <svg class="sprite sprite--light sprite--normal" role="img">
+                  <use
+                    href="/assets/img/sprite.svg#icon-chevron-down-short"
+                  ></use></svg
+              ></a>
+              <div class="sub-menu-wrapper">
+                <ul class="sub-menu">
+                  <li><a href="#" class="text-small-extra">List item 1</a></li>
+                  <li><a href="#" class="text-small-extra">List item 2</a></li>
+                  <li><a href="#" class="text-small-extra">List item 3</a></li>
+                  <li><a href="#" class="text-small-extra">List item 4</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-links nav-links--main text-medium-bold">
+              <a href="#"
+                >ACADEMICS
+                <svg class="sprite sprite--light sprite--normal" role="img">
+                  <use
+                    href="/assets/img/sprite.svg#icon-chevron-down-short"
+                  ></use></svg
+              ></a>
+              <div class="sub-menu-wrapper">
+                <ul class="sub-menu">
+                  <li><a href="#" class="text-small-extra">List item 1</a></li>
+                  <li><a href="#" class="text-small-extra">List item 2</a></li>
+                  <li><a href="#" class="text-small-extra">List item 3</a></li>
+                  <li><a href="#" class="text-small-extra">List item 4</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-links nav-links--main text-medium-bold">
+              <a href="/notice/"
+                >NOTICE
+                <svg class="sprite sprite--light sprite--normal" role="img">
+                  <use
+                    href="/assets/img/sprite.svg#icon-chevron-down-short"
+                  ></use></svg
+              ></a>
+              <div class="sub-menu-wrapper">
+                <ul class="sub-menu">
+                  <li><a href="#" class="text-small-extra">List item 1</a></li>
+                  <li><a href="#" class="text-small-extra">List item 2</a></li>
+                  <li><a href="#" class="text-small-extra">List item 3</a></li>
+                  <li><a href="#" class="text-small-extra">List item 4</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-links nav-links--main text-medium-bold">
+              <a href="/about/"
+                >ABOUT
+                <svg class="sprite sprite--light sprite--normal" role="img">
+                  <use
+                    href="/assets/img/sprite.svg#icon-chevron-down-short"
+                  ></use></svg
+              ></a>
+              <div class="sub-menu-wrapper">
+                <ul class="sub-menu">
+                  <li>
+                    <a href="/about/contact/" class="text-small-extra"
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li><a href="#" class="text-small-extra">List item 2</a></li>
+                  <li><a href="#" class="text-small-extra">List item 3</a></li>
+                  <li><a href="#" class="text-small-extra">List item 4</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="right-section">
+          <ul class="secondary-links fix-white-space">
+            <li class="nav-links nav-links--alt text-small-extra">
+              <a href="#">Staff</a>
+              <svg class="sprite sprite--light sprite--small" role="img">
+                <use
+                  href="/assets/img/sprite.svg#icon-chevron-down-short"
+                ></use>
+              </svg>
+            </li>
+            <li class="nav-links nav-links--alt text-small-extra">
+              <a href="#">Students</a>
+              <svg class="sprite sprite--light sprite--small" role="img">
+                <use
+                  href="/assets/img/sprite.svg#icon-chevron-down-short"
+                ></use>
+              </svg>
+            </li>
+            <li class="nav-links nav-links--alt text-small-extra">
+              <a href="#">Parents</a>
+              <svg class="sprite sprite--light sprite--small" role="img">
+                <use
+                  href="/assets/img/sprite.svg#icon-chevron-down-short"
+                ></use>
+              </svg>
+            </li>
+          </ul>
+          <search>
+            <form
+              id="searchForm"
+              action="/search/"
+              method="get"
+              class="search-form"
+              aria-selected="false"
+            >
+              <input
+                id="searchInput"
+                type="search"
+                class="search-box text-small-extra"
+                placeholder="Search..."
+              />
+              <button
+                id="btnSearch"
+                type="submit"
+                class="btn--search"
+                aria-label="search-button"
+              >
+                <svg
+                  class="sprite sprite--bold sprite--light sprite--medium"
+                  role="img"
+                >
+                  <use href="/assets/img/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+          </search>
+          <button class="btn__mobile-nav" id="btnCollapsed">
+            <svg class="sprite sprite--light sprite--medium" role="img">
+              <use href="/assets/img/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+      </nav>
+      <!-- End of Header Navigation -->
+
+      <!-- Mobile Navigation -->
+      <nav class="mobile-nav">
+        <button class="btn__mobile-nav" id="btnExpanded">
+          <svg class="sprite sprite--light sprite--large" role="img">
+            <use href="/assets/img/sprite.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <ul class="mobile-nav__menu">
+          <li
+            class="mobile-nav__links mobile-nav__primary"
+            aria-expanded="false"
+          >
+            <a href="#" class="text-medium-bold"
+              >ADMISSIONS
+              <svg class="sprite sprite--light sprite--normal" role="img">
+                <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </a>
+            <ul>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link One</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Two</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Three</a>
+              </li>
+            </ul>
+          </li>
+
+          <li
+            class="mobile-nav__links mobile-nav__primary"
+            aria-expanded="false"
+          >
+            <a href="#" class="text-medium-bold"
+              >ACADEMICS
+              <svg class="sprite sprite--light sprite--normal" role="img">
+                <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </a>
+            <ul>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link One</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Two</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Three</a>
+              </li>
+            </ul>
+          </li>
+
+          <li
+            class="mobile-nav__links mobile-nav__primary"
+            aria-expanded="false"
+          >
+            <a href="#" class="text-medium-bold"
+              >NOTICE
+
+              <svg class="sprite sprite--light sprite--normal" role="img">
+                <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </a>
+            <ul>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link One</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Two</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Three</a>
+              </li>
+            </ul>
+          </li>
+
+          <li
+            class="mobile-nav__links mobile-nav__primary"
+            aria-expanded="false"
+          >
+            <a href="#" class="text-medium-bold"
+              >ABOUT
+
+              <svg class="sprite sprite--light sprite--normal" role="img">
+                <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </a>
+            <ul>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link One</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Two</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Three</a>
+              </li>
+            </ul>
+          </li>
+
+          <li
+            class="mobile-nav__links mobile-nav__secondary"
+            aria-expanded="false"
+          >
+            <a href="#" class="text-medium-bold"
+              >Staff
+
+              <svg class="sprite sprite--light sprite--normal" role="img">
+                <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </a>
+            <ul>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link One</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Two</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Three</a>
+              </li>
+            </ul>
+          </li>
+
+          <li
+            class="mobile-nav__links mobile-nav__secondary"
+            aria-expanded="false"
+          >
+            <a href="#" class="text-medium-bold"
+              >Students
+
+              <svg class="sprite sprite--light sprite--normal" role="img">
+                <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </a>
+            <ul>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link One</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Two</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Three</a>
+              </li>
+            </ul>
+          </li>
+
+          <li
+            class="mobile-nav__links mobile-nav__secondary"
+            aria-expanded="false"
+          >
+            <a href="#" class="text-medium-bold"
+              >Parents
+
+              <svg class="sprite sprite--light sprite--normal" role="img">
+                <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </a>
+            <ul>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link One</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Two</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Three</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- End of Mobile Navigation -->
+    </header>
+
+    <main class="container">
+      <section class="hero-section section--inline">
+        <nav class="breadcrumb">
+          <ul>
+            <li class="breadcrumb-link">
+              <a href="#" class="text-small-extra-bold">Home</a>
+              <svg class="sprite sprite--normal" role="img">
+                <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-link">
+              <a href="#" class="text-small-extra">About</a>
+              <svg class="sprite sprite--dark sprite--normal" role="img">
+                <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-link">
+              <span class="text-small-extra">Contact</span>
+              <svg class="sprite sprite--dark sprite--normal" role="img">
+                <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
+              </svg>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <section class="container section search">
+        <form action="get" class="search-form-large">
+          <input
+            type="search"
+            name="search-input"
+            id="search-input"
+            class="text-small"
+            placeholder="Can’t Find What You’re Looking For?"
+          />
+          <button class="text-medium btn-submit">Search</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="container section footer">
+      <div class="social-media separator-gradient-block">
+        <p class="text-small-bold">CONNECT WITH US</p>
+        <span>
+          <svg class="sprite sprite--light sprite--medium">
+            <use href="/assets/img/sprite.svg#icon-whatsapp-o"></use>
+          </svg>
+          <svg class="sprite sprite--light sprite--medium">
+            <use href="/assets/img/sprite.svg#icon-youtube-o"></use>
+          </svg>
+          <svg class="sprite sprite--light sprite--medium">
+            <use href="/assets/img/sprite.svg#icon-facebook-o"></use>
+          </svg>
+        </span>
+      </div>
+
+      <section class="footer__links">
+        <div class="footer-content-wrapper separator-gradient-inline">
+          <img src="/assets/img/logo.png" alt="logo" class="logo__footer" />
+          <h2 class="heading-2 title__footer">
+            Public High School<br />
+            (Higher Secondary)
+          </h2>
+          <div class="location-wrapper">
+            <svg class="sprite sprite--light sprite--normal">
+              <use href="/assets/img/sprite.svg#icon-location-filled"></use>
+            </svg>
+            <p class="text-small">
+              DUMDUM SOUTH, NORTH<br />TWENTY FOUR PARGANAS<br />West Bengal -
+              700 003
+            </p>
+          </div>
+        </div>
+        <div class="footer-link-container separator-gradient-inline">
+          <h3 class="text-medium-bold">
+            Section Header
+            <svg class="sprite sprite--light sprite--normal">
+              <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
+            </svg>
+          </h3>
+          <ul>
+            <li class="text-small">Link One</li>
+            <li class="text-small">Link Two</li>
+            <li class="text-small">Link Three</li>
+          </ul>
+        </div>
+        <div class="footer-link-container separator-gradient-inline">
+          <h3 class="text-medium-bold">
+            Section Header
+            <svg class="sprite sprite--light sprite--normal">
+              <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
+            </svg>
+          </h3>
+          <ul>
+            <li class="text-small">Link One</li>
+            <li class="text-small">Link Two</li>
+            <li class="text-small">Link Three</li>
+          </ul>
+        </div>
+        <div class="footer-link-container">
+          <h3 class="text-medium-bold">
+            Section Header
+            <svg class="sprite sprite--light sprite--normal">
+              <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
+            </svg>
+          </h3>
+          <ul>
+            <li class="text-small">Link One</li>
+            <li class="text-small">Link Two</li>
+            <li class="text-small">Link Three</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="footer__nav separator-gradient-block">
+        <p class="text-small-extra">&copy;Public High School 2024</p>
+        <nav>
+          <ul>
+            <li class="text-small-extra">Contact us</li>
+            <li class="text-small-extra">About this site</li>
+            <li class="text-small-extra">Legal</li>
+            <li class="text-small-extra">Privacy Policy</li>
+            <li class="text-small-extra">Cookie Settings</li>
+            <li class="text-small-extra">Accessibility Statement</li>
+          </ul>
+        </nav>
+      </section>
+    </footer>
+  </body>
+</html>
