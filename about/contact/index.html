@@ -394,6 +394,60 @@
             </li>
           </ul>
         </nav>
+
+        <h1 class="heading-2 page-heading">Contact Us</h1>
+        <div class="wrapper">
+          <p class="text-medium">
+            Would you like to contact us? You can enter below your details and
+            we will contact you!
+          </p>
+
+          <form action="POST" class="form-contact">
+            <label for="fname" class="text-large col-1">Name</label>
+            <input
+              required
+              type="text"
+              name=""
+              id="fname"
+              class="text-medium col-1"
+              placeholder="John"
+            />
+
+            <label for="lname" class="text-large col-2">Surname</label>
+            <input
+              required
+              type="text"
+              name=""
+              id="lname"
+              class="text-medium col-2"
+              placeholder="Doe"
+            />
+
+            <label for="email" class="text-large">Email</label>
+            <input
+              required
+              type="email"
+              name=""
+              id="email"
+              class="text-medium"
+              placeholder="email.id@domain.name"
+            />
+
+            <label for="msg" class="text-large">Message</label>
+            <textarea
+              required
+              id="msg"
+              class="text-medium"
+              placeholder="I am wrting to you about ..."
+            ></textarea>
+
+            <button type="submit" id="btn btn-submit" class="text-large-bold">
+              Send Message
+            </button>
+          </form>
+
+          <img class="img-map" src="/about/img/map.png" alt="Local Map." />
+        </div>
       </section>
 
       <section class="container section search">
