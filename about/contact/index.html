@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css" />
 
     <script src="/public/js/utils.js" type="module" defer></script>
-    <title>Search Page</title>
+    <title>Contact Us</title>
   </head>
   <body>
     <header class="container">
@@ -113,7 +113,11 @@
               ></a>
               <div class="sub-menu-wrapper">
                 <ul class="sub-menu">
-                  <li><a href="#" class="text-small-extra">List item 1</a></li>
+                  <li>
+                    <a href="/about/contact/" class="text-small-extra"
+                      >Contact Us</a
+                    >
+                  </li>
                   <li><a href="#" class="text-small-extra">List item 2</a></li>
                   <li><a href="#" class="text-small-extra">List item 3</a></li>
                   <li><a href="#" class="text-small-extra">List item 4</a></li>
@@ -366,28 +370,87 @@
       <!-- End of Mobile Navigation -->
     </header>
 
-    <main class="container section--inline">
-      <!-- Breadcrumb Navigation -->
-      <nav class="breadcrumb">
-        <ul>
-          <li class="breadcrumb-link">
-            <a href="#" class="text-small-extra-bold">Home</a>
-            <svg class="sprite sprite--normal" role="img">
-              <use href="../assets/img/sprite.svg#icon-chevron-right"></use>
-            </svg>
-          </li>
-          <li class="breadcrumb-link">
-            <a href="#" class="text-small-extra">Search</a>
-            <svg class="sprite sprite--normal" role="img">
-              <use href="../assets/img/sprite.svg#icon-chevron-right"></use>
-            </svg>
-          </li>
-        </ul>
-      </nav>
-      <!-- End of Breadcrumb Navigation -->
+    <main class="container">
+      <section class="hero-section section--inline">
+        <nav class="breadcrumb">
+          <ul>
+            <li class="breadcrumb-link">
+              <a href="#" class="text-small-extra-bold">Home</a>
+              <svg class="sprite sprite--normal" role="img">
+                <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-link">
+              <a href="#" class="text-small-extra">About</a>
+              <svg class="sprite sprite--dark sprite--normal" role="img">
+                <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-link">
+              <span class="text-small-extra">Contact</span>
+              <svg class="sprite sprite--dark sprite--normal" role="img">
+                <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
+              </svg>
+            </li>
+          </ul>
+        </nav>
 
-      <section class="search-area">
-        <h1 class="heading-1">Searching in Public High School</h1>
+        <h1 class="heading-2 page-heading">Contact Us</h1>
+        <div class="wrapper">
+          <p class="text-medium">
+            Would you like to contact us? You can enter below your details and
+            we will contact you!
+          </p>
+
+          <form action="POST" class="form-contact">
+            <label for="fname" class="text-large col-1">Name</label>
+            <input
+              required
+              type="text"
+              name=""
+              id="fname"
+              class="text-medium col-1"
+              placeholder="John"
+            />
+
+            <label for="lname" class="text-large col-2">Surname</label>
+            <input
+              required
+              type="text"
+              name=""
+              id="lname"
+              class="text-medium col-2"
+              placeholder="Doe"
+            />
+
+            <label for="email" class="text-large">Email</label>
+            <input
+              required
+              type="email"
+              name=""
+              id="email"
+              class="text-medium"
+              placeholder="email.id@domain.name"
+            />
+
+            <label for="msg" class="text-large">Message</label>
+            <textarea
+              required
+              id="msg"
+              class="text-medium"
+              placeholder="I am wrting to you about ..."
+            ></textarea>
+
+            <button type="submit" id="btn btn-submit" class="text-large-bold">
+              Send Message
+            </button>
+          </form>
+
+          <img class="img-map" src="/about/img/map.png" alt="Local Map." />
+        </div>
+      </section>
+
+      <section class="container section search">
         <form action="get" class="search-form-large">
           <input
             type="search"
@@ -399,102 +462,10 @@
           <button class="text-medium btn-submit">Search</button>
         </form>
       </section>
-
-      <section class="results-area">
-        <ul class="search-tab">
-          <li class="active text-small-bold">All</li>
-          <li class="text-small-bold">People</li>
-          <li class="text-small-bold">Images</li>
-        </ul>
-        <div>
-          <ul>
-            <li>
-              <div class="result-link">
-                <a href="#" class="text-medium-bold link-large">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </a>
-                <a href="#" class="text-small-extra link-small">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </a>
-              </div>
-              <p class="text-medium link-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
-            </li>
-            <li>
-              <div class="result-link">
-                <a href="#" class="text-medium-bold link-large">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </a>
-                <a href="#" class="text-small-extra link-small">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </a>
-              </div>
-              <p class="text-medium link-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
-            </li>
-            <li>
-              <div class="result-link">
-                <a href="#" class="text-medium-bold link-large">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </a>
-                <a href="#" class="text-small-extra link-small">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </a>
-              </div>
-              <p class="text-medium link-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
-            </li>
-            <li>
-              <div class="result-link">
-                <a href="#" class="text-medium-bold link-large">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </a>
-                <a href="#" class="text-small-extra link-small">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </a>
-              </div>
-              <p class="text-medium link-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
-            </li>
-            <li>
-              <div class="result-link">
-                <a href="#" class="text-medium-bold link-large">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </a>
-                <a href="#" class="text-small-extra link-small">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </a>
-              </div>
-              <p class="text-medium link-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div class="pagination">
-          <button class="pagination-btn text-medium">
-            <svg class="sprite sprite--light sprite--normal" role="img">
-              <use href="../assets/img/sprite.svg#icon-chevron-left"></use>
-            </svg>
-            Prev
-          </button>
-          <span class="text-large">Page 1</span>
-          <button class="pagination-btn text-medium">
-            Next
-            <svg class="sprite sprite--light sprite--normal" role="img">
-              <use href="../assets/img/sprite.svg#icon-chevron-right"></use>
-            </svg>
-          </button>
-        </div>
-      </section>
     </main>
 
     <footer class="container section footer">
-      <div class="social-media">
+      <div class="social-media separator-gradient-block">
         <p class="text-small-bold">CONNECT WITH US</p>
         <span>
           <svg class="sprite sprite--light sprite--medium">

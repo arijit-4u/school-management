@@ -17,7 +17,6 @@
 
   padding-top: var(--large-extra);
   padding-bottom: var(--large-extra);
-  border-top: 2px solid;
 }
 
 .footer__links {
@@ -84,7 +83,6 @@
 
 .footer__nav {
   padding-top: var(--large-extra);
-  border-top: 2px solid;
 }
 
 /* Responsive */

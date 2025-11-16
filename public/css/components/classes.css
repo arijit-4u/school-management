@@ -2,10 +2,6 @@
   background: var(--surface-dim);
 }
 
-.classes-section svg {
-  fill: var(--neutral);
-}
-
 .section__title {
   display: inline-block;
   color: var(--neutral);

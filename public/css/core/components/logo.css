@@ -1,0 +1,14 @@
+.logo-square {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .logo-wide {
+    display: none;
+  }
+
+  .logo-square {
+    width: 100px;
+    display: inline;
+  }
+}

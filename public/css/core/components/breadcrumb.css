@@ -1,13 +1,10 @@
 .breadcrumb {
+  background-color: var(--surface);
   padding-top: var(--small);
   padding-bottom: var(--large-extra);
-  margin-left: var(--side-gutter);
-  margin-right: var(--side-gutter);
-  /* margin-bottom: var(--large); */
 }
 
 .breadcrumb svg {
-  fill: var(--neutral);
   vertical-align: bottom;
 }
 
@@ -25,4 +22,12 @@
 
 .breadcrumb-link:first-child svg {
   fill: var(--red);
+}
+
+.breadcrumb-link:last-child {
+  color: var(--surface-shade);
+}
+
+.breadcrumb-link:last-child svg {
+  fill: var(--surface-shade);
 }

@@ -1,0 +1,46 @@
+/* =============================================
+ * Sub Menu Dropdown
+ * ===========================================*/
+.sub-menu-wrapper {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+.sub-menu {
+  display: none;
+  min-width: 180px;
+  border-radius: var(--rounded-normal);
+
+  margin: 0.4em 0;
+  margin-left: var(--medium);
+  background-color: var(--surface);
+  box-shadow: var(--drop-shadow);
+
+  a {
+    color: var(--red-dim);
+  }
+
+  > li {
+    cursor: pointer;
+    padding: var(--small) var(--medium);
+
+    &:hover {
+      background-color: var(--red-shade-light);
+      a {
+        color: var(--surface);
+      }
+    }
+
+    &:first-child {
+      border-top-left-radius: var(--rounded-normal);
+      border-top-right-radius: var(--rounded-normal);
+    }
+
+    &:last-child {
+      border-bottom-left-radius: var(--rounded-normal);
+      border-bottom-right-radius: var(--rounded-normal);
+    }
+  }
+}

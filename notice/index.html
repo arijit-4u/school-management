@@ -3,134 +3,368 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../public/css/utils/global.css" />
-    <link rel="stylesheet" href="../public/css/utils/variables.css" />
-    <link rel="stylesheet" href="../public/css/utils/fonts.css" />
-    <link rel="stylesheet" href="../public/css/utils/search-box.css" />
-    <link rel="stylesheet" href="../public/css/utils/breadcrumb.css" />
-    <link rel="stylesheet" href="../public/css/utils/events.css" />
-    <link rel="stylesheet" href="../public/css/components/header-type-2.css" />
-    <link rel="stylesheet" href="../public/css/components/search.css" />
-    <link rel="stylesheet" href="../public/css/components/footer.css" />
+    <link rel="stylesheet" href="/public/css/base.css" />
+    <link rel="stylesheet" href="./css/components.css" />
     <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="/public/js/utils.js" type="module" defer></script>
     <script src="./js/script.js" defer></script>
     <title>Notice</title>
   </head>
   <body>
-    <header class="header">
-      <a href="../public/">
-        <img
-          src="../assets/img/logo.png"
-          alt="logo"
-          class="logo"
-          width="100"
-          height="100"
-        />
-      </a>
-      <nav class="main-nav">
-        <div class="top-container">
-          <ul class="auxiliary-links">
-            <li class="nav-links text-small">
-              <a href="/admission/">ADMISSIONS</a>
-              <svg class="sprite sprite--normal" role="img">
-                <use
-                  href="../assets/img/sprite.svg#icon-chevron-down-short"
-                ></use>
+    <header class="container">
+      <!-- Header Navigation -->
+      <nav class="main-nav section--inline">
+        <div class="nav-wrapper">
+          <a href="/public/" class="logo-wrapper" aria-label="home page">
+            <img src="/assets/img/logo.png" alt="logo" class="logo-square" />
+            <img
+              src="https://dummyimage.com/140x60/eee/aaa"
+              alt="logo"
+              class="logo-wide"
+            />
+          </a>
+
+          <div class="top-container">
+            <ul class="fix-white-space">
+              <li class="nav-links nav-links--main text-small">
+                <a href="/admission/">ADMISSIONS</a>
+                <svg class="sprite sprite--light sprite--small" role="img">
+                  <use
+                    href="/assets/img/sprite.svg#icon-chevron-down-short"
+                  ></use>
+                </svg>
+              </li>
+              <li class="nav-links nav-links--main text-small">
+                <a href="#">ACADEMICS</a>
+                <svg class="sprite sprite--light sprite--small" role="img">
+                  <use
+                    href="/assets/img/sprite.svg#icon-chevron-down-short"
+                  ></use>
+                </svg>
+              </li>
+              <li class="nav-links nav-links--main text-small">
+                <a href="/notice/">NOTICE</a>
+                <svg class="sprite sprite--light sprite--small" role="img">
+                  <use
+                    href="/assets/img/sprite.svg#icon-chevron-down-short"
+                  ></use>
+                </svg>
+              </li>
+              <li class="nav-links nav-links--main text-small">
+                <a href="/about/">ABOUT</a>
+                <svg class="sprite sprite--light sprite--small" role="img">
+                  <use
+                    href="/assets/img/sprite.svg#icon-chevron-down-short"
+                  ></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bottom-container">
+            <h2 class="heading-2 nav-heading">NOTICE</h2>
+            <img
+              src="/assets/img/SeparatorChevron.png"
+              alt=""
+              class="separator-img"
+            />
+            <ul class="fix-white-space">
+              <li class="nav-links nav-links--main text-large">
+                <a href="#"
+                  >Link One
+                  <svg class="sprite sprite--light sprite--normal" role="img">
+                    <use
+                      href="/assets/img/sprite.svg#icon-chevron-down-short"
+                    ></use></svg
+                ></a>
+                <div class="sub-menu-wrapper">
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="#" class="text-small-extra">List item 1</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-small-extra">List item 2</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-small-extra">List item 3</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-small-extra">List item 4</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-links nav-links--main text-large">
+                <a href="#"
+                  >Link Two
+                  <svg class="sprite sprite--light sprite--normal" role="img">
+                    <use
+                      href="/assets/img/sprite.svg#icon-chevron-down-short"
+                    ></use></svg
+                ></a>
+                <div class="sub-menu-wrapper">
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="#" class="text-small-extra">List item 1</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-small-extra">List item 2</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-small-extra">List item 3</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-small-extra">List item 4</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-links nav-links--main text-large">
+                <a href="#"
+                  >Link Three
+                  <svg class="sprite sprite--light sprite--normal" role="img">
+                    <use
+                      href="/assets/img/sprite.svg#icon-chevron-down-short"
+                    ></use></svg
+                ></a>
+                <div class="sub-menu-wrapper">
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="#" class="text-small-extra">List item 1</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-small-extra">List item 2</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-small-extra">List item 3</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-small-extra">List item 4</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="search-widget">
+            <search>
+              <form
+                id="searchForm"
+                action="/search/"
+                method="get"
+                class="search-form"
+                aria-selected="false"
+              >
+                <input
+                  id="searchInput"
+                  type="search"
+                  class="search-box text-small-extra"
+                  placeholder="Search..."
+                />
+                <button
+                  id="btnSearch"
+                  type="submit"
+                  class="btn--search"
+                  aria-label="search-button"
+                >
+                  <svg
+                    class="sprite sprite--bold sprite--light sprite--medium"
+                    role="img"
+                  >
+                    <use href="/assets/img/sprite.svg#search"></use>
+                  </svg>
+                </button>
+              </form>
+            </search>
+            <button class="btn__mobile-nav" id="btnCollapsed">
+              <svg class="sprite sprite--light sprite--medium" role="img">
+                <use href="/assets/img/sprite.svg#icon-menu"></use>
               </svg>
-              <ul class="sub-menu">
-                <li><a href="#" class="text-small-extra">List item 1</a></li>
-                <li><a href="#" class="text-small-extra">List item 2</a></li>
-                <li><a href="#" class="text-small-extra">List item 3</a></li>
-                <li><a href="#" class="text-small-extra">List item 4</a></li>
-              </ul>
-            </li>
-            <li class="nav-links text-small">
-              <a href="#">ACADEMICS</a>
-              <svg class="sprite sprite--normal" role="img">
-                <use
-                  href="../assets/img/sprite.svg#icon-chevron-down-short"
-                ></use>
-              </svg>
-              <ul class="sub-menu">
-                <li><a href="#" class="text-small-extra">List item 1</a></li>
-                <li><a href="#" class="text-small-extra">List item 2</a></li>
-                <li><a href="#" class="text-small-extra">List item 3</a></li>
-                <li><a href="#" class="text-small-extra">List item 4</a></li>
-              </ul>
-            </li>
-            <li class="nav-links text-small">
-              <a href="/notice/">NOTICE</a>
-              <svg class="sprite sprite--normal" role="img">
-                <use
-                  href="../assets/img/sprite.svg#icon-chevron-down-short"
-                ></use>
-              </svg>
-              <ul class="sub-menu">
-                <li><a href="#" class="text-small-extra">List item 1</a></li>
-                <li><a href="#" class="text-small-extra">List item 2</a></li>
-                <li><a href="#" class="text-small-extra">List item 3</a></li>
-                <li><a href="#" class="text-small-extra">List item 4</a></li>
-              </ul>
-            </li>
-            <li class="nav-links text-small">
-              <a href="/about/">ABOUT</a>
-              <svg class="sprite sprite--normal" role="img">
-                <use
-                  href="../assets/img/sprite.svg#icon-chevron-down-short"
-                ></use>
-              </svg>
-              <ul class="sub-menu">
-                <li><a href="#" class="text-small-extra">List item 1</a></li>
-                <li><a href="#" class="text-small-extra">List item 2</a></li>
-                <li><a href="#" class="text-small-extra">List item 3</a></li>
-                <li><a href="#" class="text-small-extra">List item 4</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form action="get" class="search-form">
-            <input type="search" class="search-box" placeholder="Search..." />
-            <svg class="sprite sprite--normal" role="img">
-              <use href="../assets/img/sprite.svg#search"></use>
-            </svg>
-          </form>
-        </div>
-        <div class="bottom-container">
-          <h2 class="heading-2 heading-primary">NOTICE</h2>
-          <img
-            src="../assets/img/SeparatorChevron.png"
-            alt="a separator"
-            class="separator-img"
-          />
-          <ul class="primary-links">
-            <li class="text-large">
-              Link One
-              <svg class="sprite sprite--normal" role="img">
-                <use
-                  href="../assets/img/sprite.svg#icon-chevron-down-short"
-                ></use>
-              </svg>
-            </li>
-            <li class="text-large">
-              Link Two
-              <svg class="sprite sprite--normal" role="img">
-                <use
-                  href="../assets/img/sprite.svg#icon-chevron-down-short"
-                ></use>
-              </svg>
-            </li>
-            <li class="text-large">
-              Link Three
-              <svg class="sprite sprite--normal" role="img">
-                <use
-                  href="../assets/img/sprite.svg#icon-chevron-down-short"
-                ></use>
-              </svg>
-            </li>
-          </ul>
+            </button>
+          </div>
         </div>
       </nav>
-    </header>
+      <!-- End of Header Navigation -->
 
+      <!-- Mobile Navigation -->
+      <nav class="mobile-nav">
+        <button class="btn__mobile-nav" id="btnExpanded">
+          <svg class="sprite sprite--light sprite--large" role="img">
+            <use href="/assets/img/sprite.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <ul class="mobile-nav__menu">
+          <li
+            class="mobile-nav__links mobile-nav__primary"
+            aria-expanded="false"
+          >
+            <a href="#" class="text-medium-bold"
+              >ADMISSIONS
+              <svg class="sprite sprite--light sprite--normal" role="img">
+                <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </a>
+            <ul>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link One</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Two</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Three</a>
+              </li>
+            </ul>
+          </li>
+
+          <li
+            class="mobile-nav__links mobile-nav__primary"
+            aria-expanded="false"
+          >
+            <a href="#" class="text-medium-bold"
+              >ACADEMICS
+              <svg class="sprite sprite--light sprite--normal" role="img">
+                <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </a>
+            <ul>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link One</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Two</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Three</a>
+              </li>
+            </ul>
+          </li>
+
+          <li
+            class="mobile-nav__links mobile-nav__primary"
+            aria-expanded="false"
+          >
+            <a href="#" class="text-medium-bold"
+              >NOTICE
+
+              <svg class="sprite sprite--light sprite--normal" role="img">
+                <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </a>
+            <ul>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link One</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Two</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Three</a>
+              </li>
+            </ul>
+          </li>
+
+          <li
+            class="mobile-nav__links mobile-nav__primary"
+            aria-expanded="false"
+          >
+            <a href="#" class="text-medium-bold"
+              >ABOUT
+
+              <svg class="sprite sprite--light sprite--normal" role="img">
+                <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </a>
+            <ul>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link One</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Two</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Three</a>
+              </li>
+            </ul>
+          </li>
+
+          <li
+            class="mobile-nav__links mobile-nav__secondary"
+            aria-expanded="false"
+          >
+            <a href="#" class="text-medium-bold"
+              >Staff
+
+              <svg class="sprite sprite--light sprite--normal" role="img">
+                <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </a>
+            <ul>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link One</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Two</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Three</a>
+              </li>
+            </ul>
+          </li>
+
+          <li
+            class="mobile-nav__links mobile-nav__secondary"
+            aria-expanded="false"
+          >
+            <a href="#" class="text-medium-bold"
+              >Students
+
+              <svg class="sprite sprite--light sprite--normal" role="img">
+                <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </a>
+            <ul>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link One</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Two</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Three</a>
+              </li>
+            </ul>
+          </li>
+
+          <li
+            class="mobile-nav__links mobile-nav__secondary"
+            aria-expanded="false"
+          >
+            <a href="#" class="text-medium-bold"
+              >Parents
+
+              <svg class="sprite sprite--light sprite--normal" role="img">
+                <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </a>
+            <ul>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link One</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Two</a>
+              </li>
+              <li class="mobile-nav__sub-links text-small-extra">
+                <a href="#">Link Three</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- End of Mobile Navigation -->
+    </header>
     <main>
       <nav class="breadcrumb">
         <ul>
@@ -142,7 +376,7 @@
           </li>
           <li class="breadcrumb-link">
             <a href="#" class="text-small-extra">Notice</a>
-            <svg class="sprite sprite--normal" role="img">
+            <svg class="sprite sprite--dark sprite--normal" role="img">
               <use href="../assets/img/sprite.svg#icon-chevron-right"></use>
             </svg>
           </li>
@@ -152,18 +386,18 @@
         <section class="news">
           <h2 class="heading-2">
             Featured News
-            <svg class="sprite sprite--normal" role="img">
+            <svg class="sprite sprite--dark sprite--normal" role="img">
               <use href="../assets/img/sprite.svg#icon-chevron-right"></use>
             </svg>
           </h2>
           <div class="news-wrapper">
             <button class="slider__btn slider__btn--left">
-              <svg class="sprite sprite--large">
+              <svg class="sprite sprite--light sprite--large">
                 <use href="../assets/img/sprite.svg#carousel_arrow-left"></use>
               </svg>
             </button>
             <button class="slider__btn slider__btn--right">
-              <svg class="sprite sprite--large">
+              <svg class="sprite sprite--light sprite--large">
                 <use href="../assets/img/sprite.svg#carousel_arrow-right"></use>
               </svg>
             </button>
@@ -298,7 +532,7 @@
         <section class="events-section">
           <div class="section__title">
             <h2 class="heading-2">Events</h2>
-            <svg class="sprite sprite--normal" role="img">
+            <svg class="sprite sprite--dark sprite--normal" role="img">
               <use href="../assets/img/sprite.svg#icon-chevron-right"></use>
             </svg>
           </div>
@@ -376,7 +610,7 @@
         <section class="notice">
           <div class="section__title">
             <h2 class="heading-2">Notice</h2>
-            <svg class="sprite sprite--normal" role="img">
+            <svg class="sprite sprite--dark sprite--normal" role="img">
               <use href="../assets/img/sprite.svg#icon-chevron-right"></use>
             </svg>
           </div>
@@ -444,30 +678,30 @@
     </main>
 
     <footer class="container section footer">
-      <div class="social-media separator-gradient">
+      <div class="social-media separator-gradient-block">
         <p class="text-small-bold">CONNECT WITH US</p>
         <span>
-          <svg class="sprite sprite--medium">
+          <svg class="sprite sprite--light sprite--medium">
             <use href="/assets/img/sprite.svg#icon-whatsapp-o"></use>
           </svg>
-          <svg class="sprite sprite--medium">
+          <svg class="sprite sprite--light sprite--medium">
             <use href="/assets/img/sprite.svg#icon-youtube-o"></use>
           </svg>
-          <svg class="sprite sprite--medium">
+          <svg class="sprite sprite--light sprite--medium">
             <use href="/assets/img/sprite.svg#icon-facebook-o"></use>
           </svg>
         </span>
       </div>
 
       <section class="footer__links">
-        <div class="footer-content-wrapper separator-gradient-vertical">
+        <div class="footer-content-wrapper separator-gradient-inline">
           <img src="/assets/img/logo.png" alt="logo" class="logo__footer" />
           <h2 class="heading-2 title__footer">
             Public High School<br />
             (Higher Secondary)
           </h2>
           <div class="location-wrapper">
-            <svg class="sprite sprite--normal">
+            <svg class="sprite sprite--light sprite--normal">
               <use href="/assets/img/sprite.svg#icon-location-filled"></use>
             </svg>
             <p class="text-small">
@@ -476,10 +710,10 @@
             </p>
           </div>
         </div>
-        <div class="footer-link-container separator-gradient-vertical">
+        <div class="footer-link-container separator-gradient-inline">
           <h3 class="text-medium-bold">
             Section Header
-            <svg class="sprite sprite--normal">
+            <svg class="sprite sprite--light sprite--normal">
               <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
             </svg>
           </h3>
@@ -489,10 +723,10 @@
             <li class="text-small">Link Three</li>
           </ul>
         </div>
-        <div class="footer-link-container separator-gradient-vertical">
+        <div class="footer-link-container separator-gradient-inline">
           <h3 class="text-medium-bold">
             Section Header
-            <svg class="sprite sprite--normal">
+            <svg class="sprite sprite--light sprite--normal">
               <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
             </svg>
           </h3>
@@ -502,10 +736,10 @@
             <li class="text-small">Link Three</li>
           </ul>
         </div>
-        <div class="footer-link-container separator-gradient-vertical">
+        <div class="footer-link-container">
           <h3 class="text-medium-bold">
             Section Header
-            <svg class="sprite sprite--normal">
+            <svg class="sprite sprite--light sprite--normal">
               <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
             </svg>
           </h3>
@@ -517,7 +751,7 @@
         </div>
       </section>
 
-      <section class="footer__nav separator-gradient">
+      <section class="footer__nav separator-gradient-block">
         <p class="text-small-extra">&copy;Public High School 2024</p>
         <nav>
           <ul>

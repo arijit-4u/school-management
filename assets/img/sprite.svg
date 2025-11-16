@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg
-	xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg">
+
+	<symbol id="sidebar-menu" viewBox="0 0 16 13.5">
+	  <rect x="3" y="3" width="1.5" height="1.5" fill="currentColor"/>
+	  <rect x="3" y="6" width="1.5" height="1.5" fill="currentColor"/>
+	  <rect x="3" y="9" width="1.5" height="1.5" fill="currentColor"/>
+	  <path d="M15,0H1A1,1,0,0,0,0,1V12.5a1,1,0,0,0,1,1H15a1,1,0,0,0,1-1V1A1,1,0,0,0,15,0ZM1.5,1.5H6V12H1.5ZM14.5,12h-7V1.5h7Z" fill="currentColor"/>
+	</symbol>
 	<symbol id="carousel_arrow-left" viewBox="0 0 36 36">
 		<path d="M13.656 18.25 19.835 6l2.26 1.906-5.01 10.344 5.01 10.535-2.26 1.715z"/>
 	</symbol>
@@ -122,8 +128,8 @@
 		<path d="M14.691 4.535a1.76 1.76 0 0 0-1.239-1.239C12.366 3 7.993 3 7.993 3s-4.373.009-5.46.305a1.76 1.76 0 0 0-1.238 1.239c-.329 1.93-.456 4.87.009 6.721a1.76 1.76 0 0 0 1.239 1.239c1.086.296 5.459.296 5.459.296s4.372 0 5.459-.296a1.76 1.76 0 0 0 1.239-1.239c.347-1.932.453-4.87-.009-6.73"/>
 		<path d="m6.601 10 3.628-2.1L6.6 5.8z"/>
 	</symbol>
-	<symbol id="search" viewBox="0 0 14 14">
-		<path stroke-width="2" d="M11.875 11.345 9.043 8.513a4.132 4.132 0 1 0-.53.53l2.832 2.832zM2.5 5.875a3.375 3.375 0 1 1 6.75 0 3.375 3.375 0 0 1-6.75 0Z"/>
+	<symbol id="search" viewBox="0 0 16 16">
+		<path d="M11.875 11.345 9.043 8.513a4.132 4.132 0 1 0-.53.53l2.832 2.832zM2.5 5.875a3.375 3.375 0 1 1 6.75 0 3.375 3.375 0 0 1-6.75 0Z"/>
 	</symbol>
 	<symbol id="separator" viewBox="0 0 30 50">
 		<path d="M10 3L20 27.0765L10 48"/>

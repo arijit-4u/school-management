@@ -9,7 +9,6 @@
   padding-top: var(--large-extra);
   visibility: hidden;
   color: var(--surface);
-  fill: var(--surface);
   transform: translateX(60%);
   opacity: 0;
   transition: 0.3s;
@@ -26,7 +25,6 @@
 }
 
 .mobile-nav svg {
-  fill: inherit;
   transition: 0.3s;
 }
 
@@ -34,7 +32,29 @@
   background: var(--red-shade-light);
   cursor: pointer;
   color: var(--neutral);
-  fill: var(--neutral);
+
+  & svg {
+    fill: var(--neutral);
+  }
+}
+
+.btn__mobile-nav {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn__mobile-nav #btnCollapsed {
+  border-left: 1px solid var(--surface-shade);
+  padding: 0 var(--medium);
+}
+
+.btn__mobile-nav svg {
+  vertical-align: bottom;
+}
+
+.btn__mobile-nav:hover svg {
+  fill: var(--surface);
 }
 
 .mobile-nav__menu {
@@ -79,7 +99,8 @@
 }
 
 @media (min-width: 1280px) {
-  .mobile-nav {
+  .mobile-nav,
+  .btn__mobile-nav {
     display: none;
   }
 }

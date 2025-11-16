@@ -2,10 +2,6 @@
   background: var(--surface);
 }
 
-.facility-section svg {
-  fill: var(--neutral);
-}
-
 .facility-cards-wrapper {
   max-width: 350px;
   margin: 0 auto;

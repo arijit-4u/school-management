@@ -1,27 +1,20 @@
-body {
+main {
   background-color: var(--surface);
 }
-main {
-  width: 880px;
-}
 
-/********** search box (overidden) ******** */
-.search-form-large {
-  width: 800px;
-  display: flex;
-  justify-content: space-between;
+.search-area,
+.results-area {
+  width: 100%;
+  max-width: 800px;
 }
-
-/* **************** search area *****************  */
 .search-area {
-  padding: var(--large) var(--side-gutter);
+  padding-block: var(--large);
 }
 .search-area > h1 {
   margin-bottom: var(--large);
 }
 .results-area {
   padding: var(--large) 0;
-  padding-left: var(--side-gutter);
 }
 .search-tab {
   display: flex;
@@ -59,7 +52,6 @@ main {
 /* Pagination */
 .pagination {
   margin: var(--large-extra) 0;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,3 +69,5 @@ main {
   align-items: center;
   gap: var(--small-extra);
 }
+
+/*============ Media querry ==============*/

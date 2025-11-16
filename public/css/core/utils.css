@@ -17,10 +17,11 @@ li {
 a {
   color: var(--surface-dim);
   text-decoration: none;
-}
 
-svg {
-  fill: var(--surface);
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 }
 
 /* Utility classes */
@@ -28,27 +29,41 @@ svg {
   font-size: 0;
 }
 
+.link-container {
+  position: relative;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* Gradients */
-.separator-gradient {
+.separator-gradient-block {
+  border-top: 2px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(
     90deg,
     rgba(0, 0, 0, 0) 0%,
-    rgba(43, 43, 43, 0.6) 15%,
-    #666666 50%,
-    rgba(43, 43, 43, 0.6) 84.5%,
+    rgba(98, 98, 98, 0.6) 15%,
+    rgba(98, 98, 98, 1) 50%,
+    rgba(98, 98, 98, 0.6) 85%,
     rgba(0, 0, 0, 0) 100%
   );
 }
 
-.separator-gradient-vertical {
+.separator-gradient-inline {
   border-image-slice: 1;
   border-image-source: linear-gradient(
     360deg,
     rgba(0, 0, 0, 0) 0%,
-    rgba(43, 43, 43, 0.6) 15%,
-    #666666 50%,
-    rgba(43, 43, 43, 0.6) 84.5%,
+    rgba(98, 98, 98, 0.6) 15%,
+    rgba(98, 98, 98, 1) 50%,
+    rgba(98, 98, 98, 0.6) 85%,
     rgba(0, 0, 0, 0) 100%
   );
 }
@@ -56,6 +71,21 @@ svg {
 /* Sprite classes */
 .sprite {
   display: inline-block;
+}
+
+.sprite--light {
+  --svg-fill: var(--surface);
+  fill: var(--svg-fill--ov, var(--svg-fill));
+}
+
+.sprite--dark {
+  --svg-fill: var(--neutral);
+  fill: var(--svg-fill--ov, var(--svg-fill));
+}
+
+.sprite--bold {
+  stroke: var(--svg-fill);
+  stroke-width: 2;
 }
 
 .sprite--small {
@@ -89,6 +119,10 @@ svg {
   padding: var(--medium) var(--large);
 }
 
+.section--inline {
+  padding-inline: var(--large);
+}
+
 @media (min-width: 475px) {
   .container {
     max-width: 475px;
@@ -111,6 +145,14 @@ svg {
   .container {
     max-width: 1024px;
   }
+
+  .section {
+    padding: var(--large-ultimate);
+  }
+
+  .section--inline {
+    padding-inline: var(--large-ultimate);
+  }
 }
 
 @media (min-width: 1280px) {
@@ -120,6 +162,10 @@ svg {
 
   .section {
     padding: var(--large-ultimate) var(--side-gutter);
+  }
+
+  .section--inline {
+    padding-inline: var(--side-gutter);
   }
 }
 

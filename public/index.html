@@ -3,11 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/utils/global.css" />
-    <link rel="stylesheet" href="./css/utils/fonts.css" />
-    <link rel="stylesheet" href="./css/utils/variables.css" />
-    <link rel="stylesheet" href="./css/utils/animation.css" />
-    <link rel="stylesheet" href="./css/utils/search-box.css" />
+    <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/components/header-type-1.css" />
     <link rel="stylesheet" href="./css/components/mobile-nav.css" />
     <link rel="stylesheet" href="./css/components/hero.css" />
@@ -19,151 +15,184 @@
     <link rel="stylesheet" href="./css/components/footer.css" />
 
     <script src="./js/app.js" defer></script>
-    <script src="./js/mobileNav.js" defer></script>
+    <script src="./js/utils.js" type="module" defer></script>
     <title>Document</title>
   </head>
   <body>
     <header class="container">
-      <ul class="top-section">
+      <!-- Info Section -->
+      <ul class="top-section section--inline">
         <li>
-          <svg class="sprite sprite--normal" role="img">
-            <use href="/assets/img/sprite.svg#icon-mail-o"></use>
-          </svg>
-          <a class="text-small-extra-bold" href="#">info@school.edu.in</a>
+          <a
+            class="text-small-extra-bold"
+            href="mailto:info@school.edu.in"
+            aria-label="school email address"
+          >
+            <svg class="sprite sprite--light sprite--normal" role="img">
+              <use href="/assets/img/sprite.svg#icon-mail-o"></use>
+            </svg>
+            info@school.edu.in</a
+          >
         </li>
         <li>
-          <svg class="sprite sprite--normal" role="img">
-            <use href="/assets/img/sprite.svg#icon-phone-o"></use>
-          </svg>
-          <a class="text-small-extra-bold" href="#">+91-33-8585-8888</a>
+          <a
+            class="text-small-extra-bold"
+            href="tel:+913385858888"
+            aria-label="school telephone number"
+          >
+            <svg class="sprite sprite--light sprite--normal" role="img">
+              <use href="/assets/img/sprite.svg#icon-phone-o"></use>
+            </svg>
+            +91-33-8585-8888</a
+          >
         </li>
       </ul>
+      <!-- End of Info Section -->
 
       <!-- Header Navigation -->
-      <nav class="main-nav">
+      <nav class="main-nav section--inline">
         <div class="left-section">
-          <img src="/assets/img/logo.png" alt="logo" class="logo-square" />
-          <img
-            src="https://placehold.co/140x60"
-            alt="a placeholder logo for small screen device"
-            class="logo-wide"
-          />
+          <a href="/public/" aria-label="home page">
+            <img src="/assets/img/logo.png" alt="logo" class="logo-square" />
+            <img
+              src="https://dummyimage.com/140x60/eee/aaa "
+              alt="logo"
+              class="logo-wide"
+          /></a>
           <ul class="primary-links fix-white-space">
-            <li class="nav-links text-medium-bold">
-              <a href="/admission/">ADMISSIONS</a>
-              <svg class="sprite sprite--small" role="img">
-                <use
-                  href="/assets/img/sprite.svg#icon-chevron-down-short"
-                ></use>
-              </svg>
-              <ul class="sub-menu">
-                <li><a href="#" class="text-small-extra">List item 1</a></li>
-                <li><a href="#" class="text-small-extra">List item 2</a></li>
-                <li><a href="#" class="text-small-extra">List item 3</a></li>
-                <li><a href="#" class="text-small-extra">List item 4</a></li>
-              </ul>
+            <li class="nav-links nav-links--main text-medium-bold">
+              <a href="/admission/"
+                >ADMISSIONS
+                <svg class="sprite sprite--light sprite--normal" role="img">
+                  <use
+                    href="/assets/img/sprite.svg#icon-chevron-down-short"
+                  ></use></svg
+              ></a>
+              <div class="sub-menu-wrapper">
+                <ul class="sub-menu">
+                  <li><a href="#" class="text-small-extra">List item 1</a></li>
+                  <li><a href="#" class="text-small-extra">List item 2</a></li>
+                  <li><a href="#" class="text-small-extra">List item 3</a></li>
+                  <li><a href="#" class="text-small-extra">List item 4</a></li>
+                </ul>
+              </div>
             </li>
-            <li class="nav-links text-medium-bold">
-              <a href="#">ACADEMICS</a>
-              <svg class="sprite sprite--small" role="img">
-                <use
-                  href="/assets/img/sprite.svg#icon-chevron-down-short"
-                ></use>
-              </svg>
-              <ul class="sub-menu">
-                <li><a href="#" class="text-small-extra">List item 1</a></li>
-                <li><a href="#" class="text-small-extra">List item 2</a></li>
-                <li><a href="#" class="text-small-extra">List item 3</a></li>
-                <li><a href="#" class="text-small-extra">List item 4</a></li>
-              </ul>
+            <li class="nav-links nav-links--main text-medium-bold">
+              <a href="#"
+                >ACADEMICS
+                <svg class="sprite sprite--light sprite--normal" role="img">
+                  <use
+                    href="/assets/img/sprite.svg#icon-chevron-down-short"
+                  ></use></svg
+              ></a>
+              <div class="sub-menu-wrapper">
+                <ul class="sub-menu">
+                  <li><a href="#" class="text-small-extra">List item 1</a></li>
+                  <li><a href="#" class="text-small-extra">List item 2</a></li>
+                  <li><a href="#" class="text-small-extra">List item 3</a></li>
+                  <li><a href="#" class="text-small-extra">List item 4</a></li>
+                </ul>
+              </div>
             </li>
-            <li class="nav-links text-medium-bold">
-              <a href="/notice/">NOTICE</a>
-              <svg class="sprite sprite--small" role="img">
-                <use
-                  href="/assets/img/sprite.svg#icon-chevron-down-short"
-                ></use>
-              </svg>
-              <ul class="sub-menu">
-                <li><a href="#" class="text-small-extra">List item 1</a></li>
-                <li><a href="#" class="text-small-extra">List item 2</a></li>
-                <li><a href="#" class="text-small-extra">List item 3</a></li>
-                <li><a href="#" class="text-small-extra">List item 4</a></li>
-              </ul>
+            <li class="nav-links nav-links--main text-medium-bold">
+              <a href="/notice/"
+                >NOTICE
+                <svg class="sprite sprite--light sprite--normal" role="img">
+                  <use
+                    href="/assets/img/sprite.svg#icon-chevron-down-short"
+                  ></use></svg
+              ></a>
+              <div class="sub-menu-wrapper">
+                <ul class="sub-menu">
+                  <li><a href="#" class="text-small-extra">List item 1</a></li>
+                  <li><a href="#" class="text-small-extra">List item 2</a></li>
+                  <li><a href="#" class="text-small-extra">List item 3</a></li>
+                  <li><a href="#" class="text-small-extra">List item 4</a></li>
+                </ul>
+              </div>
             </li>
-            <li class="nav-links text-medium-bold">
-              <a href="/about/">ABOUT</a>
-              <svg class="sprite sprite--small" role="img">
-                <use
-                  href="/assets/img/sprite.svg#icon-chevron-down-short"
-                ></use>
-              </svg>
-              <ul class="sub-menu">
-                <li><a href="#" class="text-small-extra">List item 1</a></li>
-                <li><a href="#" class="text-small-extra">List item 2</a></li>
-                <li><a href="#" class="text-small-extra">List item 3</a></li>
-                <li><a href="#" class="text-small-extra">List item 4</a></li>
-              </ul>
+            <li class="nav-links nav-links--main text-medium-bold">
+              <a href="/about/"
+                >ABOUT
+                <svg class="sprite sprite--light sprite--normal" role="img">
+                  <use
+                    href="/assets/img/sprite.svg#icon-chevron-down-short"
+                  ></use></svg
+              ></a>
+              <div class="sub-menu-wrapper">
+                <ul class="sub-menu">
+                  <li>
+                    <a href="/about/contact/" class="text-small-extra"
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li><a href="#" class="text-small-extra">List item 2</a></li>
+                  <li><a href="#" class="text-small-extra">List item 3</a></li>
+                  <li><a href="#" class="text-small-extra">List item 4</a></li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
+
         <div class="right-section">
           <ul class="secondary-links fix-white-space">
-            <li class="nav-links text-small-extra">
+            <li class="nav-links nav-links--alt text-small-extra">
               <a href="#">Staff</a>
-              <svg class="sprite sprite--small" role="img">
+              <svg class="sprite sprite--light sprite--small" role="img">
                 <use
                   href="/assets/img/sprite.svg#icon-chevron-down-short"
                 ></use>
               </svg>
-              <ul class="sub-menu__right">
-                <li><a href="#" class="text-small-extra">List item 1</a></li>
-                <li><a href="#" class="text-small-extra">List item 2</a></li>
-                <li><a href="#" class="text-small-extra">List item 3</a></li>
-                <li><a href="#" class="text-small-extra">List item 4</a></li>
-              </ul>
             </li>
-            <li class="nav-links text-small-extra">
+            <li class="nav-links nav-links--alt text-small-extra">
               <a href="#">Students</a>
-              <svg class="sprite sprite--small" role="img">
+              <svg class="sprite sprite--light sprite--small" role="img">
                 <use
                   href="/assets/img/sprite.svg#icon-chevron-down-short"
                 ></use>
               </svg>
-              <ul class="sub-menu__right">
-                <li><a href="#" class="text-small-extra">List item 1</a></li>
-                <li><a href="#" class="text-small-extra">List item 2</a></li>
-                <li><a href="#" class="text-small-extra">List item 3</a></li>
-                <li><a href="#" class="text-small-extra">List item 4</a></li>
-              </ul>
             </li>
-            <li class="nav-links text-small-extra">
+            <li class="nav-links nav-links--alt text-small-extra">
               <a href="#">Parents</a>
-              <svg class="sprite sprite--small" role="img">
+              <svg class="sprite sprite--light sprite--small" role="img">
                 <use
                   href="/assets/img/sprite.svg#icon-chevron-down-short"
                 ></use>
               </svg>
-              <ul class="sub-menu__right">
-                <li><a href="#" class="text-small-extra">List item 1</a></li>
-                <li><a href="#" class="text-small-extra">List item 2</a></li>
-                <li><a href="#" class="text-small-extra">List item 3</a></li>
-                <li><a href="#" class="text-small-extra">List item 4</a></li>
-              </ul>
             </li>
           </ul>
-          <form action="get" class="search-form">
-            <input
-              type="search"
-              class="search-box text-small-extra"
-              placeholder="Search..."
-            />
-            <svg class="sprite sprite--normal" role="img">
-              <use href="/assets/img/sprite.svg#search"></use>
-            </svg>
-          </form>
+          <search>
+            <form
+              id="searchForm"
+              action="/search/"
+              method="get"
+              class="search-form"
+              aria-selected="false"
+            >
+              <input
+                id="searchInput"
+                type="search"
+                class="search-box text-small-extra"
+                placeholder="Search..."
+              />
+              <button
+                id="btnSearch"
+                type="submit"
+                class="btn--search"
+                aria-label="search-button"
+              >
+                <svg
+                  class="sprite sprite--bold sprite--light sprite--medium"
+                  role="img"
+                >
+                  <use href="/assets/img/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+          </search>
           <button class="btn__mobile-nav" id="btnCollapsed">
-            <svg class="sprite sprite--medium" role="img">
+            <svg class="sprite sprite--light sprite--medium" role="img">
               <use href="/assets/img/sprite.svg#icon-menu"></use>
             </svg>
           </button>
@@ -174,7 +203,7 @@
       <!-- Mobile Navigation -->
       <nav class="mobile-nav">
         <button class="btn__mobile-nav" id="btnExpanded">
-          <svg class="sprite sprite--large" role="img">
+          <svg class="sprite sprite--light sprite--large" role="img">
             <use href="/assets/img/sprite.svg#icon-cross"></use>
           </svg>
         </button>
@@ -185,7 +214,7 @@
           >
             <a href="#" class="text-medium-bold"
               >ADMISSIONS
-              <svg class="sprite sprite--normal" role="img">
+              <svg class="sprite sprite--light sprite--normal" role="img">
                 <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
               </svg>
             </a>
@@ -208,7 +237,7 @@
           >
             <a href="#" class="text-medium-bold"
               >ACADEMICS
-              <svg class="sprite sprite--normal" role="img">
+              <svg class="sprite sprite--light sprite--normal" role="img">
                 <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
               </svg>
             </a>
@@ -232,7 +261,7 @@
             <a href="#" class="text-medium-bold"
               >NOTICE
 
-              <svg class="sprite sprite--normal" role="img">
+              <svg class="sprite sprite--light sprite--normal" role="img">
                 <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
               </svg>
             </a>
@@ -256,7 +285,7 @@
             <a href="#" class="text-medium-bold"
               >ABOUT
 
-              <svg class="sprite sprite--normal" role="img">
+              <svg class="sprite sprite--light sprite--normal" role="img">
                 <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
               </svg>
             </a>
@@ -280,7 +309,7 @@
             <a href="#" class="text-medium-bold"
               >Staff
 
-              <svg class="sprite sprite--normal" role="img">
+              <svg class="sprite sprite--light sprite--normal" role="img">
                 <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
               </svg>
             </a>
@@ -304,7 +333,7 @@
             <a href="#" class="text-medium-bold"
               >Students
 
-              <svg class="sprite sprite--normal" role="img">
+              <svg class="sprite sprite--light sprite--normal" role="img">
                 <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
               </svg>
             </a>
@@ -328,7 +357,7 @@
             <a href="#" class="text-medium-bold"
               >Parents
 
-              <svg class="sprite sprite--normal" role="img">
+              <svg class="sprite sprite--light sprite--normal" role="img">
                 <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
               </svg>
             </a>
@@ -385,18 +414,21 @@
             <img src="/assets/img/cover-3__1600w.jpg" alt="random photo 3" />
           </picture>
           <button class="slider__btn slider__btn--left">
-            <svg class="sprite sprite--large">
+            <svg class="sprite sprite--light sprite--large">
               <use href="/assets/img/sprite.svg#carousel_arrow-left"></use>
             </svg>
           </button>
           <button class="slider__btn slider__btn--right">
-            <svg class="sprite sprite--large">
+            <svg class="sprite sprite--light sprite--large">
               <use href="/assets/img/sprite.svg#carousel_arrow-right"></use>
             </svg>
           </button>
           <div class="dots"></div>
           <div class="image-info" data-desc="">
-            <svg class="sprite sprite--medium swap-on-hover" role="img">
+            <svg
+              class="sprite sprite--light sprite--medium swap-on-hover"
+              role="img"
+            >
               <use href="/assets/img/sprite.svg#icon-information-filled"></use>
               <use href="/assets/img/sprite.svg#icon-information-o"></use>
             </svg>
@@ -416,7 +448,7 @@
         <div class="section__title-wrapper">
           <h2 class="section__title heading-2">Our Classes</h2>
           <span class="section__title-icon">
-            <svg class="sprite sprite--normal" role="img">
+            <svg class="sprite sprite--dark sprite--normal" role="img">
               <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
             </svg>
           </span>
@@ -427,7 +459,7 @@
             <div class="classes-info-wrapper">
               <p class="text-large-bold">Explore more</p>
               <span class="class-cards__icon">
-                <svg class="sprite sprite--small" role="img">
+                <svg class="sprite sprite--dark sprite--small" role="img">
                   <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
                 </svg>
               </span>
@@ -438,7 +470,7 @@
             <div class="classes-info-wrapper">
               <p class="text-large-bold">Explore more</p>
               <span class="class-cards__icon">
-                <svg class="sprite sprite--small" role="img">
+                <svg class="sprite sprite--dark sprite--small" role="img">
                   <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
                 </svg>
               </span>
@@ -449,7 +481,7 @@
             <div class="classes-info-wrapper">
               <p class="text-large-bold">Explore more</p>
               <span class="class-cards__icon">
-                <svg class="sprite sprite--small" role="img">
+                <svg class="sprite sprite--dark sprite--small" role="img">
                   <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
                 </svg>
               </span>
@@ -462,7 +494,7 @@
         <div class="section__title-wrapper">
           <h2 class="section__title heading-2">Our Infrastructure</h2>
           <span class="section__title-icon">
-            <svg class="sprite sprite--normal" role="img">
+            <svg class="sprite sprite--dark sprite--normal" role="img">
               <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
             </svg>
           </span>
@@ -603,12 +635,12 @@
               <img src="/assets/img/gallary-10.jpg" alt="" />
             </div>
             <button class="gallery__btn gallery__btn--left">
-              <svg class="sprite sprite--large">
+              <svg class="sprite sprite--light sprite--large">
                 <use href="/assets/img/sprite.svg#carousel_arrow-left"></use>
               </svg>
             </button>
             <button class="gallery__btn gallery__btn--right">
-              <svg class="sprite sprite--large">
+              <svg class="sprite sprite--light sprite--large">
                 <use href="/assets/img/sprite.svg#carousel_arrow-right"></use>
               </svg>
             </button>
@@ -623,19 +655,19 @@
         <div class="testimonial-cards">
           <article class="testimonial-card">
             <div class="review-icons">
-              <svg class="sprite sprite--normal">
+              <svg class="sprite sprite--light sprite--normal">
                 <use href="/assets/img/sprite.svg#icon-star-filled"></use>
               </svg>
-              <svg class="sprite sprite--normal">
+              <svg class="sprite sprite--light sprite--normal">
                 <use href="/assets/img/sprite.svg#icon-star-filled"></use>
               </svg>
-              <svg class="sprite sprite--normal">
+              <svg class="sprite sprite--light sprite--normal">
                 <use href="/assets/img/sprite.svg#icon-star-filled"></use>
               </svg>
-              <svg class="sprite sprite--normal">
+              <svg class="sprite sprite--light sprite--normal">
                 <use href="/assets/img/sprite.svg#icon-star-filled"></use>
               </svg>
-              <svg class="sprite sprite--normal">
+              <svg class="sprite sprite--light sprite--normal">
                 <use href="/assets/img/sprite.svg#icon-star-half"></use>
               </svg>
             </div>
@@ -655,19 +687,19 @@
           </article>
           <article class="testimonial-card">
             <div class="review-icons">
-              <svg class="sprite sprite--normal">
+              <svg class="sprite sprite--light sprite--normal">
                 <use href="/assets/img/sprite.svg#icon-star-filled"></use>
               </svg>
-              <svg class="sprite sprite--normal">
+              <svg class="sprite sprite--light sprite--normal">
                 <use href="/assets/img/sprite.svg#icon-star-filled"></use>
               </svg>
-              <svg class="sprite sprite--normal">
+              <svg class="sprite sprite--light sprite--normal">
                 <use href="/assets/img/sprite.svg#icon-star-filled"></use>
               </svg>
-              <svg class="sprite sprite--normal">
+              <svg class="sprite sprite--light sprite--normal">
                 <use href="/assets/img/sprite.svg#icon-star-filled"></use>
               </svg>
-              <svg class="sprite sprite--normal">
+              <svg class="sprite sprite--light sprite--normal">
                 <use href="/assets/img/sprite.svg#icon-star-half"></use>
               </svg>
             </div>
@@ -687,19 +719,19 @@
           </article>
           <article class="testimonial-card">
             <div class="review-icons">
-              <svg class="sprite sprite--normal">
+              <svg class="sprite sprite--light sprite--normal">
                 <use href="/assets/img/sprite.svg#icon-star-filled"></use>
               </svg>
-              <svg class="sprite sprite--normal">
+              <svg class="sprite sprite--light sprite--normal">
                 <use href="/assets/img/sprite.svg#icon-star-filled"></use>
               </svg>
-              <svg class="sprite sprite--normal">
+              <svg class="sprite sprite--light sprite--normal">
                 <use href="/assets/img/sprite.svg#icon-star-filled"></use>
               </svg>
-              <svg class="sprite sprite--normal">
+              <svg class="sprite sprite--light sprite--normal">
                 <use href="/assets/img/sprite.svg#icon-star-filled"></use>
               </svg>
-              <svg class="sprite sprite--normal">
+              <svg class="sprite sprite--light sprite--normal">
                 <use href="/assets/img/sprite.svg#icon-star-half"></use>
               </svg>
             </div>
@@ -719,19 +751,19 @@
           </article>
           <article class="testimonial-card">
             <div class="review-icons">
-              <svg class="sprite sprite--normal">
+              <svg class="sprite sprite--light sprite--normal">
                 <use href="/assets/img/sprite.svg#icon-star-filled"></use>
               </svg>
-              <svg class="sprite sprite--normal">
+              <svg class="sprite sprite--light sprite--normal">
                 <use href="/assets/img/sprite.svg#icon-star-filled"></use>
               </svg>
-              <svg class="sprite sprite--normal">
+              <svg class="sprite sprite--light sprite--normal">
                 <use href="/assets/img/sprite.svg#icon-star-filled"></use>
               </svg>
-              <svg class="sprite sprite--normal">
+              <svg class="sprite sprite--light sprite--normal">
                 <use href="/assets/img/sprite.svg#icon-star-filled"></use>
               </svg>
-              <svg class="sprite sprite--normal">
+              <svg class="sprite sprite--light sprite--normal">
                 <use href="/assets/img/sprite.svg#icon-star-half"></use>
               </svg>
             </div>
@@ -754,30 +786,30 @@
     </main>
 
     <footer class="container section footer">
-      <div class="social-media separator-gradient">
+      <div class="social-media separator-gradient-block">
         <p class="text-small-bold">CONNECT WITH US</p>
         <span>
-          <svg class="sprite sprite--medium">
+          <svg class="sprite sprite--light sprite--medium">
             <use href="/assets/img/sprite.svg#icon-whatsapp-o"></use>
           </svg>
-          <svg class="sprite sprite--medium">
+          <svg class="sprite sprite--light sprite--medium">
             <use href="/assets/img/sprite.svg#icon-youtube-o"></use>
           </svg>
-          <svg class="sprite sprite--medium">
+          <svg class="sprite sprite--light sprite--medium">
             <use href="/assets/img/sprite.svg#icon-facebook-o"></use>
           </svg>
         </span>
       </div>
 
       <section class="footer__links">
-        <div class="footer-content-wrapper separator-gradient-vertical">
+        <div class="footer-content-wrapper separator-gradient-inline">
           <img src="/assets/img/logo.png" alt="logo" class="logo__footer" />
           <h2 class="heading-2 title__footer">
             Public High School<br />
             (Higher Secondary)
           </h2>
           <div class="location-wrapper">
-            <svg class="sprite sprite--normal">
+            <svg class="sprite sprite--light sprite--normal">
               <use href="/assets/img/sprite.svg#icon-location-filled"></use>
             </svg>
             <p class="text-small">
@@ -786,10 +818,10 @@
             </p>
           </div>
         </div>
-        <div class="footer-link-container separator-gradient-vertical">
+        <div class="footer-link-container separator-gradient-inline">
           <h3 class="text-medium-bold">
             Section Header
-            <svg class="sprite sprite--normal">
+            <svg class="sprite sprite--light sprite--normal">
               <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
             </svg>
           </h3>
@@ -799,10 +831,10 @@
             <li class="text-small">Link Three</li>
           </ul>
         </div>
-        <div class="footer-link-container separator-gradient-vertical">
+        <div class="footer-link-container separator-gradient-inline">
           <h3 class="text-medium-bold">
             Section Header
-            <svg class="sprite sprite--normal">
+            <svg class="sprite sprite--light sprite--normal">
               <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
             </svg>
           </h3>
@@ -812,10 +844,10 @@
             <li class="text-small">Link Three</li>
           </ul>
         </div>
-        <div class="footer-link-container separator-gradient-vertical">
+        <div class="footer-link-container">
           <h3 class="text-medium-bold">
             Section Header
-            <svg class="sprite sprite--normal">
+            <svg class="sprite sprite--light sprite--normal">
               <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
             </svg>
           </h3>
@@ -827,7 +859,7 @@
         </div>
       </section>
 
-      <section class="footer__nav separator-gradient">
+      <section class="footer__nav separator-gradient-block">
         <p class="text-small-extra">&copy;Public High School 2024</p>
         <nav>
           <ul>
