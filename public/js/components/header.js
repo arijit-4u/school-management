@@ -1,3 +1,6 @@
+import mobileNav from "./utils/mobileNav.js";
+import search from "./utils/search.js";
+
 const templateHome = document.createElement("template");
 const templateRest = document.createElement("template");
 const templateMobileNav = document.createElement("template");
@@ -518,6 +521,11 @@ class Header extends HTMLElement {
     super();
   }
 
+  connectedCallback() {
+    search();
+    mobileNav();
+  }
+
   attributeChangedCallback(name, _oldVal, newVal) {
     if (name === "variant") {
       this.updateVariant(newVal);
@@ -540,6 +548,8 @@ class Header extends HTMLElement {
     if (type === "rest") {
       this.appendChild(templateRest.content.cloneNode(true));
     }
+
+    this.appendChild(templateMobileNav.content.cloneNode(true));
   }
 }
 
