@@ -1,4 +1,4 @@
-body {
+main {
   background-color: var(--surface-dim);
 }
 
@@ -6,9 +6,13 @@ img {
   width: 100%;
 }
 
+.breadcrumb {
+  margin-left: var(--side-gutter);
+  margin-right: var(--side-gutter);
+}
+
 .grid-wrapper {
   padding: var(--large) var(--side-gutter);
-
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas:

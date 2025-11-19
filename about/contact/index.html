@@ -9,6 +9,7 @@
 
     <script src="/public/js/components/header.js" type="module"></script>
     <script src="/public/js/components/footer.js" type="module"></script>
+    <script src="/public/js/components/search.js" type="module"></script>
     <title>Contact Us</title>
   </head>
 
@@ -95,18 +96,7 @@
         </div>
       </section>
 
-      <section class="container section search">
-        <form action="get" class="search-form-large">
-          <input
-            type="search"
-            name="search-input"
-            id="search-input"
-            class="text-small"
-            placeholder="Can’t Find What You’re Looking For?"
-          />
-          <button class="text-medium btn-submit">Search</button>
-        </form>
-      </section>
+      <ps-search></ps-search>
     </main>
 
     <ps-footer></ps-footer>
