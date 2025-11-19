@@ -65,7 +65,7 @@ templateHome.innerHTML = `
           </div>
         </li>
         <li class="nav-links nav-links--main text-medium-bold">
-          <a href="#"
+          <a href="/academics/"
             >ACADEMICS
             <svg class="sprite sprite--light sprite--normal" role="img">
               <use
@@ -206,7 +206,7 @@ templateRest.innerHTML = `
             </svg>
           </li>
           <li class="nav-links nav-links--main text-small">
-            <a href="#">ACADEMICS</a>
+            <a href="/academics/">ACADEMICS</a>
             <svg class="sprite sprite--light sprite--small" role="img">
               <use href="/assets/img/sprite.svg#icon-chevron-down-short"></use>
             </svg>
