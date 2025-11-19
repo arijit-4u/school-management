@@ -1,0 +1,17 @@
+@import "/public/css/components/header-type-2.css";
+@import "/public/css/components/mobile-nav.css";
+@import "/public/css/components/search.css";
+@import "/public/css/components/footer.css";
+
+main {
+  background-color: var(--surface);
+}
+
+.breadcrumb {
+  margin-left: var(--side-gutter);
+  margin-right: var(--side-gutter);
+}
+
+.section > h3 {
+  margin-bottom: var(--medium);
+}
