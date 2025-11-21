@@ -1,10 +1,12 @@
+@import "/src/styles/base.css";
+@import "/src/styles/components/header-type-1.css";
+@import "/src/styles/components/mobile-nav.css";
+@import "/src/styles/components/search.css";
+@import "/src/styles/components/footer.css";
+
 main {
   background-color: var(--surface);
 }
-
-/*
-*  Layout
-*/
 
 .wrapper {
   margin-bottom: var(--large-ultimate);
@@ -35,9 +37,6 @@ main {
   }
 }
 
-/*
-*  Main
-*/
 .page-heading {
   margin-bottom: var(--large-extra);
 }

@@ -1,0 +1,35 @@
+@import "core/variables.css";
+@import "core/fonts.css";
+@import "core/animation.css";
+@import "core/utils.css";
+@import "core/components.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #57606f;
+}
+
+body,
+input,
+button {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: var(--surface-dim);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}

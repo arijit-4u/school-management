@@ -3,20 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/base.css" />
-    <link rel="stylesheet" href="./css/components/header-type-1.css" />
-    <link rel="stylesheet" href="./css/components/mobile-nav.css" />
-    <link rel="stylesheet" href="./css/components/hero.css" />
-    <link rel="stylesheet" href="./css/components/classes.css" />
-    <link rel="stylesheet" href="./css/components/facilities.css" />
-    <link rel="stylesheet" href="./css/components/blogs.css" />
-    <link rel="stylesheet" href="./css/components/gallery.css" />
-    <link rel="stylesheet" href="./css/components/testimonial.css" />
-    <link rel="stylesheet" href="./css/components/footer.css" />
 
-    <script src="./js/app.js" defer></script>
-    <script src="./js/components/header.js" type="module"></script>
-    <script src="./js/components/footer.js" type="module"></script>
+    <link rel="stylesheet" href="./src/styles/base.css" />
+    <link rel="stylesheet" href="./src/styles/components/header-type-1.css" />
+    <link rel="stylesheet" href="./src/styles/components/mobile-nav.css" />
+    <link rel="stylesheet" href="./src/styles/components/hero.css" />
+    <link rel="stylesheet" href="./src/styles/components/classes.css" />
+    <link rel="stylesheet" href="./src/styles/components/facilities.css" />
+    <link rel="stylesheet" href="./src/styles/components/blogs.css" />
+    <link rel="stylesheet" href="./src/styles/components/gallery.css" />
+    <link rel="stylesheet" href="./src/styles/components/testimonial.css" />
+    <link rel="stylesheet" href="./src/styles/components/footer.css" />
+
+    <script src="./src/app.js" defer></script>
+    <script src="./src/components/header.js" type="module"></script>
+    <script src="./src/components/footer.js" type="module"></script>
+
     <title>Home | Public School</title>
   </head>
 
@@ -29,44 +31,44 @@
           <picture class="slide" title="Image of our school campus">
             <source
               media="(max-width: 639px)"
-              srcset="/assets/img/cover-1__600w.jpg"
+              srcset="/public/img/cover-1__600w.jpg"
             />
             <source
               media="(max-width: 1024px)"
-              srcset="/assets/img/cover-1__1024w.jpg"
+              srcset="/public/img/cover-1__1024w.jpg"
             />
-            <img src="/assets/img/cover-1__1600w.jpg" alt="random photo 1" />
+            <img src="/public/img/cover-1__1600w.jpg" alt="random photo 1" />
           </picture>
           <picture class="slide" title="Image of our school building">
             <source
               media="(max-width: 639px)"
-              srcset="/assets/img/cover-2__600w.jpg"
+              srcset="/public/img/cover-2__600w.jpg"
             />
             <source
               media="(max-width: 1024px)"
-              srcset="/assets/img/cover-2__1024w.jpg"
+              srcset="/public/img/cover-2__1024w.jpg"
             />
-            <img src="/assets/img/cover-2__1600w.jpg" alt="random photo 2" />
+            <img src="/public/img/cover-2__1600w.jpg" alt="random photo 2" />
           </picture>
           <picture class="slide" title="Image of our school playground">
             <source
               media="(max-width: 639px)"
-              srcset="/assets/img/cover-3__600w.jpg"
+              srcset="/public/img/cover-3__600w.jpg"
             />
             <source
               media="(max-width: 1024px)"
-              srcset="/assets/img/cover-3__1024w.jpg"
+              srcset="/public/img/cover-3__1024w.jpg"
             />
-            <img src="/assets/img/cover-3__1600w.jpg" alt="random photo 3" />
+            <img src="/public/img/cover-3__1600w.jpg" alt="random photo 3" />
           </picture>
           <button class="slider__btn slider__btn--left">
             <svg class="sprite sprite--light sprite--large">
-              <use href="/assets/img/sprite.svg#carousel_arrow-left"></use>
+              <use href="/public/img/sprite.svg#carousel_arrow-left"></use>
             </svg>
           </button>
           <button class="slider__btn slider__btn--right">
             <svg class="sprite sprite--light sprite--large">
-              <use href="/assets/img/sprite.svg#carousel_arrow-right"></use>
+              <use href="/public/img/sprite.svg#carousel_arrow-right"></use>
             </svg>
           </button>
           <div class="dots"></div>
@@ -75,8 +77,8 @@
               class="sprite sprite--light sprite--medium swap-on-hover"
               role="img"
             >
-              <use href="/assets/img/sprite.svg#icon-information-filled"></use>
-              <use href="/assets/img/sprite.svg#icon-information-o"></use>
+              <use href="/public/img/sprite.svg#icon-information-filled"></use>
+              <use href="/public/img/sprite.svg#icon-information-o"></use>
             </svg>
           </div>
         </div>
@@ -95,40 +97,40 @@
           <h2 class="section__title heading-2">Our Classes</h2>
           <span class="section__title-icon">
             <svg class="sprite sprite--dark sprite--normal" role="img">
-              <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
+              <use href="/public/img/sprite.svg#icon-chevron-right"></use>
             </svg>
           </span>
         </div>
         <div class="classes-cards-wrapper">
           <article class="class-cards">
-            <img src="/assets/img/class-1.jpg" alt="a placeholder image" />
+            <img src="/public/img/class-1.jpg" alt="a placeholder image" />
             <div class="classes-info-wrapper">
               <p class="text-large-bold">Explore more</p>
               <span class="class-cards__icon">
                 <svg class="sprite sprite--dark sprite--small" role="img">
-                  <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
+                  <use href="/public/img/sprite.svg#icon-chevron-right"></use>
                 </svg>
               </span>
             </div>
           </article>
           <article class="class-cards">
-            <img src="/assets/img/class-2.jpg" alt="a placeholder image" />
+            <img src="/public/img/class-2.jpg" alt="a placeholder image" />
             <div class="classes-info-wrapper">
               <p class="text-large-bold">Explore more</p>
               <span class="class-cards__icon">
                 <svg class="sprite sprite--dark sprite--small" role="img">
-                  <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
+                  <use href="/public/img/sprite.svg#icon-chevron-right"></use>
                 </svg>
               </span>
             </div>
           </article>
           <article class="class-cards">
-            <img src="/assets/img/class-3.jpg" alt="a placeholder image" />
+            <img src="/public/img/class-3.jpg" alt="a placeholder image" />
             <div class="classes-info-wrapper">
               <p class="text-large-bold">Explore more</p>
               <span class="class-cards__icon">
                 <svg class="sprite sprite--dark sprite--small" role="img">
-                  <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
+                  <use href="/public/img/sprite.svg#icon-chevron-right"></use>
                 </svg>
               </span>
             </div>
@@ -141,14 +143,14 @@
           <h2 class="section__title heading-2">Our Infrastructure</h2>
           <span class="section__title-icon">
             <svg class="sprite sprite--dark sprite--normal" role="img">
-              <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
+              <use href="/public/img/sprite.svg#icon-chevron-right"></use>
             </svg>
           </span>
         </div>
         <div class="facility-cards-wrapper">
           <article class="facility-cards">
             <img
-              src="/assets/img/facility-1.jpg"
+              src="/public/img/facility-1.jpg"
               alt="a picture of the computer lab"
             />
             <p class="facility-card-description separator-gradient">
@@ -157,7 +159,7 @@
           </article>
           <article class="facility-cards">
             <img
-              src="/assets/img/facility-2.jpg"
+              src="/public/img/facility-2.jpg"
               alt="a picture of the infirmary"
             />
             <p class="facility-card-description separator-gradient">
@@ -166,7 +168,7 @@
           </article>
           <article class="facility-cards">
             <img
-              src="/assets/img/facility-3.jpg"
+              src="/public/img/facility-3.jpg"
               alt="a picture of the cafeteria"
             />
             <p class="facility-card-description separator-gradient">
@@ -175,7 +177,7 @@
           </article>
           <article class="facility-cards">
             <img
-              src="/assets/img/facility-4.jpg"
+              src="/public/img/facility-4.jpg"
               alt="a picture of the chemistry lab"
             />
             <p class="facility-card-description separator-gradient">
@@ -194,7 +196,7 @@
             </div>
             <div class="blogs-cards-wrapper">
               <article class="blogs-cards">
-                <img src="/assets/img/blog-1.jpg" alt="a picture of books" />
+                <img src="/public/img/blog-1.jpg" alt="a picture of books" />
                 <p class="blog-card-title text-medium-bold">
                   Reading a book daily: it's impact on mental growth.
                 </p>
@@ -203,7 +205,7 @@
                 </p>
               </article>
               <article class="blogs-cards">
-                <img src="/assets/img/blog-2.jpg" alt="a picture of books" />
+                <img src="/public/img/blog-2.jpg" alt="a picture of books" />
                 <p class="blog-card-title text-medium-bold">
                   Mental rot: a new side-effect of smartphones.
                 </p>
@@ -212,7 +214,7 @@
                 </p>
               </article>
               <article class="blogs-cards">
-                <img src="/assets/img/blog-3.jpg" alt="a picture of books" />
+                <img src="/public/img/blog-3.jpg" alt="a picture of books" />
                 <p class="blog-card-title text-medium-bold">
                   Do your children have ADHD? know the ins-and-outs.
                 </p>
@@ -269,25 +271,25 @@
           </div>
           <div class="section__images">
             <div class="image-wrapper">
-              <img src="/assets/img/gallary-2.jpg" alt="" />
-              <img src="/assets/img/gallary-3.jpg" alt="" />
-              <img src="/assets/img/gallary-4.jpg" alt="" />
-              <img src="/assets/img/gallary-5.jpg" alt="" />
-              <img src="/assets/img/gallary-1.jpg" alt="" />
-              <img src="/assets/img/gallary-6.jpg" alt="" />
-              <img src="/assets/img/gallary-7.jpg" alt="" />
-              <img src="/assets/img/gallary-8.jpg" alt="" />
-              <img src="/assets/img/gallary-9.jpg" alt="" />
-              <img src="/assets/img/gallary-10.jpg" alt="" />
+              <img src="/public/img/gallary-2.jpg" alt="" />
+              <img src="/public/img/gallary-3.jpg" alt="" />
+              <img src="/public/img/gallary-4.jpg" alt="" />
+              <img src="/public/img/gallary-5.jpg" alt="" />
+              <img src="/public/img/gallary-1.jpg" alt="" />
+              <img src="/public/img/gallary-6.jpg" alt="" />
+              <img src="/public/img/gallary-7.jpg" alt="" />
+              <img src="/public/img/gallary-8.jpg" alt="" />
+              <img src="/public/img/gallary-9.jpg" alt="" />
+              <img src="/public/img/gallary-10.jpg" alt="" />
             </div>
             <button class="gallery__btn gallery__btn--left">
               <svg class="sprite sprite--light sprite--large">
-                <use href="/assets/img/sprite.svg#carousel_arrow-left"></use>
+                <use href="/public/img/sprite.svg#carousel_arrow-left"></use>
               </svg>
             </button>
             <button class="gallery__btn gallery__btn--right">
               <svg class="sprite sprite--light sprite--large">
-                <use href="/assets/img/sprite.svg#carousel_arrow-right"></use>
+                <use href="/public/img/sprite.svg#carousel_arrow-right"></use>
               </svg>
             </button>
           </div>
@@ -302,19 +304,19 @@
           <article class="testimonial-card">
             <div class="review-icons">
               <svg class="sprite sprite--light sprite--normal">
-                <use href="/assets/img/sprite.svg#icon-star-filled"></use>
+                <use href="/public/img/sprite.svg#icon-star-filled"></use>
               </svg>
               <svg class="sprite sprite--light sprite--normal">
-                <use href="/assets/img/sprite.svg#icon-star-filled"></use>
+                <use href="/public/img/sprite.svg#icon-star-filled"></use>
               </svg>
               <svg class="sprite sprite--light sprite--normal">
-                <use href="/assets/img/sprite.svg#icon-star-filled"></use>
+                <use href="/public/img/sprite.svg#icon-star-filled"></use>
               </svg>
               <svg class="sprite sprite--light sprite--normal">
-                <use href="/assets/img/sprite.svg#icon-star-filled"></use>
+                <use href="/public/img/sprite.svg#icon-star-filled"></use>
               </svg>
               <svg class="sprite sprite--light sprite--normal">
-                <use href="/assets/img/sprite.svg#icon-star-half"></use>
+                <use href="/public/img/sprite.svg#icon-star-half"></use>
               </svg>
             </div>
             <div class="review text-small">
@@ -334,19 +336,19 @@
           <article class="testimonial-card">
             <div class="review-icons">
               <svg class="sprite sprite--light sprite--normal">
-                <use href="/assets/img/sprite.svg#icon-star-filled"></use>
+                <use href="/public/img/sprite.svg#icon-star-filled"></use>
               </svg>
               <svg class="sprite sprite--light sprite--normal">
-                <use href="/assets/img/sprite.svg#icon-star-filled"></use>
+                <use href="/public/img/sprite.svg#icon-star-filled"></use>
               </svg>
               <svg class="sprite sprite--light sprite--normal">
-                <use href="/assets/img/sprite.svg#icon-star-filled"></use>
+                <use href="/public/img/sprite.svg#icon-star-filled"></use>
               </svg>
               <svg class="sprite sprite--light sprite--normal">
-                <use href="/assets/img/sprite.svg#icon-star-filled"></use>
+                <use href="/public/img/sprite.svg#icon-star-filled"></use>
               </svg>
               <svg class="sprite sprite--light sprite--normal">
-                <use href="/assets/img/sprite.svg#icon-star-half"></use>
+                <use href="/public/img/sprite.svg#icon-star-half"></use>
               </svg>
             </div>
             <div class="review text-small">
@@ -366,19 +368,19 @@
           <article class="testimonial-card">
             <div class="review-icons">
               <svg class="sprite sprite--light sprite--normal">
-                <use href="/assets/img/sprite.svg#icon-star-filled"></use>
+                <use href="/public/img/sprite.svg#icon-star-filled"></use>
               </svg>
               <svg class="sprite sprite--light sprite--normal">
-                <use href="/assets/img/sprite.svg#icon-star-filled"></use>
+                <use href="/public/img/sprite.svg#icon-star-filled"></use>
               </svg>
               <svg class="sprite sprite--light sprite--normal">
-                <use href="/assets/img/sprite.svg#icon-star-filled"></use>
+                <use href="/public/img/sprite.svg#icon-star-filled"></use>
               </svg>
               <svg class="sprite sprite--light sprite--normal">
-                <use href="/assets/img/sprite.svg#icon-star-filled"></use>
+                <use href="/public/img/sprite.svg#icon-star-filled"></use>
               </svg>
               <svg class="sprite sprite--light sprite--normal">
-                <use href="/assets/img/sprite.svg#icon-star-half"></use>
+                <use href="/public/img/sprite.svg#icon-star-half"></use>
               </svg>
             </div>
             <div class="review text-small">
@@ -398,19 +400,19 @@
           <article class="testimonial-card">
             <div class="review-icons">
               <svg class="sprite sprite--light sprite--normal">
-                <use href="/assets/img/sprite.svg#icon-star-filled"></use>
+                <use href="/public/img/sprite.svg#icon-star-filled"></use>
               </svg>
               <svg class="sprite sprite--light sprite--normal">
-                <use href="/assets/img/sprite.svg#icon-star-filled"></use>
+                <use href="/public/img/sprite.svg#icon-star-filled"></use>
               </svg>
               <svg class="sprite sprite--light sprite--normal">
-                <use href="/assets/img/sprite.svg#icon-star-filled"></use>
+                <use href="/public/img/sprite.svg#icon-star-filled"></use>
               </svg>
               <svg class="sprite sprite--light sprite--normal">
-                <use href="/assets/img/sprite.svg#icon-star-filled"></use>
+                <use href="/public/img/sprite.svg#icon-star-filled"></use>
               </svg>
               <svg class="sprite sprite--light sprite--normal">
-                <use href="/assets/img/sprite.svg#icon-star-half"></use>
+                <use href="/public/img/sprite.svg#icon-star-half"></use>
               </svg>
             </div>
             <div class="review text-small">

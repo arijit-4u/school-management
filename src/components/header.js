@@ -16,7 +16,7 @@ templateHome.innerHTML = `
         aria-label="school email address"
       >
         <svg class="sprite sprite--light sprite--normal" role="img">
-          <use href="/assets/img/sprite.svg#icon-mail-o"></use>
+          <use href="/public/img/sprite.svg#icon-mail-o"></use>
         </svg>
         info@school.edu.in</a
       >
@@ -28,7 +28,7 @@ templateHome.innerHTML = `
         aria-label="school telephone number"
       >
         <svg class="sprite sprite--light sprite--normal" role="img">
-          <use href="/assets/img/sprite.svg#icon-phone-o"></use>
+          <use href="/public/img/sprite.svg#icon-phone-o"></use>
         </svg>
         +91-33-8585-8888</a
       >
@@ -39,8 +39,8 @@ templateHome.innerHTML = `
   <!-- Header Navigation -->
   <nav class="main-nav section--inline">
     <div class="left-section">
-      <a href="/public/" aria-label="home page">
-        <img src="/assets/img/logo.png" alt="logo" class="logo-square" />
+      <a href="/" aria-label="home page">
+        <img src="/public/img/logo.png" alt="logo" class="logo-square" />
         <img
           src="https://dummyimage.com/140x60/eee/aaa "
           alt="logo"
@@ -52,7 +52,7 @@ templateHome.innerHTML = `
             >ADMISSIONS
             <svg class="sprite sprite--light sprite--normal" role="img">
               <use
-                href="/assets/img/sprite.svg#icon-chevron-down-short"
+                href="/public/img/sprite.svg#icon-chevron-down-short"
               ></use></svg
           ></a>
           <div class="sub-menu-wrapper">
@@ -69,7 +69,7 @@ templateHome.innerHTML = `
             >ACADEMICS
             <svg class="sprite sprite--light sprite--normal" role="img">
               <use
-                href="/assets/img/sprite.svg#icon-chevron-down-short"
+                href="/public/img/sprite.svg#icon-chevron-down-short"
               ></use></svg
           ></a>
           <div class="sub-menu-wrapper">
@@ -86,7 +86,7 @@ templateHome.innerHTML = `
             >NOTICE
             <svg class="sprite sprite--light sprite--normal" role="img">
               <use
-                href="/assets/img/sprite.svg#icon-chevron-down-short"
+                href="/public/img/sprite.svg#icon-chevron-down-short"
               ></use></svg
           ></a>
           <div class="sub-menu-wrapper">
@@ -103,15 +103,13 @@ templateHome.innerHTML = `
             >ABOUT
             <svg class="sprite sprite--light sprite--normal" role="img">
               <use
-                href="/assets/img/sprite.svg#icon-chevron-down-short"
+                href="/public/img/sprite.svg#icon-chevron-down-short"
               ></use></svg
           ></a>
           <div class="sub-menu-wrapper">
             <ul class="sub-menu">
               <li>
-                <a href="/about/contact/" class="text-small-extra"
-                  >Contact Us</a
-                >
+                <a href="/contact-us/" class="text-small-extra">Contact Us</a>
               </li>
               <li><a href="#" class="text-small-extra">List item 2</a></li>
               <li><a href="#" class="text-small-extra">List item 3</a></li>
@@ -127,19 +125,19 @@ templateHome.innerHTML = `
         <li class="nav-links nav-links--alt text-small-extra">
           <a href="#">Staff</a>
           <svg class="sprite sprite--light sprite--small" role="img">
-            <use href="/assets/img/sprite.svg#icon-chevron-down-short"></use>
+            <use href="/public/img/sprite.svg#icon-chevron-down-short"></use>
           </svg>
         </li>
         <li class="nav-links nav-links--alt text-small-extra">
           <a href="#">Students</a>
           <svg class="sprite sprite--light sprite--small" role="img">
-            <use href="/assets/img/sprite.svg#icon-chevron-down-short"></use>
+            <use href="/public/img/sprite.svg#icon-chevron-down-short"></use>
           </svg>
         </li>
         <li class="nav-links nav-links--alt text-small-extra">
           <a href="#">Parents</a>
           <svg class="sprite sprite--light sprite--small" role="img">
-            <use href="/assets/img/sprite.svg#icon-chevron-down-short"></use>
+            <use href="/public/img/sprite.svg#icon-chevron-down-short"></use>
           </svg>
         </li>
       </ul>
@@ -167,14 +165,14 @@ templateHome.innerHTML = `
               class="sprite sprite--bold sprite--light sprite--medium"
               role="img"
             >
-              <use href="/assets/img/sprite.svg#search"></use>
+              <use href="/public/img/sprite.svg#search"></use>
             </svg>
           </button>
         </form>
       </search>
       <button class="btn__mobile-nav" id="btnCollapsed">
         <svg class="sprite sprite--light sprite--medium" role="img">
-          <use href="/assets/img/sprite.svg#icon-menu"></use>
+          <use href="/public/img/sprite.svg#icon-menu"></use>
         </svg>
       </button>
     </div>
@@ -188,8 +186,8 @@ templateRest.innerHTML = `
   <!-- Header Navigation -->
   <nav class="main-nav section--inline">
     <div class="nav-wrapper">
-      <a href="/public/" class="logo-wrapper" aria-label="home page">
-        <img src="/assets/img/logo.png" alt="logo" class="logo-square" />
+      <a href="/" class="logo-wrapper" aria-label="home page">
+        <img src="/public/img/logo.png" alt="logo" class="logo-square" />
         <img
           src="https://dummyimage.com/140x60/eee/aaa"
           alt="logo"
@@ -202,25 +200,25 @@ templateRest.innerHTML = `
           <li class="nav-links nav-links--main text-small">
             <a href="/admission/">ADMISSIONS</a>
             <svg class="sprite sprite--light sprite--small" role="img">
-              <use href="/assets/img/sprite.svg#icon-chevron-down-short"></use>
+              <use href="/public/img/sprite.svg#icon-chevron-down-short"></use>
             </svg>
           </li>
           <li class="nav-links nav-links--main text-small">
             <a href="/academics/">ACADEMICS</a>
             <svg class="sprite sprite--light sprite--small" role="img">
-              <use href="/assets/img/sprite.svg#icon-chevron-down-short"></use>
+              <use href="/public/img/sprite.svg#icon-chevron-down-short"></use>
             </svg>
           </li>
           <li class="nav-links nav-links--main text-small">
             <a href="/notice/">NOTICE</a>
             <svg class="sprite sprite--light sprite--small" role="img">
-              <use href="/assets/img/sprite.svg#icon-chevron-down-short"></use>
+              <use href="/public/img/sprite.svg#icon-chevron-down-short"></use>
             </svg>
           </li>
           <li class="nav-links nav-links--main text-small">
             <a href="/about/">ABOUT</a>
             <svg class="sprite sprite--light sprite--small" role="img">
-              <use href="/assets/img/sprite.svg#icon-chevron-down-short"></use>
+              <use href="/public/img/sprite.svg#icon-chevron-down-short"></use>
             </svg>
           </li>
         </ul>
@@ -230,7 +228,7 @@ templateRest.innerHTML = `
         <h2 id="pageHeading" class="heading-2 nav-heading">PAGE HEADING</h2>
 
         <img
-          src="/assets/img/SeparatorChevron.png"
+          src="/public/img/SeparatorChevron.png"
           alt=""
           class="separator-img"
         />
@@ -240,7 +238,7 @@ templateRest.innerHTML = `
               >Link One
               <svg class="sprite sprite--light sprite--normal" role="img">
                 <use
-                  href="/assets/img/sprite.svg#icon-chevron-down-short"
+                  href="/public/img/sprite.svg#icon-chevron-down-short"
                 ></use></svg
             ></a>
             <div class="sub-menu-wrapper">
@@ -265,7 +263,7 @@ templateRest.innerHTML = `
               >Link Two
               <svg class="sprite sprite--light sprite--normal" role="img">
                 <use
-                  href="/assets/img/sprite.svg#icon-chevron-down-short"
+                  href="/public/img/sprite.svg#icon-chevron-down-short"
                 ></use></svg
             ></a>
             <div class="sub-menu-wrapper">
@@ -290,7 +288,7 @@ templateRest.innerHTML = `
               >Link Three
               <svg class="sprite sprite--light sprite--normal" role="img">
                 <use
-                  href="/assets/img/sprite.svg#icon-chevron-down-short"
+                  href="/public/img/sprite.svg#icon-chevron-down-short"
                 ></use></svg
             ></a>
             <div class="sub-menu-wrapper">
@@ -338,14 +336,14 @@ templateRest.innerHTML = `
                 class="sprite sprite--bold sprite--light sprite--medium"
                 role="img"
               >
-                <use href="/assets/img/sprite.svg#search"></use>
+                <use href="/public/img/sprite.svg#search"></use>
               </svg>
             </button>
           </form>
         </search>
         <button class="btn__mobile-nav" id="btnCollapsed">
           <svg class="sprite sprite--light sprite--medium" role="img">
-            <use href="/assets/img/sprite.svg#icon-menu"></use>
+            <use href="/public/img/sprite.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
@@ -359,7 +357,7 @@ templateMobileNav.innerHTML = `
 <nav class="mobile-nav">
   <button class="btn__mobile-nav" id="btnExpanded">
     <svg class="sprite sprite--light sprite--large" role="img">
-      <use href="/assets/img/sprite.svg#icon-cross"></use>
+      <use href="/public/img/sprite.svg#icon-cross"></use>
     </svg>
   </button>
 
@@ -368,7 +366,7 @@ templateMobileNav.innerHTML = `
       <a href="#" class="text-medium-bold"
         >ADMISSIONS
         <svg class="sprite sprite--light sprite--normal" role="img">
-          <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
+          <use href="/public/img/sprite.svg#icon-chevron-down"></use>
         </svg>
       </a>
       <ul>
@@ -388,7 +386,7 @@ templateMobileNav.innerHTML = `
       <a href="#" class="text-medium-bold"
         >ACADEMICS
         <svg class="sprite sprite--light sprite--normal" role="img">
-          <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
+          <use href="/public/img/sprite.svg#icon-chevron-down"></use>
         </svg>
       </a>
       <ul>
@@ -409,7 +407,7 @@ templateMobileNav.innerHTML = `
         >NOTICE
 
         <svg class="sprite sprite--light sprite--normal" role="img">
-          <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
+          <use href="/public/img/sprite.svg#icon-chevron-down"></use>
         </svg>
       </a>
       <ul>
@@ -430,7 +428,7 @@ templateMobileNav.innerHTML = `
         >ABOUT
 
         <svg class="sprite sprite--light sprite--normal" role="img">
-          <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
+          <use href="/public/img/sprite.svg#icon-chevron-down"></use>
         </svg>
       </a>
       <ul>
@@ -451,7 +449,7 @@ templateMobileNav.innerHTML = `
         >Staff
 
         <svg class="sprite sprite--light sprite--normal" role="img">
-          <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
+          <use href="/public/img/sprite.svg#icon-chevron-down"></use>
         </svg>
       </a>
       <ul>
@@ -472,7 +470,7 @@ templateMobileNav.innerHTML = `
         >Students
 
         <svg class="sprite sprite--light sprite--normal" role="img">
-          <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
+          <use href="/public/img/sprite.svg#icon-chevron-down"></use>
         </svg>
       </a>
       <ul>
@@ -493,7 +491,7 @@ templateMobileNav.innerHTML = `
         >Parents
 
         <svg class="sprite sprite--light sprite--normal" role="img">
-          <use href="/assets/img/sprite.svg#icon-chevron-down"></use>
+          <use href="/public/img/sprite.svg#icon-chevron-down"></use>
         </svg>
       </a>
       <ul>

@@ -6,27 +6,27 @@ template.innerHTML = `
     <p class="text-small-bold">CONNECT WITH US</p>
     <span>
       <svg class="sprite sprite--light sprite--medium">
-        <use href="/assets/img/sprite.svg#icon-whatsapp-o"></use>
+        <use href="/public/img/sprite.svg#icon-whatsapp-o"></use>
       </svg>
       <svg class="sprite sprite--light sprite--medium">
-        <use href="/assets/img/sprite.svg#icon-youtube-o"></use>
+        <use href="/public/img/sprite.svg#icon-youtube-o"></use>
       </svg>
       <svg class="sprite sprite--light sprite--medium">
-        <use href="/assets/img/sprite.svg#icon-facebook-o"></use>
+        <use href="/public/img/sprite.svg#icon-facebook-o"></use>
       </svg>
     </span>
   </div>
 
   <section class="footer__links">
     <div class="footer-content-wrapper separator-gradient-inline">
-      <img src="/assets/img/logo.png" alt="logo" class="logo__footer" />
+      <img src="/public/img/logo.png" alt="logo" class="logo__footer" />
       <h2 class="heading-2 title__footer">
         Public High School<br />
         (Higher Secondary)
       </h2>
       <div class="location-wrapper">
         <svg class="sprite sprite--light sprite--normal">
-          <use href="/assets/img/sprite.svg#icon-location-filled"></use>
+          <use href="/public/img/sprite.svg#icon-location-filled"></use>
         </svg>
         <p class="text-small">
           DUMDUM SOUTH, NORTH<br />TWENTY FOUR PARGANAS<br />West Bengal - 700
@@ -38,7 +38,7 @@ template.innerHTML = `
       <h3 class="text-medium-bold">
         Section Header
         <svg class="sprite sprite--light sprite--normal">
-          <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
+          <use href="/public/img/sprite.svg#icon-chevron-right"></use>
         </svg>
       </h3>
       <ul>
@@ -51,7 +51,7 @@ template.innerHTML = `
       <h3 class="text-medium-bold">
         Section Header
         <svg class="sprite sprite--light sprite--normal">
-          <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
+          <use href="/public/img/sprite.svg#icon-chevron-right"></use>
         </svg>
       </h3>
       <ul>
@@ -64,7 +64,7 @@ template.innerHTML = `
       <h3 class="text-medium-bold">
         Section Header
         <svg class="sprite sprite--light sprite--normal">
-          <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
+          <use href="/public/img/sprite.svg#icon-chevron-right"></use>
         </svg>
       </h3>
       <ul>

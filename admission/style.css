@@ -1,3 +1,9 @@
+@import "/src/styles/base.css";
+@import "/src/styles/components/header-type-2.css";
+@import "/src/styles/components/mobile-nav.css";
+@import "/src/styles/components/search.css";
+@import "/src/styles/components/footer.css";
+
 main {
   background: var(--surface);
 }
