@@ -9,6 +9,8 @@
     <script src="/src/components/header.js" type="module"></script>
     <script src="/src/components/footer.js" type="module"></script>
     <script src="/src/components/search.js" type="module"></script>
+    <script src="/src/components/breadcrumb.js" type="module"></script>
+
     <script src="./script.js" defer></script>
 
     <title>Notice</title>
@@ -18,22 +20,8 @@
     <ps-header variant="rest" page="notice"></ps-header>
 
     <main class="container">
-      <nav class="breadcrumb">
-        <ul>
-          <li class="breadcrumb-link">
-            <a href="#" class="text-small-extra-bold">Home</a>
-            <svg class="sprite sprite--normal" role="img">
-              <use href="../assets/img/sprite.svg#icon-chevron-right"></use>
-            </svg>
-          </li>
-          <li class="breadcrumb-link">
-            <a href="#" class="text-small-extra">Notice</a>
-            <svg class="sprite sprite--dark sprite--normal" role="img">
-              <use href="../assets/img/sprite.svg#icon-chevron-right"></use>
-            </svg>
-          </li>
-        </ul>
-      </nav>
+      <ps-breadcrumb page="notice"></ps-breadcrumb>
+
       <div class="grid--main">
         <section class="news">
           <h2 class="heading-2">

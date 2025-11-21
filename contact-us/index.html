@@ -9,6 +9,7 @@
     <script src="/src/components/header.js" type="module"></script>
     <script src="/src/components/footer.js" type="module"></script>
     <script src="/src/components/search.js" type="module"></script>
+    <script src="/src/components/breadcrumb.js" type="module"></script>
 
     <title>Contact Us</title>
   </head>
@@ -18,28 +19,7 @@
 
     <main class="container">
       <section class="hero-section section--inline">
-        <nav class="breadcrumb">
-          <ul>
-            <li class="breadcrumb-link">
-              <a href="#" class="text-small-extra-bold">Home</a>
-              <svg class="sprite sprite--normal" role="img">
-                <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
-              </svg>
-            </li>
-            <li class="breadcrumb-link">
-              <a href="#" class="text-small-extra">About</a>
-              <svg class="sprite sprite--dark sprite--normal" role="img">
-                <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
-              </svg>
-            </li>
-            <li class="breadcrumb-link">
-              <span class="text-small-extra">Contact</span>
-              <svg class="sprite sprite--dark sprite--normal" role="img">
-                <use href="/assets/img/sprite.svg#icon-chevron-right"></use>
-              </svg>
-            </li>
-          </ul>
-        </nav>
+        <ps-breadcrumb page="contact us"></ps-breadcrumb>
 
         <h1 class="heading-2 page-heading">Contact Us</h1>
         <div class="wrapper">

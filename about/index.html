@@ -9,6 +9,7 @@
     <script src="/src/components/header.js" type="module"></script>
     <script src="/src/components/footer.js" type="module"></script>
     <script src="/src/components/search.js" type="module"></script>
+    <script src="/src/components/breadcrumb.js" type="module"></script>
 
     <title>About</title>
   </head>
@@ -17,31 +18,17 @@
     <ps-header variant="rest" page="about"></ps-header>
 
     <main class="container">
-      <nav class="breadcrumb">
-        <ul>
-          <li class="breadcrumb-link">
-            <a href="#" class="text-small-extra-bold">Home</a>
-            <svg class="sprite sprite--normal" role="img">
-              <use href="../assets/img/sprite.svg#icon-chevron-right"></use>
-            </svg>
-          </li>
-          <li class="breadcrumb-link">
-            <a href="#" class="text-small-extra">About</a>
-            <svg class="sprite sprite--dark sprite--normal" role="img">
-              <use href="../assets/img/sprite.svg#icon-chevron-right"></use>
-            </svg>
-          </li>
-        </ul>
-      </nav>
+      <ps-breadcrumb page="about"></ps-breadcrumb>
 
       <div class="grid-wrapper">
         <div class="about-main">
           <div class="title-box">
             <h1 class="heading-1">About our Public High School</h1>
             <svg class="sprite sprite--dark sprite--normal" role="img">
-              <use href="../assets/img/sprite.svg#icon-chevron-right"></use>
+              <use href="/public/img/sprite.svg#icon-chevron-right"></use>
             </svg>
           </div>
+
           <p class="text-small text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
             sunt, quidem, modi quisquam laboriosam officia beatae explicabo quos
@@ -111,7 +98,7 @@
           <div>
             <h2>Section header</h2>
             <svg class="sprite sprite--dark sprite--normal" role="img">
-              <use href="../assets/img/sprite.svg#icon-chevron-right"></use>
+              <use href="/public/img/sprite.svg#icon-chevron-right"></use>
             </svg>
             <ul>
               <li><a href="#">Link one</a></li>
@@ -122,7 +109,7 @@
           <div>
             <h2>Section header</h2>
             <svg class="sprite sprite--dark sprite--normal" role="img">
-              <use href="../assets/img/sprite.svg#icon-chevron-right"></use>
+              <use href="/public/img/sprite.svg#icon-chevron-right"></use>
             </svg>
             <ul>
               <li><a href="#">Link one</a></li>
@@ -133,7 +120,7 @@
           <div>
             <h2>Section header</h2>
             <svg class="sprite sprite--dark sprite--normal" role="img">
-              <use href="../assets/img/sprite.svg#icon-chevron-right"></use>
+              <use href="/public/img/sprite.svg#icon-chevron-right"></use>
             </svg>
             <ul>
               <li><a href="#">Link one</a></li>

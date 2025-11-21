@@ -33,3 +33,7 @@ a {
     text-decoration: underline;
   }
 }
+
+:not(:defined) {
+  visibility: hidden;
+}

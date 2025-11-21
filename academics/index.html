@@ -9,6 +9,7 @@
     <script src="/src/components/header.js" type="module"></script>
     <script src="/src/components/footer.js" type="module"></script>
     <script src="/src/components/search.js" type="module"></script>
+    <script src="/src/components/breadcrumb.js" type="module"></script>
 
     <title>Academics</title>
   </head>
@@ -17,22 +18,7 @@
     <ps-header variant="rest" page="Academics"></ps-header>
 
     <main class="container">
-      <nav class="breadcrumb">
-        <ul>
-          <li class="breadcrumb-link">
-            <a href="#" class="text-small-extra-bold">Home</a>
-            <svg class="sprite sprite--normal" role="img">
-              <use href="../assets/img/sprite.svg#icon-chevron-right"></use>
-            </svg>
-          </li>
-          <li class="breadcrumb-link">
-            <a href="#" class="text-small-extra">Academics</a>
-            <svg class="sprite sprite--dark sprite--normal" role="img">
-              <use href="../assets/img/sprite.svg#icon-chevron-right"></use>
-            </svg>
-          </li>
-        </ul>
-      </nav>
+      <ps-breadcrumb page="academics"></ps-breadcrumb>
 
       <h1 class="heading-2 section">
         ACADEMICS
