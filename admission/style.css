@@ -91,7 +91,7 @@ main {
 }
 
 .faq summary::before {
-  content: url(../../assets/svg/icon-plus.svg);
+  content: url(/public/svg/icon-plus.svg);
   height: var(--medium);
   width: var(--medium);
   position: absolute;
@@ -100,7 +100,7 @@ main {
 }
 
 .faq summary::after {
-  content: url(../../assets/svg/icon-plus.svg);
+  content: url(/public/svg/icon-plus.svg);
   height: var(--medium);
   width: var(--medium);
   position: absolute;
@@ -113,7 +113,7 @@ main {
 }
 
 .faq details[open] summary::before {
-  content: url(../../assets/svg/icon-cross.svg);
+  content: url(/public/svg/icon-cross.svg);
   height: var(--medium);
   width: var(--medium);
   position: absolute;
@@ -122,7 +122,7 @@ main {
 }
 
 .faq details[open] summary::after {
-  content: url(../../assets/svg/icon-cross.svg);
+  content: url(/public/svg/icon-cross.svg);
   height: var(--medium);
   width: var(--medium);
   position: absolute;
