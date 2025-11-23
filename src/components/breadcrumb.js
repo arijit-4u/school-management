@@ -1,7 +1,6 @@
-const templateBreadcrumb = document.createElement("template");
-const templateBreadcrumbItem = document.createElement("template");
+const breadCrumbStyle = document.createElement("template");
 
-templateBreadcrumb.innerHTML = `
+breadCrumbStyle.innerHTML = `
 <style>
   .breadcrumb {
     padding-top: var(--small);
@@ -37,55 +36,59 @@ templateBreadcrumb.innerHTML = `
     fill: var(--surface-shade);
   }
 </style>
-
-<nav>
-  <ul id="breadcrumb" class="breadcrumb">
-    <li class="breadcrumb-link">
-      <a href="/" class="text-small-extra-bold">Home</a>
-      <svg class="sprite sprite--normal" role="img">
-        <use href="/public/img/sprite.svg#icon-chevron-right"></use>
-      </svg>
-    </li>
-  </ul>
-</nav>
-`;
-
-templateBreadcrumbItem.innerHTML = `
-<li class="breadcrumb-link">
-  <a href="#" class="text-small-extra">RELATIVE LINK</a>
-  <svg class="sprite sprite--dark sprite--normal" role="img">
-    <use href="/public/img/sprite.svg#icon-chevron-right"></use>
-  </svg>
-</li>
 `;
 
 class Breadcrumb extends HTMLElement {
   static get observedAttributes() {
-    return ["page"];
+    return ["path"];
   }
 
   constructor() {
     super();
-    this.appendChild(templateBreadcrumb.content.cloneNode(true));
   }
 
-  connectedCallback() {}
+  connectedCallback() {
+    this.render();
+  }
 
-  attributeChangedCallback(name, _oldVal, newVal) {
+  attributeChangedCallback(name, _oldVal, _newVal) {
     if (name == "page") {
-      this.updatePage(newVal);
+      this.render();
     }
   }
 
-  updatePage(name) {
-    const breadcrumbList = this.querySelector("#breadcrumb");
-    const breadcrumbItem = templateBreadcrumbItem.content.cloneNode(true);
-    const link = breadcrumbItem.querySelector("a");
+  render() {
+    const label = this.childNodes.item(0).textContent;
+    const path = this.getAttribute("path") || "";
+    const parts = path.split("/").filter(String);
 
-    link.innerText = name;
-    link.href = "#";
+    this.innerHTML = `
+    <nav>
+      <ul id="breadcrumb" class="breadcrumb">
+        <li class="breadcrumb-link">
+          <a href="/" class="text-small-extra-bold">Home</a>
+          <chevron-right></chevron-right>
+        </li>
 
-    breadcrumbList.appendChild(breadcrumbItem);
+        ${parts .slice(0, parts.length - 1) .map( (part, idx) => `
+        <li class="breadcrumb-link">
+          <a
+            href="/${parts.slice(0, idx + 1).join(`/`)}"
+            class="text-small-extra-bold"
+            >${part.replace("-", " ")}</a
+          >
+          <chevron-right></chevron-right>
+        </li>
+        ` ) .join("")}
+
+        <li class="breadcrumb-link">
+          <span class="text-small-bold">${label}</span>
+        </li>
+      </ul>
+    </nav>
+    `;
+
+    this.appendChild(breadCrumbStyle.content.cloneNode(true));
   }
 }
 
